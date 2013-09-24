@@ -16,4 +16,16 @@ Timetable:
 
 ## Feasibility report
 
+See guidance.
+
 ## Presentation
+
+25 minute presentation to present: problem + market/literature + solution + code.
+
+Suggested:
+
+- 5 minutes: problem
+- 5 minutes: market/literature
+- 5 minutes: solution
+- 5 minutes: demonstration
+- 5 minutes: code
