@@ -2,7 +2,7 @@
 
 Lecturer: Vince Knight
 
-Office: M1.25
+Office: M1.30
 
 email: knightva@cf.ac.uk
 
@@ -25,7 +25,7 @@ email: knightva@cf.ac.uk
 
 ## What you should do next:
 
-- Download and install Python on your own machine if you have one:
+- Download and install Python (**version 2.x**) on your own machine if you have one:
     - If you have a windows machine follow the instruction at [www.python.org/](http://www.python.org/)
     - If you have a linux machine or using Mac OS (both of these are 'nix' machines) then python is already installed.
 - Start working on the first lab sheet.
