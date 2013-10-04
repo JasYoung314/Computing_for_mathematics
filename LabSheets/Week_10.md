@@ -6,6 +6,8 @@ A typesetting language is a language that requires the user to write code that i
 
 ![\text{Typesetting languages}\ref{W10-img01}](./Images/W10-img01.png)
 
+A YouTube playlist with all the videos for this lab sheet can be found [here](http://www.youtube.com/playlist?list=PLnC5h3PY-znygZ2rYNaX7_8j2Duwh58cK).
+
 1. **TICKABLE**  Open up TeXworks which should open a blank document. Write the following LaTeX code:
 
     ~~~{.latex }

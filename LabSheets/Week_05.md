@@ -7,6 +7,8 @@ This lab sheet will introduce a very important concept of computer science: obje
 + Methods;
 + Inheritance.
 
+A YouTube playlist with all the videos for this lab sheet can be found [here](http://www.youtube.com/playlist?list=PLnC5h3PY-znwesme9fiK-kZZ-DUOJF9l_).
+
 ## Classes
 
 1. **TICKABLE** The main idea behind object orientated programming (OOP) is to create abstract structures that allow us to not worry about data. Alan Kay come up with the concept and is quoted as saying: 'I wanted to get rid of data'. Instead of keeping track of variables using lists and arrays and writing specific functions for each operation we could be trying to do we use a system similar to the cellular structure in biology\text{ as shown in Figure \ref{W05-img01}}:

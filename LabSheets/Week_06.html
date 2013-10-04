@@ -5,6 +5,7 @@
   <meta http-equiv="Content-Style-Type" content="text/css" />
   <meta name="generator" content="pandoc" />
   <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
   <style type="text/css">
 table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
   margin: 0; padding: 0; vertical-align: baseline; border: none; }
@@ -36,6 +37,7 @@ code > span.er { font-weight: bold; }
 <p>Sage being an open-source program means that it is being developed by other mathematicians all over the world. It is also completely free (so you can download a copy on your own computer).</p>
 <p>Sage allows us to solves equations, differentiate expressions, plot graphs and do various other mathematical operations.</p>
 <p><strong>Sage is based on Python so you can use all the general programming techniques you have learnt up until now in Sage.</strong> Sage has all of the commands and functions you are used to in Python although some might do a bit more. Sage also has a lot of built in objects for specific mathematical operations.</p>
+<p>A YouTube playlist with all the videos for this lab sheet can be found <a href="http://www.youtube.com/playlist?list=PLnC5h3PY-znyytHl2YQjE41o-TdfewmKr">here</a>.</p>
 <ol style="list-style-type: decimal">
 <li><p><strong>TICKABLE</strong> Open Sage</p>
 <p>Navigate to <a href="https://sage.maths.cf.ac.uk/">sage.maths.cf.ac.uk</a> where you can setup a user account following these instructions:</p>
@@ -59,7 +61,7 @@ sqrt(<span class="dv">8</span>.)</code></pre>
 <p>Sage uses <code>I</code> to denote the imaginary constant:</p>
 <pre class="sourceCode python"><code class="sourceCode python">I ** <span class="dv">2</span>
 sqrt(-<span class="dv">53</span>.)</code></pre></li>
-<li><p><strong>TICKABLE</strong> Obtain an exact form for \(\sum_{i=1}^5\frac{1}{\sqrt{i}}\). Once you have an expression, experiment with the <code>factor</code>, <code>simplify</code> and <code>expand</code> functions.</p>
+<li><p><strong>TICKABLE</strong> Obtain an exact form for <span class="math">\(\sum_{i=1}^5\frac{1}{\sqrt{i}}\)</span>. Once you have an expression, experiment with the <code>factor</code>, <code>simplify</code> and <code>expand</code> functions.</p>
 <p><a href="http://youtu.be/kJwDWY6Wd7s">Video hint</a></p></li>
 <li><p>Sage can also be used to obtain prime factors of numbers:</p>
 <pre class="sourceCode python"><code class="sourceCode python">factor(<span class="dv">234398</span>)</code></pre>
@@ -72,10 +74,10 @@ sqrt(-<span class="dv">53</span>.)</code></pre></li>
 <p><a href="http://youtu.be/5e0wAaO4I84">Video hint</a></p></li>
 <li><p>Using the <code>is_prime</code> method investigate the following claim:</p>
 <blockquote>
-<p>All numbers of the form \(k^2-79*k+1601\) are prime for \(k\in\mathbb{Z}\) and \(k\geq 3\).</p>
+<p>All numbers of the form <span class="math">\(k^2-79*k+1601\)</span> are prime for <span class="math">\(k\in\mathbb{Z}\)</span> and <span class="math">\(k\geq 3\)</span>.</p>
 </blockquote></li>
 <li><p><strong>TICKABLE</strong> A very important aspect of Sage is it's ability to handle symbolic computation. In other words it is capable of simplifying:</p>
-<p>\[x^2 - 3x^2 + 4xy - 81 y^2\]</p>
+<p><span class="math">\[x^2 - 3x^2 + 4xy - 81 y^2\]</span></p>
 <p>To do so we need to first declare symbolic variables:</p>
 <pre class="sourceCode python"><code class="sourceCode python">y = var(<span class="st">&#39;y&#39;</span>)</code></pre>
 <p>(We could also declare <code>x</code> but <code>x</code> is a default variable in Sage that is always declared). Once we have done that we can assign the above expression to a variable:</p>
@@ -85,32 +87,32 @@ sqrt(-<span class="dv">53</span>.)</code></pre></li>
 <p>Once we have done that we can factorise the expression using the <code>factor</code> method:</p>
 <pre class="sourceCode python"><code class="sourceCode python">myexp.factor()</code></pre>
 <p><a href="http://youtu.be/_mmHrQ7FzaY">Video hint</a></p></li>
-<li><p>We can also define functions in Sage. The following code defines \(f:x\to x^3 + \pi x^2-\frac{23}{2}x^2+15x-\frac{23}{2}\pi x+15\pi\):</p>
+<li><p>We can also define functions in Sage. The following code defines <span class="math">\(f:x\to x^3 + \pi x^2-\frac{23}{2}x^2+15x-\frac{23}{2}\pi x+15\pi\)</span>:</p>
 <pre class="sourceCode python"><code class="sourceCode python">f(x) =  x^<span class="dv">3</span> + pi*x^<span class="dv">2</span> - <span class="dv">23</span>/<span class="dv">2</span>*x^<span class="dv">2</span> - <span class="dv">23</span>/<span class="dv">2</span>*pi*x  + <span class="dv">15</span>*x+ <span class="dv">15</span>*pi</code></pre>
-<p>To take a look at \(f\) we can use the <code>plot</code> function:</p>
+<p>To take a look at <span class="math">\(f\)</span> we can use the <code>plot</code> function:</p>
 <pre class="sourceCode python"><code class="sourceCode python">plot(f(x), x, -<span class="dv">15</span>, <span class="dv">15</span>)</code></pre>
 <p>Experiment with the arguments in that expression.</p>
-<p>To idenfity the 3 (visible on the plot) roots of our function we can use the <code>roots</code> method on \(f\):</p>
+<p>To idenfity the 3 (visible on the plot) roots of our function we can use the <code>roots</code> method on <span class="math">\(f\)</span>:</p>
 <pre class="sourceCode python"><code class="sourceCode python">f.roots()</code></pre>
-<p>We can also try to factorise \(f\):</p>
+<p>We can also try to factorise <span class="math">\(f\)</span>:</p>
 <pre class="sourceCode python"><code class="sourceCode python">f.factor()</code></pre>
 <p>Finally we can use the <code>solve</code> function:</p>
 <pre class="sourceCode python"><code class="sourceCode python">solve(f(x) == <span class="dv">0</span>, x)</code></pre>
 <p><a href="http://youtu.be/UA7LVwmMmfk">Video hint</a></p></li>
 <li><p><strong>TICKABLE</strong> Using Sage obtain the solution to the following equations:</p>
 <ol style="list-style-type: decimal">
-<li>\(x^2 = -1\)</li>
-<li>$x^2 - 53 x + 2 a = 0 $</li>
-<li>\(sin(x) = x - 1\) (Investigate the Sage function <code>find_root</code>)</li>
-<li>$x^5 + sin(x) - 2 * x = .5 $</li>
+<li><span class="math">\(x^2 = -1\)</span></li>
+<li><span class="math">\(x^2 - 53 x + 2 a = 0 \)</span></li>
+<li><span class="math">\(sin(x) = x - 1\)</span> (Investigate the Sage function <code>find_root</code>)</li>
+<li><span class="math">\(x^5 + sin(x) - 2 * x = .5 \)</span></li>
 </ol>
 <p><a href="http://youtu.be/GVEbkBXBmTw">Video hint</a></p></li>
 <li><p>It is also possible to solve systems of equations using Sage. In this case we pass a list of equations as arguments to the <code>solve</code> function. The following code gives a solution to this system of equation:</p>
-<p>\[\begin{cases}
+<p><span class="math">\[\begin{cases}
 x + y = z\\
 3 x - y = 0\\
 y + z = 1
-\end{cases}\]</p>
+\end{cases}\]</span></p>
 <pre class="sourceCode python"><code class="sourceCode python">y, z = var(<span class="st">&#39;y&#39;</span>, <span class="st">&#39;z&#39;</span>)
 solve([x + y == z, <span class="dv">3</span>*x - y == <span class="dv">0</span>, y + z ==<span class="dv">1</span>], [x, y, z])</code></pre></li>
 </ol>

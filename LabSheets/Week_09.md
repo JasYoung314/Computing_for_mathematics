@@ -6,6 +6,8 @@ Sage can be used to solve differential equations. Often complex systems can be m
 - Solve differential equations numerically using Sage;
 - Plot the results of the above.
 
+A YouTube playlist with all the videos for this lab sheet can be found [here](http://www.youtube.com/playlist?list=PLnC5h3PY-znzOZOAOVo6k_b-zDxjBr-x4).
+
 1. **TICKABLE** The general syntax for solving a differential equation of the form $f(x, y)== g(x, y)$ is shown below:
 
     ~~~{.python}

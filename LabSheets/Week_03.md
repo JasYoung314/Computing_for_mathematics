@@ -8,6 +8,8 @@ This lab sheet will introduce various data structures and also an important conc
 + Use the csv python module to read and write csv files;
 + Program some basic algorithms using recurrence.
 
+A YouTube playlist with all the videos for this lab sheet can be found [here](http://www.youtube.com/playlist?list=PLnC5h3PY-znxclcsx-JIwgFqGTXMdItOH).
+
 ## Lists in Python
 
 Lists are a particular object in Python that hold ordered collection of other objects. In other languages they are sometimes called 'arrays'. You can think of these as baskets that allow you to hold objects. You can put anything in lists:

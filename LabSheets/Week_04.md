@@ -5,6 +5,8 @@ This lab sheet will introduce two algorithms from computer science. After this s
 + Insertion and Bubble sort algorithm;
 + Binary search.
 
+A YouTube playlist with all the videos for this lab sheet can be found [here](http://www.youtube.com/playlist?list=PLnC5h3PY-znyEYYOnDbQHq1PUuNgbhdD3).
+
 ## Sorting Algorithms
 
 1. **TICKABLE** The following code creates a list of digits from 1 to 31.
