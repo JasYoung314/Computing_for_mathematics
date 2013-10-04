@@ -121,7 +121,7 @@ A variable is one of the basic building blocks used by a program. Variables may 
 
     There are various other things that can be done "on" strings, be sure to research these.
 
-    [Video hint](http://www.youtube.com/watch?v=IW6AGodpmSc)
+    [Video hint](http://www.youtube.com/watch?v=gHQtmCeCg1w&feature=youtu.be)
 
 7. It is possible to go from one type of variable to another.
 
