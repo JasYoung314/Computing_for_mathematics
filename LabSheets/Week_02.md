@@ -180,7 +180,7 @@ A variable is one of the basic building blocks used by a program. Variables may 
         print "boolean is %s" % boolean
     ~~~
 
-    Try typeing the above code but change `boolean` to `False`. **Note: in Python, indentation is important! In all languages it is good practive, in Python it is a requirement**.
+    Try typing the above code but change `boolean` to `False`. **Note: in Python, indentation is important! In all languages it is good practice, in Python it is a requirement**.
 
     It is easy to create boolean variables using the following:
 
