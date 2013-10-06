@@ -51,7 +51,7 @@ This website contains the lab sheets for the first term of Computing for Mathema
 
 The reading list can be found [here](./readinglist.html).
 
-([My personal website](http://www.vincent-knight.com/))
+[My personal website](http://www.vincent-knight.com/) contains information with regards to assessment and also solutions to the lab sheets.
 
 <script type="text/javascript">
 
