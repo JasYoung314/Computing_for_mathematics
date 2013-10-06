@@ -345,7 +345,7 @@ To be able to make progress from the basic on this sheet we need a way to write 
 
 19. **TICKABLE**: Create a function that returns the sum of the first $K$ integers not divisiable by $B$. Investigate "using optional arguments" and set $K$ and $B$ to have default values 10000 and 3 respectively.
 
-    [Video hint](http://www.youtube.com/watch?v=asCgj1tXqu8)
+    [Video hint](http://www.youtube.com/watch?v=hjv8sAlYPDw&feature=youtu.be)
 
 20. Create a function that return the square root of a number using the algorithm suggested in question 14. Write some code that compares the output of this algorithm to the actual square root for the first 10000 digits.
 
