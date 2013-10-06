@@ -202,7 +202,7 @@ A variable is one of the basic building blocks used by a program. Variables may 
         print "num is an odd number"
     ~~~
 
-    (The `%` operator gives the remainder of one number when divided by another.)
+    (The `%` operator gives the remainder of one number when divided by another. Note that this is not the same use as discussed in question 7 within strings.)
 
     [Video hint](http://www.youtube.com/watch?v=ZODKm7YolkQ)
 
