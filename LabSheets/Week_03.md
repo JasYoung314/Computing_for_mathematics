@@ -73,7 +73,7 @@ Lists are a particular object in Python that hold ordered collection of other ob
     We can include logical statements to only give the squares of odd numbers:
 
     ~~~{.python}
-    squares = [e ** 2 for e in range(1, 11) if e %% 2 == 1]
+    squares = [e ** 2 for e in range(1, 11) if e % 2 == 1]
     print squares
     ~~~
 
@@ -239,7 +239,7 @@ Lists are a particular object in Python that hold ordered collection of other ob
 
     ~~~{.python}
     def isprime(n):
-        return max([e % n for e in range(2, n)]) != 0
+        return max([n % e for e in range(2, n)]) != 0
     ~~~
 
     The file [W03_D01.txt](./Data/W03_D01.txt) contains a list of integers. Read in these integers and print to screen how many of them are prime. (If you would like a bit of a challenge, print to to screen the number of unique primes as the file contains various repetitions of numbers).
