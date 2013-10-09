@@ -378,15 +378,15 @@ There are two ways of writing comments in Python:
 
     ~~~{.python}
     def myfunc(a,b):
-    """
-    This function calculates the ratio of two numbers raised to the sum of the two numbers.
+        """
+        This function calculates the ratio of two numbers raised to the sum of the two numbers.
 
-    Arguments:
-        a: the first number
-        b: the second number
+        Arguments:
+            a: the first number
+            b: the second number
 
-    Output: (a / b) ** (a + b)
-    """
+        Output: (a / b) ** (a + b)
+        """
         return (a / float(b)) ** (a + b)
     ~~~
 
@@ -476,13 +476,13 @@ There are two ways of writing comments in Python:
 
     ~~~{.python}
     afunc():
-    """
-    Always start a function with a multiline comment to describe what it does.
+        """
+        Always start a function with a multiline comment to describe what it does.
 
-    Arguments: List the arguments and what format they should be in.
+        Arguments: List the arguments and what format they should be in.
 
-    Output: List the expected output of the function.
-    """
+        Output: List the expected output of the function.
+        """
     ~~~
 
     As and when we see new topics on this course we will also discuss the corresponding conventions.

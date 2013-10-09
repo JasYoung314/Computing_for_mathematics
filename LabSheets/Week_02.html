@@ -265,15 +265,15 @@ num += <span class="dv">3</span>  <span class="co"># Add 3 to num</span>
 <span class="kw">print</span> num</code></pre></li>
 <li><p>The following is an example of a multilined comment in the definition of a function:</p>
 <pre class="sourceCode python"><code class="sourceCode python"><span class="kw">def</span> myfunc(a,b):
-<span class="co">&quot;&quot;&quot;</span>
-<span class="co">This function calculates the ratio of two numbers raised to the sum of the two numbers.</span>
+    <span class="co">&quot;&quot;&quot;</span>
+<span class="co">    This function calculates the ratio of two numbers raised to the sum of the two numbers.</span>
 
-<span class="co">Arguments:</span>
-<span class="co">    a: the first number</span>
-<span class="co">    b: the second number</span>
+<span class="co">    Arguments:</span>
+<span class="co">        a: the first number</span>
+<span class="co">        b: the second number</span>
 
-<span class="co">Output: (a / b) ** (a + b)</span>
-<span class="co">&quot;&quot;&quot;</span>
+<span class="co">    Output: (a / b) ** (a + b)</span>
+<span class="co">    &quot;&quot;&quot;</span>
     <span class="kw">return</span> (a / <span class="dt">float</span>(b)) ** (a + b)</code></pre></li>
 <li><p><strong>TICKABLE</strong>: One final aspect that is very important when writing code is <strong>convention</strong>. When working on a project with multiple people for example being able to use the same convention can be very beneficial. The most commonly known convention for Python is <a href="http://www.Python.org/dev/peps/pep-0008/">PEP8</a>. You are advised to use the following general summary of PEP8 for this course:</p>
 <ul>
@@ -324,13 +324,13 @@ myfunc(<span class="dv">3</span>,<span class="dv">4</span>)</code></pre>
 </ul>
 <p>Comment well and comment often. In particular use the following convention for functions:</p>
 <pre class="sourceCode python"><code class="sourceCode python">afunc():
-<span class="co">&quot;&quot;&quot;</span>
-<span class="co">Always start a function with a multiline comment to describe what it does.</span>
+    <span class="co">&quot;&quot;&quot;</span>
+<span class="co">    Always start a function with a multiline comment to describe what it does.</span>
 
-<span class="co">Arguments: List the arguments and what format they should be in.</span>
+<span class="co">    Arguments: List the arguments and what format they should be in.</span>
 
-<span class="co">Output: List the expected output of the function.</span>
-<span class="co">&quot;&quot;&quot;</span></code></pre>
+<span class="co">    Output: List the expected output of the function.</span>
+<span class="co">    &quot;&quot;&quot;</span></code></pre>
 <p>As and when we see new topics on this course we will also discuss the corresponding conventions.</p>
 <p>Go back through your script and ensure that you have used the above convention.</p></li>
 </ol>
