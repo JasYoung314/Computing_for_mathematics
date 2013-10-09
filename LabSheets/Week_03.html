@@ -77,7 +77,7 @@ clist = alist + blist
 <pre class="sourceCode python"><code class="sourceCode python">squares = [e ** <span class="dv">2</span> <span class="kw">for</span> e in <span class="dt">range</span>(<span class="dv">1</span>, <span class="dv">11</span>)]
 <span class="kw">print</span> squares</code></pre>
 <p>We can include logical statements to only give the squares of odd numbers:</p>
-<pre class="sourceCode python"><code class="sourceCode python">squares = [e ** <span class="dv">2</span> <span class="kw">for</span> e in <span class="dt">range</span>(<span class="dv">1</span>, <span class="dv">11</span>) <span class="kw">if</span> e %% <span class="dv">2</span> == <span class="dv">1</span>]
+<pre class="sourceCode python"><code class="sourceCode python">squares = [e ** <span class="dv">2</span> <span class="kw">for</span> e in <span class="dt">range</span>(<span class="dv">1</span>, <span class="dv">11</span>) <span class="kw">if</span> e % <span class="dv">2</span> == <span class="dv">1</span>]
 <span class="kw">print</span> squares</code></pre>
 <p><a href="http://www.youtube.com/watch?v=8WXIY18RJiY">Video hint</a></p></li>
 <li><p><strong>TICKABLE</strong> By creating a function and using list comprehensions, create a list of <span class="math">\(f(n)\)</span> for all integers <span class="math">\(n\leq 100\)</span> where <span class="math">\(f(n)\)</span> is given below:</p>
@@ -173,7 +173,7 @@ string = textfile.read()
 <p><a href="http://www.youtube.com/watch?v=HSz1A8ZHWWg">Video hint</a> <a href="http://www.youtube.com/watch?v=HSz1A8ZHWWg">Video hint</a></p></li>
 <li><p><strong>TICKABLE</strong> The following function checks if a number is prime or not. Read through the function and ensure that you understand it.</p>
 <pre class="sourceCode python"><code class="sourceCode python"><span class="kw">def</span> isprime(n):
-    <span class="kw">return</span> <span class="dt">max</span>([e % n <span class="kw">for</span> e in <span class="dt">range</span>(<span class="dv">2</span>, n)]) != <span class="dv">0</span></code></pre>
+    <span class="kw">return</span> <span class="dt">max</span>([n % e <span class="kw">for</span> e in <span class="dt">range</span>(<span class="dv">2</span>, n)]) != <span class="dv">0</span></code></pre>
 <p>The file <a href="./Data/W03_D01.txt">W03_D01.txt</a> contains a list of integers. Read in these integers and print to screen how many of them are prime. (If you would like a bit of a challenge, print to to screen the number of unique primes as the file contains various repetitions of numbers).</p>
 <p><a href="http://www.youtube.com/watch?v=Tbv0s_GEJ1I">Video hint</a></p></li>
 <li><p>There is a common data format called 'csv' short for 'comma separated value'. There is a python library that allows for the easy use of this format when writing a lot of data to files. Watch the following video and experiment with this library.</p>
