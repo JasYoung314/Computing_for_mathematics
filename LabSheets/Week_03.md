@@ -213,6 +213,8 @@ Lists are a particular object in Python that hold ordered collection of other ob
 
     Note that the string we are writing at each step of the loop ends with a `\n`. This is a special character that tells the writer to write a new line. There are other special characters such as `\t` which tells the writer to include a tabulated space.
 
+    [Video hint](http://www.youtube.com/watch?v=HSz1A8ZHWWg)
+
 11. To read data from a file, we need to open the file in 'read mode':
 
     ~~~{.python}
@@ -234,8 +236,7 @@ Lists are a particular object in Python that hold ordered collection of other ob
     data = [int(e) for e in data[:-1]]
     ~~~
 
-    [Video hint](http://www.youtube.com/watch?v=HSz1A8ZHWWg)
-    [Video hint](http://www.youtube.com/watch?v=HSz1A8ZHWWg)
+    [Video hint](http://www.youtube.com/watch?v=3ljPll8cG3A&feature=youtu.be)
 
 12. **TICKABLE** The following function checks if a number is prime or not. Read through the function and ensure that you understand it.
 
