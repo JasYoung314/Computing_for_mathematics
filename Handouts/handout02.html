@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <style type="text/css">
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; background-color: #f8f8f8; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+pre, code { background-color: #f8f8f8; }
+code > span.kw { color: #204a87; font-weight: bold; }
+code > span.dt { color: #204a87; }
+code > span.dv { color: #0000cf; }
+code > span.bn { color: #0000cf; }
+code > span.fl { color: #0000cf; }
+code > span.ch { color: #4e9a06; }
+code > span.st { color: #4e9a06; }
+code > span.co { color: #8f5902; font-style: italic; }
+code > span.ot { color: #8f5902; }
+code > span.al { color: #ef2929; }
+code > span.fu { color: #000000; }
+code > span.er { font-weight: bold; }
+  </style>
+</head>
+<body>
+<h1 id="computing-for-mathematics-handout-2---conditional-statements-flow-control-and-functions">Computing for mathematics handout 2 - Conditional Statements, flow control and functions</h1>
+<p>Lecturer: Vince Knight</p>
+<p>Office: M1.30</p>
+<p>email: knightva@cf.ac.uk</p>
+<p><strong>Office hours: Thursday 1300-1500</strong></p>
+<h2 id="what-you-have-learnt-this-week">What you have learnt this week:</h2>
+<ul>
+<li>Variables, variables types etc...</li>
+<li>What we can do to numeric variables;</li>
+<li>What we can do to strings;</li>
+<li>If statements;</li>
+<li>Loops (<code>for</code> and <code>while</code>);</li>
+<li>Functions;</li>
+<li>Comments.</li>
+</ul>
+<h2 id="saving-files">Saving files</h2>
+<p>When you save a python script make sure to include the <code>.py</code> extension. This ensures that IDLE will be able to open it.</p>
+<h2 id="indentation">Indentation</h2>
+<p>Indentation is important in Python.</p>
+<pre class="sourceCode python"><code class="sourceCode python"><span class="kw">if</span> BOOLEAN:  <span class="co"># Check if BOOLEAN is true or false</span>
+    then do everything in this indented block
+    ...
+    ...
+    ...
+    up until the last indent!
+<span class="kw">else</span>:  <span class="co"># If BOOLEAN is false</span>
+    then do everything in THIS indented block
+    ...
+    ...
+    ...</code></pre>
+<h2 id="assignment">Assignment</h2>
+<p>In question 21 you used a very clever aspect of Python called 'simultaneous assignment'. This ensured that <code>a</code> and <code>b</code> changed value at the same time.</p>
+<p>To do this without simultaneous assignment we would need a <code>temporary variable</code>:</p>
+<pre><code>temp = a
+a = b
+b = temp + b</code></pre>
+<h2 id="documentation">Documentation</h2>
+<p><strong>Commenting is extremely important</strong>. You need to stick to the conventions described in questions 22, 23 and 24 of the first lab sheet.</p>
+<p>Remember to describe functions like this:</p>
+<pre class="sourceCode python"><code class="sourceCode python"><span class="kw">def</span> somefunction():
+    <span class="co">&quot;&quot;&quot;</span>
+<span class="co">    Describe in a sentence or two what your function does</span>
+
+<span class="co">    Arguments: Describe what variables must be passed to the function</span>
+
+<span class="co">    Outputs: Describe what outputs will be returned by the function</span>
+<span class="co">    &quot;&quot;&quot;</span>
+    Then start the code... <span class="co"># Include in line comments along the way.</span></code></pre>
+<h2 id="what-you-should-do-next">What you should do next:</h2>
+<ul>
+<li><strong>Get started on the second sheet!</strong></li>
+<li>To make the best use of the lab sessions turn up having finished your sheets;</li>
+<li>If anything is still unclear please come and see me during office hours.</li>
+</ul>
+</body>
+</html>
