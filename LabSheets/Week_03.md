@@ -117,7 +117,7 @@ Lists are a particular object in Python that hold ordered collection of other ob
 
     (Note that you can write lists over multiple lines)
 
-    To find a particular phone number in this phone book we would need to go through ever element of the phone book to check if it was the right one\text{ (as shown in Figure \ref{W03-img01)}}:
+    To find a particular phone number in this phone book we would need to go through every element of the phone book to check if it was the right one\text{ (as shown in Figure \ref{W03-img01)}}:
 
     ![\text{A bad phone book}\label{W03-img01}](./Images/W03-img01.png)
 
@@ -174,7 +174,7 @@ Lists are a particular object in Python that hold ordered collection of other ob
     print goodphonebook['Brayden']
     ~~~
 
-    **Note valid keys must be strings or numerical variables but anything can be a value of a key.**
+    **Note A key must be a string or a numerical variable. The associated value of a key can be anything.**
 
     [Video hint](http://www.youtube.com/watch?v=CuyHg-1Let0)
 
