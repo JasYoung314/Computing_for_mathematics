@@ -174,7 +174,7 @@ Lists are a particular object in Python that hold ordered collection of other ob
     print goodphonebook['Brayden']
     ~~~
 
-    **Note A key must be a string or a numerical variable. The associated value of a key can be anything.**
+    **Note: A key must be a string or a numerical variable. The associated value of a key can be anything.**
 
     [Video hint](http://www.youtube.com/watch?v=CuyHg-1Let0)
 
