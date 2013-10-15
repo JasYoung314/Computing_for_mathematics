@@ -69,6 +69,7 @@ def makeeven(k):
     Output:
         k - 1
     """
+    return k - 1
 
 someevennbrs = []
 for k in someoddnbrs:
