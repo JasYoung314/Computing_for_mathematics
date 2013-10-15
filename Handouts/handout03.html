@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <style type="text/css">
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; background-color: #f8f8f8; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+pre, code { background-color: #f8f8f8; }
+code > span.kw { color: #204a87; font-weight: bold; }
+code > span.dt { color: #204a87; }
+code > span.dv { color: #0000cf; }
+code > span.bn { color: #0000cf; }
+code > span.fl { color: #0000cf; }
+code > span.ch { color: #4e9a06; }
+code > span.st { color: #4e9a06; }
+code > span.co { color: #8f5902; font-style: italic; }
+code > span.ot { color: #8f5902; }
+code > span.al { color: #ef2929; }
+code > span.fu { color: #000000; }
+code > span.er { font-weight: bold; }
+  </style>
+</head>
+<body>
+<h1 id="computing-for-mathematics-handout-3---functions-lists-and-for-loops-iteration-versus-recursion">Computing for mathematics handout 3 - Functions, Lists and For Loops, Iteration versus Recursion</h1>
+<p>Lecturer: Vince Knight</p>
+<p>Office: M1.30</p>
+<p>email: knightva@cf.ac.uk</p>
+<p><strong>Office hours: Thursday 1300-1500</strong></p>
+<h2 id="what-you-have-learnt-this-week">What you have learnt this week:</h2>
+<ul>
+<li>Lists, appending variables to lists, using list comprehensions;</li>
+<li>Dictionaries;</li>
+<li>Writing and reading data to file;</li>
+<li>Recursion versus iteration.</li>
+</ul>
+<h2 id="functions">Functions</h2>
+<ul>
+<li><p>When you define a function you do not <strong>use</strong> it:</p>
+<pre class="sourceCode python"><code class="sourceCode python"><span class="kw">def</span> mean(lst):
+    <span class="co">&quot;&quot;&quot;</span>
+<span class="co">    A function to return the mean of a list</span>
+
+<span class="co">    Arguments:</span>
+<span class="co">        lst: A list of numbers</span>
+
+<span class="co">    Outputs: The mean</span>
+<span class="co">    &quot;&quot;&quot;</span>
+    sumofelements = <span class="dt">sum</span>(lst)
+    N = <span class="dt">len</span>(lst)
+    <span class="kw">return</span> lst / <span class="dt">float</span>(N)</code></pre></li>
+<li><p>The above just creates a <strong>tool</strong> that we can use if we want to:</p>
+<pre class="sourceCode python"><code class="sourceCode python"><span class="kw">print</span> mean([<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>,<span class="dv">5</span>])</code></pre></li>
+</ul>
+<h2 id="lists-and-for-loops">Lists and for loops</h2>
+<ul>
+<li>A list is a python object that <strong>contains</strong> other python objects:</li>
+</ul>
+<pre class="sourceCode python"><code class="sourceCode python">someoddnbrs = [<span class="dv">1</span>,<span class="dv">3</span>,<span class="dv">5</span>,<span class="dv">7</span>,<span class="dv">9</span>,<span class="dv">11</span>]</code></pre>
+<ul>
+<li>We can use a <code>for</code> loop (see sheet 1) to 'iterate' (ie 'go through') the elements of that list:</li>
+</ul>
+<pre class="sourceCode python"><code class="sourceCode python"><span class="kw">for</span> k in someoddnbrs:
+    <span class="kw">print</span> k</code></pre>
+<ul>
+<li>We can apply a function to a list:</li>
+</ul>
+<pre class="sourceCode python"><code class="sourceCode python"><span class="kw">def</span> makeeven(k):
+    <span class="co">&quot;&quot;&quot;</span>
+<span class="co">    A function to minus 1 from a number</span>
+
+<span class="co">    Arguments:</span>
+<span class="co">        k: an odd number</span>
+
+<span class="co">    Output:</span>
+<span class="co">        k - 1</span>
+<span class="co">    &quot;&quot;&quot;</span>
+
+someevennbrs = []
+<span class="kw">for</span> k in someoddnbrs:
+    someevenbrs.append(makeeven(k))
+    <span class="kw">print</span> someevennbrs</code></pre>
+<ul>
+<li>We can do this in 1 line using list comprehensions:</li>
+</ul>
+<pre class="sourceCode python"><code class="sourceCode python">someevennbrs = [makeeven(k) <span class="kw">for</span> k in someoddnbrs]</code></pre>
+<h2 id="iteration-versus-recursion">Iteration versus recursion</h2>
+<h2 id="what-you-should-do-next">What you should do next:</h2>
+<ul>
+<li>You have had a lot of information delivered to you in a short amount of time, go back through the previous sheets to make sure you understand the basics.</li>
+<li><strong>Get started on the third sheet!</strong></li>
+<li>To make the best use of the lab sessions turn up having finished your sheets;</li>
+<li>If anything is still unclear <strong>please</strong> come and see me during office hours.</li>
+</ul>
+</body>
+</html>

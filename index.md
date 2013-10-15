@@ -53,6 +53,10 @@ This website contains the lab sheets for the first term of Computing for Mathema
 
 	[html (recommended)](./Handouts/handout02.html), [pdf](./Handouts/handout02.pdf), [docx](./Handouts/handout02.docx)
 
+3. Handout 3: Functions, Lists and For Loops, Iteration versus Recursion
+
+	[html (recommended)](./Handouts/handout03.html), [pdf](./Handouts/handout03.pdf), [docx](./Handouts/handout03.docx)
+
 The reading list can be found [here](./readinglist.html).
 
 [My personal website](http://www.vincent-knight.com/) contains information with regards to assessment and also solutions to the lab sheets.
