@@ -84,6 +84,9 @@ someevennbrs = [makeeven(k) for k in someoddnbrs]
 
 ## Iteration versus recursion
 
+- Iteration is an approach for defining a function that loops through elements.
+- Recursion is an approach for defining a function that 'calls itself' until a base case is reached.
+
 ## What you should do next:
 
 - You have had a lot of information delivered to you in a short amount of time, go back through the previous sheets to make sure you understand the basics.
