@@ -15,7 +15,6 @@ email: knightva@cf.ac.uk
 - Writing and reading data to file;
 - Recursion versus iteration.
 
-
 ## Functions
 
 - When you define a function you do not **use** it:
@@ -45,43 +44,43 @@ email: knightva@cf.ac.uk
 
 - A list is a python object that **contains** other python objects:
 
-~~~{.python}
-someoddnbrs = [1,3,5,7,9,11]
-~~~
+    ~~~{.python}
+    someoddnbrs = [1,3,5,7,9,11]
+    ~~~
 
 - We can use a `for` loop (see sheet 1) to 'iterate' (ie 'go through') the elements of that list:
 
-~~~{.python}
-for k in someoddnbrs:
-    print k
-~~~
+    ~~~{.python}
+    for k in someoddnbrs:
+        print k
+    ~~~
 
 - We can apply a function to a list:
 
-~~~{.python}
-def makeeven(k):
-    """
-    A function to minus 1 from a number
+    ~~~{.python}
+    def makeeven(k):
+        """
+        A function to minus 1 from a number
 
-    Arguments:
-        k: an odd number
+        Arguments:
+            k: an odd number
 
-    Output:
-        k - 1
-    """
-    return k - 1
+        Output:
+            k - 1
+        """
+        return k - 1
 
-someevennbrs = []
-for k in someoddnbrs:
-    someevenbrs.append(makeeven(k))
-    print someevennbrs
-~~~
+    someevennbrs = []
+    for k in someoddnbrs:
+        someevenbrs.append(makeeven(k))
+        print someevennbrs
+    ~~~
 
 - We can do this in 1 line using list comprehensions:
 
-~~~{.python}
-someevennbrs = [makeeven(k) for k in someoddnbrs]
-~~~
+    ~~~{.python}
+    someevennbrs = [makeeven(k) for k in someoddnbrs]
+    ~~~
 
 ## Iteration versus recursion
 

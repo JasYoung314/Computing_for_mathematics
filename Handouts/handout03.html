@@ -5,7 +5,6 @@
   <meta http-equiv="Content-Style-Type" content="text/css" />
   <meta name="generator" content="pandoc" />
   <title></title>
-  <style type="text/css">code{white-space: pre;}</style>
   <style type="text/css">
 table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
   margin: 0; padding: 0; vertical-align: baseline; border: none; }
@@ -60,17 +59,12 @@ code > span.er { font-weight: bold; }
 </ul>
 <h2 id="lists-and-for-loops">Lists and for loops</h2>
 <ul>
-<li>A list is a python object that <strong>contains</strong> other python objects:</li>
-</ul>
-<pre class="sourceCode python"><code class="sourceCode python">someoddnbrs = [<span class="dv">1</span>,<span class="dv">3</span>,<span class="dv">5</span>,<span class="dv">7</span>,<span class="dv">9</span>,<span class="dv">11</span>]</code></pre>
-<ul>
-<li>We can use a <code>for</code> loop (see sheet 1) to 'iterate' (ie 'go through') the elements of that list:</li>
-</ul>
+<li><p>A list is a python object that <strong>contains</strong> other python objects:</p>
+<pre class="sourceCode python"><code class="sourceCode python">someoddnbrs = [<span class="dv">1</span>,<span class="dv">3</span>,<span class="dv">5</span>,<span class="dv">7</span>,<span class="dv">9</span>,<span class="dv">11</span>]</code></pre></li>
+<li><p>We can use a <code>for</code> loop (see sheet 1) to 'iterate' (ie 'go through') the elements of that list:</p>
 <pre class="sourceCode python"><code class="sourceCode python"><span class="kw">for</span> k in someoddnbrs:
-    <span class="kw">print</span> k</code></pre>
-<ul>
-<li>We can apply a function to a list:</li>
-</ul>
+    <span class="kw">print</span> k</code></pre></li>
+<li><p>We can apply a function to a list:</p>
 <pre class="sourceCode python"><code class="sourceCode python"><span class="kw">def</span> makeeven(k):
     <span class="co">&quot;&quot;&quot;</span>
 <span class="co">    A function to minus 1 from a number</span>
@@ -86,11 +80,10 @@ code > span.er { font-weight: bold; }
 someevennbrs = []
 <span class="kw">for</span> k in someoddnbrs:
     someevenbrs.append(makeeven(k))
-    <span class="kw">print</span> someevennbrs</code></pre>
-<ul>
-<li>We can do this in 1 line using list comprehensions:</li>
+    <span class="kw">print</span> someevennbrs</code></pre></li>
+<li><p>We can do this in 1 line using list comprehensions:</p>
+<pre class="sourceCode python"><code class="sourceCode python">someevennbrs = [makeeven(k) <span class="kw">for</span> k in someoddnbrs]</code></pre></li>
 </ul>
-<pre class="sourceCode python"><code class="sourceCode python">someevennbrs = [makeeven(k) <span class="kw">for</span> k in someoddnbrs]</code></pre>
 <h2 id="iteration-versus-recursion">Iteration versus recursion</h2>
 <ul>
 <li>Iteration is an approach for defining a function that loops through elements.</li>
