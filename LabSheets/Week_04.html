@@ -177,7 +177,9 @@ RETURN MIDDLE</code></pre>
             last = middle - <span class="dv">1</span>
         <span class="kw">else</span>:
             first = middle + <span class="dv">1</span>
-    <span class="kw">return</span> middle</code></pre>
+    <span class="kw">if</span> data[middle] == item:
+        <span class="kw">return</span> middle
+    <span class="kw">return</span> <span class="ot">False</span></code></pre>
 <p><a href="http://www.youtube.com/watch?v=UyIhxhURX-M">Video hint</a></p></li>
 <li><p>Use the timing function of question 4 to compare the performance of the binary search and sequential search algorithms.</p></li>
 <li><p>The binary search algorithm is a very nice algorithm to write in a recursive way, attempt to do this.</p></li>
