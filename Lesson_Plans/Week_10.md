@@ -7,7 +7,7 @@ At the end of this lecture students will be:
 
 - Able to write basic LaTeX documents;
 - Create presentations using LaTeX;
-- Create basic drawings using Tigz.
+- Create basic drawings using Tikz.
 - Be familiar with web based versions like [writelatex](https://www.writelatex.com/)
 
 ### Timeline
