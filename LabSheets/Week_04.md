@@ -50,7 +50,7 @@ A YouTube playlist with all the videos for this lab sheet can be found [here](ht
             FIND SMALLEST ELEMENT IN OLDLIST
             MOVE THAT ELEMENT TO NEWLIST
 
-    It should be straightforward to see that at every step of this algorithm we the total size of NEWLIST and OLDLIST stay the same. As such we can simply put the NEWLIST at the beginning of the OLDLIST so that at each step of our algorithm we are basically moving elements from the unsorted part of the list to the sorted part of the list\text{ as shown in Figure \ref{W04-img02}}.
+    It should be straightforward to see that at every step of this algorithm the sum of the sizes of NEWLIST and OLDLIST stay the same. As such we can simply put the NEWLIST at the beginning of the OLDLIST so that at each step of our algorithm we are basically moving elements from the unsorted part of the list to the sorted part of the list\text{ as shown in Figure \ref{W04-img02}}.
 
     ![\text{A concise version of selection sort.}\label{W04-img02}}](./Images/W04-img02.png)
 
