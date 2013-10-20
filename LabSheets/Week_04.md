@@ -92,7 +92,7 @@ A YouTube playlist with all the videos for this lab sheet can be found [here](ht
     Here's the pseudo code for the "BUBBLE UP" part of the above code:
 
         SET INDEX TO LENGTH - 1
-        WHILE INDEX >  FIRSTUNSORTED + 1:
+        WHILE INDEX > FIRSTUNSORTED:
             IF DATA[INDEX] < DATA[INDEX - 1]
                 SWAP DATA[INDEX] AND DATA[INDEX - 1]
                 SET SWAP TO TRUE
