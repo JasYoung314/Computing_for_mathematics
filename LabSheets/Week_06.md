@@ -24,6 +24,8 @@ A YouTube playlist with all the videos for this lab sheet can be found [here](ht
 
     [Video hint](http://www.youtube.com/watch?v=3E9LvXV_zrA&feature=youtu.be)
 
+    **If you forget your password DO NOT CREATE ANOTHER ACCOUNT: come and see me (Vince Knight) and I can reset your password.**
+
 2. **TICKABLE** It is very easy to get help in Sage. Simply type any command followed by a `?` to get a help file for it:
 
     ~~~{.python}
