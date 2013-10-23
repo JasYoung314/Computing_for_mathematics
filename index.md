@@ -10,7 +10,7 @@ This website contains the lab sheets for the first term of Computing for Mathema
 
 	[html (recommended)](./LabSheets/Week_02.html), [pdf](./LabSheets/Week_02.pdf), [docx](./LabSheets/Week_02.docx)
 
-2. Lab Sheets 2:  Data Structurs and Recursion
+2. Lab Sheets 2:  Data Structures and Recursion
 
 	[html (recommended)](./LabSheets/Week_03.html), [pdf](./LabSheets/Week_03.pdf), [docx](./LabSheets/Week_03.docx)
 
