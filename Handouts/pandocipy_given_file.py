@@ -7,4 +7,4 @@ print e
 
 system("pandoc -s --mathjax='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML' --highlight-style tango " + e +  ".md -o " + e + ".html")
 system("pandoc -s " + e +  ".md -o " + e + ".docx")
-system("pandoc -s --listings -V geometry:margin=1.5cm " + e +  ".md -o " + e + ".pdf")
+system("pandoc -s --listings -V geometry:margin=1.5cm --latex-engine=xelatex " + e +  ".md -o " + e + ".pdf")

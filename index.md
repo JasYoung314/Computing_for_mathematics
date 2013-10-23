@@ -57,6 +57,10 @@ This website contains the lab sheets for the first term of Computing for Mathema
 
 	[html (recommended)](./Handouts/handout03.html), [pdf](./Handouts/handout03.pdf), [docx](./Handouts/handout03.docx)
 
+4. Handout 4: Functions, Sorting and Searching algorithms and what to expect on the class test.
+
+	[html (recommended)](./Handouts/handout04.html), [pdf](./Handouts/handout04.pdf), [docx](./Handouts/handout04.docx)
+
 The reading list can be found [here](./readinglist.html).
 
 [My personal website](http://www.vincent-knight.com/) contains information with regards to assessment and also solutions to the lab sheets.
