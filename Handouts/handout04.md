@@ -27,7 +27,7 @@ In *mathematics* we'll often see things like this:
 
 Let us define $f(x)=x^2$, $g(x)=x^3-1$ and $h(x)=\sqrt{x}$.
 
-Calculate f(x), g(x) and h(x) for $x$ taking on the following values: $0, .5, 1, 3$.
+Calculate $f(x)$, $g(x)$ and $h(x)$ for $x$ taking on the following values: $0, .5, 1, 3$.
 
 ---
 
@@ -47,7 +47,7 @@ Now define $k(x) = f(g(h(x)))$. Which function ($h,f,g$ or $k$) has the lowest m
 
 Here we would calculate $k(x)$ for the above function:
 
-- $k(0)=f(g(h(0)))=f(g(0))=f(-1)=1, k(.5)\approx .418, k(1)=0, k(3)=17.608$
+- $k(0)=f(g(h(0)))=f(g(0))=f(-1)=1, k(.5)\approx .418, k(1)=0, k(3)\approx 17.608$
 
 From here we would write: let $a, b, c, d$ be the mean values of $h, f, g, k$ respectively.
 
