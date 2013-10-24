@@ -127,10 +127,10 @@ print "k: %s" % mean([k(x) for x in values])
 - 50 minute class test.
 - The class test will have 3 questions:
 
-    - Q1 will be a *non tickable* question from the lab sheets;
+    - Q1 will be a **non tickable** question from the lab sheets;
     - Q2 will be a question of comparable difficulty to what has been done in the lab sheets;
     - Q3 will be a harder question similar to a question from the lab sheets.
-- This will be an open 'book' test. You will have access to the internet. *BUT NOT TO EMAIL* or any other communication with other students: make sure your scripts from the sheets are on your machine: 'I was just logging in to my email to get my sheets' will not be tolerated.
+- This will be an open 'book' test. You will have access to the internet, **BUT NOT TO EMAIL** or any other communication with other students: make sure your scripts from the sheets are on your machine: 'I was just logging in to my email to get my sheets' will not be tolerated.
 - You will write 3 scripts (1 for each question) and will be uploading and emailing them.
 
 ## What you should do next:
