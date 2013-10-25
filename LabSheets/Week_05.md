@@ -110,6 +110,8 @@ A YouTube playlist with all the videos for this lab sheet can be found [here](ht
     listofquadratics = []
     ~~~
 
+    [Video hint](http://www.youtube.com/watch?v=2pPih4SawM8&feature=youtu.be)
+
 ## Methods
 
 5. **TICKABLE** We have seen methods before. For example for a given list `l = [1, 3, 2, 1.2]`, there exists a `sort` method that 'does some work to l' so that `l` becomes: `[1, 1.2, 2, 3]`. It is very easy to create custom methods for any class. We simply need to define functions _within_ our class.
