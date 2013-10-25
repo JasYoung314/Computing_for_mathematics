@@ -104,7 +104,7 @@ A YouTube playlist with all the videos for this lab sheet can be found [here](ht
         c = 0
     ~~~
 
-    The file [W05_D01.csv](./Data/W05_D01.txt) contains triplets of coefficients. Create instances of the Quadratic class with the corresponding coefficients and put them all in to a list:
+    The file [W05_D01.csv](./Data/W05_D01.csv) contains triplets of coefficients. Create instances of the Quadratic class with the corresponding coefficients and put them all in to a list:
 
     ~~~{.python}
     listofquadratics = []
