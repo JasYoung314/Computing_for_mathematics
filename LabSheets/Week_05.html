@@ -39,7 +39,7 @@ code > span.er { font-weight: bold; }
 <p>A YouTube playlist with all the videos for this lab sheet can be found <a href="http://www.youtube.com/playlist?list=PLnC5h3PY-znwesme9fiK-kZZ-DUOJF9l_">here</a>.</p>
 <h2 id="classes">Classes</h2>
 <ol style="list-style-type: decimal">
-<li><p><strong>TICKABLE</strong> The main idea behind object orientated programming (OOP) is to create abstract structures that allow us to not worry about data. Alan Kay come up with the concept and is quoted as saying: 'I wanted to get rid of data'. Instead of keeping track of variables using lists and arrays and writing specific functions for each operation we could be trying to do we use a system similar to the cellular structure in biology:</p>
+<li><p><strong>TICKABLE</strong> The main idea behind object orientated programming (OOP) is to create abstract structures that allow us to not worry about data. Alan Kay came up with the concept and is quoted as saying: 'I wanted to get rid of data'. Instead of keeping track of variables using lists and arrays and writing specific functions for each operation we could be trying to do we use a system similar to the cellular structure in biology:</p>
 <div class="figure">
 <img src="./Images/W05-img01.png" alt="" /><p class="caption"></p>
 </div>
@@ -111,7 +111,7 @@ vince.sex = <span class="st">&quot;M&quot;</span>
 
     <span class="kw">def</span> haveabirthday(<span class="ot">self</span>):
         <span class="ot">self</span>.age += <span class="dv">1</span></code></pre>
-<p><strong>All method definitions require <code>self</code> as an argument which simply implies that that method work on the particular instance in question.</strong> We do not need to pass an argument to methods for the self argument (we can in essence ignore it).</p>
+<p><strong>All method definitions require <code>self</code> as an argument which simply implies that the method works on the particular instance in question.</strong> We do not need to pass an argument to methods for the self argument (we can in essence ignore it when calling the method).</p>
 <p>Let us see how this works:</p>
 <pre class="sourceCode python"><code class="sourceCode python">vince = Student()
 <span class="kw">print</span> vince.age
@@ -146,7 +146,7 @@ vince = Student([<span class="st">&quot;Biology&quot;</span>,<span class="st">&q
 <span class="kw">print</span> vince.courses
 <span class="kw">print</span> vince.age
 <span class="kw">print</span> vince.sex</code></pre></li>
-<li><p><strong>TICKABLE</strong> Re visit the Quadratic class from earlier. Use the <code>__init__</code> method and also create a method to return <code>True</code> if the quadratic has real roots.</p>
+<li><p><strong>TICKABLE</strong> Revisit the Quadratic class from earlier. Use the <code>__init__</code> method and also create a method to return <code>True</code> if the quadratic has real roots.</p>
 <p>Recall that the roots of \(ax^2 + bx + c\) are given by:</p>
 <p>\[x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\]</p>
 <p>Using this count how many of the instances in <a href="./Data/W05_D01.txt">W05_D01.csv</a> have real roots.</p></li>
