@@ -268,7 +268,7 @@ A YouTube playlist with all the videos for this lab sheet can be found [here](ht
 
     ~~~{.python}
     class MathStudent(Student):
-        self.favouriteclass = "Mathematics"
+        favouriteclass = "Mathematics"
     ~~~
 
     Instances of this inherited class will inherit attributes and methods from the original class:
@@ -284,4 +284,4 @@ A YouTube playlist with all the videos for this lab sheet can be found [here](ht
 
     Create another inherited class (from student) giving it a specific method.
 
-    [Video hint](http://youtu.be/oEzqQLlORq4)
+    [Video hint](http://www.youtube.com/watch?v=cKDWCzCE1y4&feature=youtu.be)
