@@ -61,6 +61,10 @@ This website contains the lab sheets for the first term of Computing for Mathema
 
 	[html (recommended)](./Handouts/handout04.html), [pdf](./Handouts/handout04.pdf), [docx](./Handouts/handout04.docx)
 
+5. Handout 5: Object Orientated Programming
+
+	[html (recommended)](./Handouts/handout05.html), [pdf](./Handouts/handout05.pdf), [docx](./Handouts/handout05.docx)
+
 The reading list can be found [here](./readinglist.html).
 
 [My personal website](http://www.vincent-knight.com/) contains information with regards to assessment and also solutions to the lab sheets.
