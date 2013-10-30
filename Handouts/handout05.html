@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <style type="text/css">
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; background-color: #f8f8f8; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+pre, code { background-color: #f8f8f8; }
+code > span.kw { color: #204a87; font-weight: bold; }
+code > span.dt { color: #204a87; }
+code > span.dv { color: #0000cf; }
+code > span.bn { color: #0000cf; }
+code > span.fl { color: #0000cf; }
+code > span.ch { color: #4e9a06; }
+code > span.st { color: #4e9a06; }
+code > span.co { color: #8f5902; font-style: italic; }
+code > span.ot { color: #8f5902; }
+code > span.al { color: #ef2929; }
+code > span.fu { color: #000000; }
+code > span.er { font-weight: bold; }
+  </style>
+</head>
+<body>
+<h1 id="computing-for-mathematics-handout-5---object-orientated-programming">Computing for mathematics handout 5 - Object Orientated Programming</h1>
+<p>Lecturer: Vince Knight</p>
+<p>Office: M1.30</p>
+<p>email: knightva@cf.ac.uk</p>
+<p><strong>Office hours: Thursday 1300-1500</strong></p>
+<h2 id="what-you-have-learnt-this-week">What you have learnt this week:</h2>
+<ul>
+<li>How to create a class and an instance of a class;</li>
+<li>How to give a class attributes;</li>
+<li>How to give a class methods;</li>
+<li>How to create new classes from old through inheritance.</li>
+</ul>
+<h2 id="question-7">Question 7</h2>
+<p>Many people found question 7 quite a challenge. Here is a similar question.</p>
+<blockquote>
+<p><em>The list <code>fields</code> contains two columns of data: each representing the width and lengths of fields. For a field to be profitable they must have an area of at least 50 square metres, how many fields in our data set are profitable?</em></p>
+</blockquote>
+<pre class="sourceCode python"><code class="sourceCode python">
+fields = [[<span class="dv">4</span>,<span class="dv">5</span>],
+          [<span class="dv">6</span>,<span class="dv">2</span>],
+          [<span class="dv">1</span>,<span class="dv">7</span>],
+          [<span class="dv">8</span>,<span class="dv">2</span>],
+          [<span class="dv">4</span>,<span class="dv">1</span>],
+          [<span class="dv">7</span>,<span class="dv">2</span>],
+          [<span class="dv">8</span>,<span class="dv">2</span>],
+          [<span class="dv">9</span>,<span class="dv">1</span>],
+          [<span class="dv">10</span>,<span class="dv">56</span>],
+          [<span class="dv">83</span>,<span class="dv">15</span>],
+          [<span class="dv">4</span>,<span class="dv">1</span>],
+          <span class="dv">53</span>,<span class="dv">2</span>]]
+
+<span class="kw">class</span> Field():
+    <span class="co">&quot;&quot;&quot;</span>
+<span class="co">    A class for our field</span>
+<span class="co">    &quot;&quot;&quot;</span>
+    <span class="kw">def</span> <span class="ot">__init__</span>(<span class="ot">self</span>, x, y):
+        <span class="ot">self</span>.width = x
+        <span class="ot">self</span>.height = y
+    <span class="kw">def</span> profitable(<span class="ot">self</span>):
+        <span class="kw">return</span> <span class="ot">self</span>.width * <span class="ot">self</span>.height &gt;= <span class="dv">50</span>
+
+fields = [Field(f[<span class="dv">0</span>], f[<span class="dv">1</span>]) <span class="kw">for</span> f in fields]
+<span class="kw">print</span> <span class="dt">len</span>([f <span class="kw">for</span> f in fields <span class="kw">if</span> f.profitable()])</code></pre>
+<h2 id="what-you-should-do-next">What you should do next:</h2>
+<ul>
+<li><strong>Start the next sheet</strong>: this is a short one and the aim is for you to be familiar with Sage.</li>
+<li>Continue to revise for the class test: work through all your lab sheets. If you can do exercises in the lab sheets (not just 'understand them' but actually 'do them') you will be fine.</li>
+<li>To make the best use of the lab sessions turn up having finished your sheets;</li>
+<li>If anything is still unclear <strong>please</strong> come and see me during office hours.</li>
+</ul>
+</body>
+</html>
