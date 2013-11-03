@@ -82,7 +82,7 @@ A YouTube playlist with all the videos for this lab sheet can be found [here](ht
 
 6. Using the `is_prime` method investigate the following claim:
 
-    > All numbers of the form $k^2-79*k+1601$ are prime for $k\in\mathbb{Z}$ and $k\geq 3$.
+    > All numbers of the form $k^2-79k+1601$ are prime for $k\in\mathbb{Z}$ and $k\geq 3$.
 
 7. **TICKABLE** A very important aspect of Sage is it's ability to handle symbolic computation. In other words it is capable of simplifying:
 
