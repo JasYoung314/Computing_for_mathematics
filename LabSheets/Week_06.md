@@ -1,6 +1,6 @@
 # Week 6 - Algebra
 
-Now that we have a good knowledge of programming we can take a closer look at a Mathematics package. There are a variety of such packages: [Maple](http://www.maplesoft.com/products/maple/), [Mathematica](http://www.wolfram.com/products/) and others. The mathematics package we will use is called [Sage](http://sagemath.org/), as stated on the Sage website ([sagemath.org](http://sagemath.org/):
+Now that we have a good knowledge of programming we can take a closer look at a Mathematics package. There are a variety of such packages: [Maple](http://www.maplesoft.com/products/maple/), [Mathematica](http://www.wolfram.com/products/) and others. The mathematics package we will use is called [Sage](http://sagemath.org/), as stated on the Sage website ([sagemath.org](http://sagemath.org/)):
 
 > Sage is a free open-source mathematics software system licensed under the GPL. It combines the power of many existing open-source packages into a common Python-based interface.
 
