@@ -157,7 +157,7 @@ A YouTube playlist with all the videos for this lab sheet can be found [here](ht
 
     [Video hint](http://youtu.be/GVEbkBXBmTw)
 
-10. It is also possible to solve systems of equations using Sage. In this case we pass a list of equations as arguments to the `solve` function. The following code gives a solution to this system of equation:
+10. It is also possible to solve systems of equations using Sage. In this case we pass a list of equations as arguments to the `solve` function. The following code gives a solution to this system of equations:
 
     $$\begin{cases}
     x + y = z\\
