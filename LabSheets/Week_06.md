@@ -152,8 +152,8 @@ A YouTube playlist with all the videos for this lab sheet can be found [here](ht
 
     1. $x^2 = -1$
     2. $x^2 - 53 x + 2 a = 0$
-    4. $sin(x) = x - 1$ (Investigate the Sage function `find_root`)
-    3. $x^5 + sin(x) - 2x = .5$
+    4. $\sin(x) = x - 1$ (Investigate the Sage function `find_root`)
+    3. $x^5 + \sin(x) - 2x = .5$
 
     [Video hint](http://youtu.be/GVEbkBXBmTw)
 
