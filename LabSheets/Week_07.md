@@ -95,7 +95,7 @@ A YouTube playlist with all the videos for this lab sheet can be found [here](ht
 4. There are various algebraic relationships on limits:
 
     1. $\lim_{x\to a}[f(x)+g(x)]=\lim_{x\to a}f(x) + \lim_{x\to a}g(x)$
-    2. $\lim_{x\to a}[f(x)\times g(x)]=\lim_{x\to a}f(x) / \lim_{x\to a}g(x)$
+    2. $\lim_{x\to a}[f(x)\times g(x)]=\lim_{x\to a}f(x) \times \lim_{x\to a}g(x)$
     3. $\lim_{x\to a}[f(x)/g(x)]=\lim_{x\to a}f(x) / \lim_{x\to a}g(x)$ (if $\lim_{x\to a}g(a)\ne 0$)
 
 

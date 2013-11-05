@@ -5,7 +5,6 @@
   <meta http-equiv="Content-Style-Type" content="text/css" />
   <meta name="generator" content="pandoc" />
   <title></title>
-  <style type="text/css">code{white-space: pre;}</style>
   <style type="text/css">
 table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
   margin: 0; padding: 0; vertical-align: baseline; border: none; }
@@ -46,39 +45,39 @@ code > span.er { font-weight: bold; }
 <pre class="sourceCode python"><code class="sourceCode python">f(x, y) = x * y + x ^ <span class="dv">2</span> + y ^ <span class="dv">2</span></code></pre></li>
 <li><p>In calculus the following definition of a limit is well know:</p>
 <blockquote>
-<p><span class="math">\(\lim_{x\to a}f(x)=L\)</span> iff <span class="math">\(\forall\; \epsilon&gt;0\)</span> <span class="math">\(\exists\)</span> <span class="math">\(\delta\)</span> such that <span class="math">\(\forall\; x\)</span>: <span class="math">\(|x-a|&lt;\delta\)</span> <span class="math">\(\Rightarrow\)</span> <span class="math">\(|f(x)-L|\leq \epsilon\)</span>.</p>
+<p>\(\lim_{x\to a}f(x)=L\) iff \(\forall\; \epsilon&gt;0\) \(\exists\) \(\delta\) such that \(\forall\; x\): \(|x-a|&lt;\delta\) \(\Rightarrow\) \(|f(x)-L|\leq \epsilon\).</p>
 </blockquote>
-<p>Let us calculate the limit of <span class="math">\(f(x) = \frac{3x^2}{x^3+x-1}\)</span> as <span class="math">\(x\to 1\)</span>.</p>
-<p>First of all let us plot <span class="math">\(f(x)\)</span>:</p>
+<p>Let us calculate the limit of \(f(x) = \frac{3x^2}{x^3+x-1}\) as \(x\to 1\).</p>
+<p>First of all let us plot \(f(x)\):</p>
 <pre class="sourceCode python"><code class="sourceCode python">plot(f(x), x, <span class="dv">1</span>, <span class="dv">10</span>)</code></pre>
-<p>The following code obtains <span class="math">\(\lim_{x\to 1}f\)</span>:</p>
+<p>The following code obtains \(\lim_{x\to 1}f\):</p>
 <pre class="sourceCode python"><code class="sourceCode python">limit(f,x=<span class="dv">1</span>)</code></pre>
-<p>The following code obtains <span class="math">\(\lim_{x\to \infty}f\)</span>:</p>
+<p>The following code obtains \(\lim_{x\to \infty}f\):</p>
 <pre class="sourceCode python"><code class="sourceCode python">limit(f,x=oo)</code></pre>
 <p>We can also obtain the same result using the <code>limit</code> method:</p>
 <pre class="sourceCode python"><code class="sourceCode python">f.limit(x=<span class="dv">1</span>)
 f.limit(x=oo)</code></pre>
-<p>Note that <span class="math">\(f(1)=\lim_{x\to 1}f(x)\)</span>:</p>
+<p>Note that \(f(1)=\lim_{x\to 1}f(x)\):</p>
 <pre class="sourceCode python"><code class="sourceCode python">f(<span class="dv">1</span>)</code></pre>
-<p>This implies that <span class="math">\(f\)</span> is continuous at 1.</p>
+<p>This implies that \(f\) is continuous at 1.</p>
 <p><a href="http://youtu.be/-br9qoY9QbM">Video hint</a></p></li>
-<li><p><strong>TICKABLE</strong> Plot <span class="math">\(f(x)=\frac{3x^2}{x^3+x-1}\)</span> using the default options:</p>
+<li><p><strong>TICKABLE</strong> Plot \(f(x)=\frac{3x^2}{x^3+x-1}\) using the default options:</p>
 <pre class="sourceCode python"><code class="sourceCode python">plot(f)</code></pre>
-<p>We see that Sage is plotting extremely high values at the discontinuity due to a root of the denominator which seems to be around <span class="math">\(x=.7\)</span>. We can plot our function either side of that point and combine them. We do this by creating plot objects:</p>
+<p>We see that Sage is plotting extremely high values at the discontinuity due to a root of the denominator which seems to be around \(x=.7\). We can plot our function either side of that point and combine them. We do this by creating plot objects:</p>
 <pre class="sourceCode python"><code class="sourceCode python">p = plot(f, x, <span class="fl">0.8</span>, <span class="dv">10</span>)
 <span class="dt">type</span>(p)
 p += plot(f, x, -<span class="dv">10</span>, .<span class="dv">6</span>)
 <span class="dt">type</span>(p)
 p.show()</code></pre>
-<p>Identify (use the <code>solve</code> function or the <code>roots</code> method, and maybe the <code>denominator</code> method on <span class="math">\(f\)</span>) <span class="math">\(\alpha\)</span>: the root of the denominator of <span class="math">\(f\)</span>. Obtain <span class="math">\(\lim_{x\to\alpha +}f(x)\)</span> and <span class="math">\(\lim_{x\to\alpha -}f(x)\)</span>. Directions of limits can be obtained using the following code:</p>
+<p>Identify (use the <code>solve</code> function or the <code>roots</code> method, and maybe the <code>denominator</code> method on \(f\)) \(\alpha\): the root of the denominator of \(f\). Obtain \(\lim_{x\to\alpha +}f(x)\) and \(\lim_{x\to\alpha -}f(x)\). Directions of limits can be obtained using the following code:</p>
 <pre class="sourceCode python"><code class="sourceCode python">limit(f, x=??, <span class="dt">dir</span>=<span class="st">&quot;plus&quot;</span>)
 limit(f, x=??, <span class="dt">dir</span>=<span class="st">&quot;minus&quot;</span>)</code></pre>
 <p>Note that in this case a non directional limit returns <code>infinity</code> this implies that a single limit does not exist.</p></li>
 <li><p>There are various algebraic relationships on limits:</p>
 <ol style="list-style-type: decimal">
-<li><span class="math">\(\lim_{x\to a}[f(x)+g(x)]=\lim_{x\to a}f(x) + \lim_{x\to a}g(x)\)</span></li>
-<li><span class="math">\(\lim_{x\to a}[f(x)\times g(x)]=\lim_{x\to a}f(x) / \lim_{x\to a}g(x)\)</span></li>
-<li><span class="math">\(\lim_{x\to a}[f(x)/g(x)]=\lim_{x\to a}f(x) / \lim_{x\to a}g(x)\)</span> (if <span class="math">\(\lim_{x\to a}g(a)\ne 0\)</span>)</li>
+<li>\(\lim_{x\to a}[f(x)+g(x)]=\lim_{x\to a}f(x) + \lim_{x\to a}g(x)\)</li>
+<li>\(\lim_{x\to a}[f(x)\times g(x)]=\lim_{x\to a}f(x) \times \lim_{x\to a}g(x)\)</li>
+<li>\(\lim_{x\to a}[f(x)/g(x)]=\lim_{x\to a}f(x) / \lim_{x\to a}g(x)\) (if \(\lim_{x\to a}g(a)\ne 0\))</li>
 </ol>
 <p>We can verify the first identity with the following Sage code for a particular example:</p>
 <pre class="sourceCode python"><code class="sourceCode python">f(x) = exp(x)
@@ -88,16 +87,16 @@ L1 = limit(f(x) + g(x), x = a)
 L2 = limit(f(x), x = a) + limit(g(x), x = a)
 <span class="dt">bool</span>(L1 == L2)</code></pre>
 <p>Note that we use the <code>bool</code> class to convert the symbolic equation <code>L1==L2</code> to a boolean variable. Verify with some example functions the other two relationships above.</p></li>
-<li><p><strong>TICKABLE</strong> The point of this question is to investigate <span class="math">\(\lim_{x\to 0}\frac{sin(x)}{x}\)</span>. Using Sage:</p>
+<li><p><strong>TICKABLE</strong> The point of this question is to investigate \(\lim_{x\to 0}\frac{sin(x)}{x}\). Using Sage:</p>
 <ol style="list-style-type: decimal">
-<li>Obtain the values of <span class="math">\(|sin(x)-x|\)</span> for 1000 values of <span class="math">\(x&lt;.05\)</span> (you might find the sage <code>srange</code> function helpful).</li>
+<li>Obtain the values of \(|sin(x)-x|\) for 1000 values of \(x&lt;.05\) (you might find the sage <code>srange</code> function helpful).</li>
 <li>Plot the above points, what does this indicate as to the value of the limit (investigate the <code>list_plot</code> sage function)?</li>
 <li>Compute the limit in question using Sage.</li>
 </ol></li>
-<li><p>The point of this question is to investigate <span class="math">\(\lim_{x\to 0}(1+x)^{1/x}\)</span>. Using Sage:</p>
+<li><p>The point of this question is to investigate \(\lim_{x\to 0}(1+x)^{1/x}\). Using Sage:</p>
 <ol style="list-style-type: decimal">
-<li>Compute the numerical value of <span class="math">\(e\)</span>.</li>
-<li>Obtain the values of <span class="math">\((1+x)^{1/x}\)</span> for 1000 values of <span class="math">\(x&lt;.05\)</span>.</li>
+<li>Compute the numerical value of \(e\).</li>
+<li>Obtain the values of \((1+x)^{1/x}\) for 1000 values of \(x&lt;.05\).</li>
 <li>Plot the above points, what does this indicate as to the value of the limit?</li>
 <li>Compute the limit in question using Sage.</li>
 </ol></li>
@@ -108,21 +107,21 @@ diff(f,x)</code></pre>
 <p>Note that here everything is a symbolic variable!</p>
 <p><a href="http://youtu.be/FbxioEG9kzM">Video hint</a></p></li>
 <li><p>The point of this question is to investigate the definition of a derivative:</p>
-<p><span class="math">\[\frac{df}{dx}=\lim_{h\to 0}\frac{f(x+h)-f(x)}{h}\]</span></p>
+<p>\[\frac{df}{dx}=\lim_{h\to 0}\frac{f(x+h)-f(x)}{h}\]</p>
 <ol style="list-style-type: decimal">
-<li>Consider <span class="math">\(f(x) = x^3 + 3x - 20\)</span>;</li>
-<li>Compute <span class="math">\(\frac{f(x+h)-f(x)}{h}\)</span>;</li>
-<li>Compute the above limit as <span class="math">\(h\to 0\)</span> and verify that this is the derivative of <span class="math">\(f\)</span>.</li>
+<li>Consider \(f(x) = x^3 + 3x - 20\);</li>
+<li>Compute \(\frac{f(x+h)-f(x)}{h}\);</li>
+<li>Compute the above limit as \(h\to 0\) and verify that this is the derivative of \(f\).</li>
 </ol></li>
-<li><p><strong>TICKABLE</strong> By definition, the derivative <span class="math">\(f&#39;(a)\)</span> gives the rate of change of the tangent line at the point <span class="math">\((a,f(a)\)</span>. Write a function that takes as arguments a function and a point <span class="math">\(a\)</span> and returns the plot of the function as well as the tangent line at <span class="math">\(a\)</span>. The plot  shows a plot of <span class="math">\(f(x)=\sin(x)+3x+1/x\)</span> as well as the tangent line at <span class="math">\(x=2\)</span>.</p>
+<li><p><strong>TICKABLE</strong> By definition, the derivative \(f&#39;(a)\) gives the rate of change of the tangent line at the point \((a,f(a)\). Write a function that takes as arguments a function and a point \(a\) and returns the plot of the function as well as the tangent line at \(a\). The plot  shows a plot of \(f(x)=\sin(x)+3x+1/x\) as well as the tangent line at \(x=2\).</p>
 <div class="figure">
 <img src="./Images/W07-img01.png" alt="" /><p class="caption"></p>
 </div></li>
 <li><p>There are various rules for the calculation of limits:</p>
 <ol style="list-style-type: decimal">
-<li><span class="math">\(\frac{d}{dx}(u+v)=\frac{du}{dx}+\frac{dv}{dx}\)</span></li>
-<li><span class="math">\(\frac{d}{dx}uv=v\frac{du}{dx}+u\frac{dv}{dx}\)</span></li>
-<li><span class="math">\(\frac{d}{dx}\frac{u}{v}=\frac{v\frac{du}{dx}-u\frac{dv}{dx}}{v^2}\)</span></li>
+<li>\(\frac{d}{dx}(u+v)=\frac{du}{dx}+\frac{dv}{dx}\)</li>
+<li>\(\frac{d}{dx}uv=v\frac{du}{dx}+u\frac{dv}{dx}\)</li>
+<li>\(\frac{d}{dx}\frac{u}{v}=\frac{v\frac{du}{dx}-u\frac{dv}{dx}}{v^2}\)</li>
 </ol>
 <p>We can verify the first identity with the following Sage code for a particular example:</p>
 <pre class="sourceCode python"><code class="sourceCode python">f(x) = exp(x)
@@ -150,10 +149,10 @@ f.integrate(x)</code></pre></li>
 </ol>
 <p>Investigate the <code>assume()</code> command as well as the <code>forget()</code> command and work out the previous integral.</p>
 <ol start="13" style="list-style-type: decimal">
-<li><p>A graphical interpretation of integration is that <span class="math">\(\int_a^bf(x)dx\)</span> gives the area under the curve of <span class="math">\(f(c)\)</span>. Using a technique called Riemmann integration we can approximate this area by taking a certain number of rectangles of given width and height given by <span class="math">\(f(x)\)</span>. Do some work on Riemmann integration and use sage to see how the approximation converges to the actual value of the integral as the number of rectangles taken increases.</p></li>
+<li><p>A graphical interpretation of integration is that \(\int_a^bf(x)dx\) gives the area under the curve of \(f(c)\). Using a technique called Riemmann integration we can approximate this area by taking a certain number of rectangles of given width and height given by \(f(x)\). Do some work on Riemmann integration and use sage to see how the approximation converges to the actual value of the integral as the number of rectangles taken increases.</p></li>
 <li><p><strong>TICKABLE</strong> The data file <a href="./Data/W07_D01.txt">W07_D01.txt</a> contains 5 columns of data:</p>
-<p><span class="math">\[a,b,c,A,B\]</span></p>
-<p>For every row of data compute <span class="math">\(\int_{A}^{B}ax^2+bx+c\)</span> and obtain:</p>
+<p>\[a,b,c,A,B\]</p>
+<p>For every row of data compute \(\int_{A}^{B}ax^2+bx+c\) and obtain:</p>
 <ol style="list-style-type: decimal">
 <li>The mean value of the integral</li>
 <li>The mean value of all integrals that are positive</li>
