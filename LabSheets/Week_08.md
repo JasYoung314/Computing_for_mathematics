@@ -123,7 +123,7 @@ A YouTube playlist with all the videos for this lab sheet can be found [here](ht
     The identity matrix of size $n\times n$ is denoted by $\mathbb{I}_n$. The following Sage code gives $\mathbb{I}_n$:
 
     ~~~{.python}
-    identify_matrix(4)
+    identity_matrix(4)
     ~~~
 
     Note also, that the previous exercise showed that we can sometimes find a matrix $B$ such that $AB=\mathbb{I}_n$. Finding such a matrix is refered to as 'invering' $A$ and if certain properties hold (you will see this in further details next semester) this matrix is denoted $A^{-1}$.

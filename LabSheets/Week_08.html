@@ -5,7 +5,6 @@
   <meta http-equiv="Content-Style-Type" content="text/css" />
   <meta name="generator" content="pandoc" />
   <title></title>
-  <style type="text/css">code{white-space: pre;}</style>
   <style type="text/css">
 table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
   margin: 0; padding: 0; vertical-align: baseline; border: none; }
@@ -33,26 +32,26 @@ code > span.er { font-weight: bold; }
 <p>A YouTube playlist with all the videos for this lab sheet can be found <a href="http://www.youtube.com/playlist?list=PLnC5h3PY-znzwLePTdmDWDCKJse3omJe5">here</a>.</p>
 <ol style="list-style-type: decimal">
 <li><p>Use Sage to solve the following system of equations:</p>
-<p><span class="math">\[\begin{cases}
+<p>\[\begin{cases}
 10x+2y=0\\
 2x-y=154
-\end{cases}\]</span></p></li>
+\end{cases}\]</p></li>
 <li><p><strong>TICKABLE</strong> Note that the above system of equations is equivalent to the following systems of equations:</p>
-<p><span class="math">\[\begin{cases}
+<p>\[\begin{cases}
 10a+2b=0\\
 2a-b=154
-\end{cases}\]</span></p>
-<p><span class="math">\[\begin{cases}
+\end{cases}\]</p>
+<p>\[\begin{cases}
 10m+2n=0\\
 2m-n=154
-\end{cases}\]</span></p>
+\end{cases}\]</p>
 <p>In essense the only thing that defines the system of equations is the cofficients:</p>
-<p><span class="math">\[\begin{pmatrix}
+<p>\[\begin{pmatrix}
 10,2,0\\
 2,-1,154
-\end{pmatrix}\]</span></p>
+\end{pmatrix}\]</p>
 <p>We can of course seperate the right hand side of our equation and perhaps include those elements in a vector. Our system can now be represented as:</p>
-<p><span class="math">\[\begin{pmatrix}10,2\\2,-1\end{pmatrix}\begin{pmatrix}0\\154\end{pmatrix}\]</span></p>
+<p>\[\begin{pmatrix}10,2\\2,-1\end{pmatrix}\begin{pmatrix}0\\154\end{pmatrix}\]</p>
 <p>Let us attempt to represent the above system in Sage.</p>
 <p>The following defines <code>b</code> as a vector:</p>
 <pre class="sourceCode python"><code class="sourceCode python">b = vector(<span class="dv">0</span>,<span class="dv">154</span>)</code></pre>
@@ -62,26 +61,26 @@ code > span.er { font-weight: bold; }
 <pre class="sourceCode python"><code class="sourceCode python">X = vector([x, y])</code></pre>
 <p>We can <strong>multiply</strong> <code>A</code> by <code>X</code>:</p>
 <pre class="sourceCode python"><code class="sourceCode python">A * X</code></pre>
-<p>Verify that <span class="math">\(X = (x_0, y_0)\)</span> where <span class="math">\((x_0, y_0)\)</span> is the solution to our system of equations (obtained in (1)).</p>
+<p>Verify that \(X = (x_0, y_0)\) where \((x_0, y_0)\) is the solution to our system of equations (obtained in (1)).</p>
 <p><a href="http://youtu.be/zuxPlbRK79w">Video hint</a></p></li>
 <li><p><strong>TICKABLE</strong> In linear algebra (you will study this next semester) a matrix equation is an equation of the form:</p>
-<p><span class="math">\[AX=b\]</span></p>
+<p>\[AX=b\]</p>
 <p>or</p>
-<p><span class="math">\[XA=b\]</span></p>
-<p>If we define <code>A</code> and <code>b</code> as in question 2 we can solve this equation quite simply using the <code>solve_right</code> or <code>solve_left</code> methods. The following obtains a solution to the equation <span class="math">\(AX=b\)</span>:</p>
+<p>\[XA=b\]</p>
+<p>If we define <code>A</code> and <code>b</code> as in question 2 we can solve this equation quite simply using the <code>solve_right</code> or <code>solve_left</code> methods. The following obtains a solution to the equation \(AX=b\):</p>
 <pre class="sourceCode python"><code class="sourceCode python">A.solve_right(b)</code></pre>
 <p>Note that <code>A\b</code> is shorthand for <code>A.solve_right</code></p>
 <p>Use the above to solve the following system of equations using matrix notation:</p>
-<p><span class="math">\[\begin{cases}
+<p>\[\begin{cases}
 4x - 2y + 3z = 10\\
 -x - 5y - 8z = 9\\
 x + y + z = 1
-\end{cases}\]</span></p>
+\end{cases}\]</p>
 <p><a href="http://youtu.be/-Qxv5XMer60">Video hint</a></p></li>
 <li><p>For reasons that will become clear, the following definition of matrix multiplication is required:</p>
-<p><span class="math">\[(AB)_{ij}=\sum_{j&#39;}\sum_{i&#39;}A_{ij&#39;}B_{i&#39;j}\]</span></p>
-<p>For <span class="math">\(2\times 2\)</span> matrices this is equivalent to:</p>
-<p><span class="math">\[AB=\begin{pmatrix}a_{11}&amp; a_{12}\\a_{21}&amp; a_{22}\end{pmatrix}\begin{pmatrix}b_{11}&amp; b_{12}\\b_{21}&amp; b_{22}\end{pmatrix}=\begin{pmatrix}a_{11}b_{11}+a_{12}b_{21}&amp;a_{11}b_{12}+a_{12}b_{22}\\a_{21}b_{11}+a_{22}b_{21}&amp;a_{21}b_{12}+a_{22}b_{22}\end{pmatrix}\]</span></p>
+<p>\[(AB)_{ij}=\sum_{j&#39;}\sum_{i&#39;}A_{ij&#39;}B_{i&#39;j}\]</p>
+<p>For \(2\times 2\) matrices this is equivalent to:</p>
+<p>\[AB=\begin{pmatrix}a_{11}&amp; a_{12}\\a_{21}&amp; a_{22}\end{pmatrix}\begin{pmatrix}b_{11}&amp; b_{12}\\b_{21}&amp; b_{22}\end{pmatrix}=\begin{pmatrix}a_{11}b_{11}+a_{12}b_{21}&amp;a_{11}b_{12}+a_{12}b_{22}\\a_{21}b_{11}+a_{22}b_{21}&amp;a_{21}b_{12}+a_{22}b_{22}\end{pmatrix}\]</p>
 <p>As an example create the following two matrices in Sage:</p>
 <pre class="sourceCode python"><code class="sourceCode python">A = matrix([[<span class="dv">1</span>,<span class="dv">2</span>],[<span class="dv">3</span>,<span class="dv">4</span>]])
 B = matrix([[<span class="dv">7</span>,<span class="dv">8</span>],[<span class="dv">9</span>,<span class="dv">10</span>]])</code></pre>
@@ -89,52 +88,52 @@ B = matrix([[<span class="dv">7</span>,<span class="dv">8</span>],[<span class="
 <pre class="sourceCode python"><code class="sourceCode python">A * B</code></pre>
 <p>Repeat the exercise by multiplying the following pairs of matrices:</p>
 <ol style="list-style-type: decimal">
-<li><span class="math">\(A=\begin{pmatrix}-1&amp;1\\-1&amp;-1\end{pmatrix}\)</span>, <span class="math">\(B=\begin{pmatrix}-1&amp;4\\1&amp;1\end{pmatrix}\)</span></li>
-<li><span class="math">\(A=\begin{pmatrix}0&amp;144\\-2&amp;1\end{pmatrix}\)</span>, <span class="math">\(B=\begin{pmatrix}1&amp;0\\0&amp;1\end{pmatrix}\)</span></li>
-<li><span class="math">\(A=\begin{pmatrix}1&amp;0\\0&amp;1\end{pmatrix}\)</span>, <span class="math">\(B=\begin{pmatrix}-2&amp;0\\-1&amp;-17\end{pmatrix}\)</span></li>
-<li><span class="math">\(A=\begin{pmatrix}0&amp;-1\\3&amp;1\end{pmatrix}\)</span>, <span class="math">\(B=\begin{pmatrix}1/3&amp;1/3\\-1&amp;0\end{pmatrix}\)</span></li>
+<li>\(A=\begin{pmatrix}-1&amp;1\\-1&amp;-1\end{pmatrix}\), \(B=\begin{pmatrix}-1&amp;4\\1&amp;1\end{pmatrix}\)</li>
+<li>\(A=\begin{pmatrix}0&amp;144\\-2&amp;1\end{pmatrix}\), \(B=\begin{pmatrix}1&amp;0\\0&amp;1\end{pmatrix}\)</li>
+<li>\(A=\begin{pmatrix}1&amp;0\\0&amp;1\end{pmatrix}\), \(B=\begin{pmatrix}-2&amp;0\\-1&amp;-17\end{pmatrix}\)</li>
+<li>\(A=\begin{pmatrix}0&amp;-1\\3&amp;1\end{pmatrix}\), \(B=\begin{pmatrix}1/3&amp;1/3\\-1&amp;0\end{pmatrix}\)</li>
 </ol>
 <p><a href="http://youtu.be/NOpEMl_yzMM">Video hint</a></p></li>
 <li><p><strong>TICKABLE</strong> The previous exercise shows that when considering matrix multiplication there exists a matrix which does not have a multiplicative affect: &quot;the identity matrix&quot;.</p>
-<p>The identity matrix of size <span class="math">\(n\times n\)</span> is denoted by <span class="math">\(\mathbb{I}_n\)</span>. The following Sage code gives <span class="math">\(\mathbb{I}_n\)</span>:</p>
-<pre class="sourceCode python"><code class="sourceCode python">identify_matrix(<span class="dv">4</span>)</code></pre>
-<p>Note also, that the previous exercise showed that we can sometimes find a matrix <span class="math">\(B\)</span> such that <span class="math">\(AB=\mathbb{I}_n\)</span>. Finding such a matrix is refered to as 'invering' <span class="math">\(A\)</span> and if certain properties hold (you will see this in further details next semester) this matrix is denoted <span class="math">\(A^{-1}\)</span>.</p>
-<p>If we recall the matrix equation <span class="math">\(AX=b\)</span> and if we assume that <span class="math">\(A^{-1}\)</span>exists then multiplying both sides by <span class="math">\(A^{-1}\)</span> gives:</p>
-<p><span class="math">\[A^{-1}AX=A^{-1}b\Rightarrow \mathbb{I}_nX=A^{-1}b\Rightarrow X=A^{-1}b\]</span></p>
-<p>In Sage we can obtain <span class="math">\(A^{-1}\)</span> (if it exists) with the following code:</p>
+<p>The identity matrix of size \(n\times n\) is denoted by \(\mathbb{I}_n\). The following Sage code gives \(\mathbb{I}_n\):</p>
+<pre class="sourceCode python"><code class="sourceCode python">identity_matrix(<span class="dv">4</span>)</code></pre>
+<p>Note also, that the previous exercise showed that we can sometimes find a matrix \(B\) such that \(AB=\mathbb{I}_n\). Finding such a matrix is refered to as 'invering' \(A\) and if certain properties hold (you will see this in further details next semester) this matrix is denoted \(A^{-1}\).</p>
+<p>If we recall the matrix equation \(AX=b\) and if we assume that \(A^{-1}\)exists then multiplying both sides by \(A^{-1}\) gives:</p>
+<p>\[A^{-1}AX=A^{-1}b\Rightarrow \mathbb{I}_nX=A^{-1}b\Rightarrow X=A^{-1}b\]</p>
+<p>In Sage we can obtain \(A^{-1}\) (if it exists) with the following code:</p>
 <pre class="sourceCode python"><code class="sourceCode python">A.inverse()</code></pre>
-<p>Thus another approach to solving <span class="math">\(AX=b\)</span> is:</p>
+<p>Thus another approach to solving \(AX=b\) is:</p>
 <pre class="sourceCode python"><code class="sourceCode python">A.inverse() * b</code></pre>
 <p>Use this approach to solve the systems of equations we have considered so far.</p>
 <p><a href="http://youtu.be/NOpEMl_yzMM">Video hint</a></p></li>
 <li><p><strong>TICKABLE</strong> Recalling your basic python knowledge. Lists can be used to hold any sort of object. Obtain a list of the inverses of the following matrices (when the inverse exists, you might need to look up information on <code>try</code> and <code>except</code>):</p>
-<p><span class="math">\[\left(\begin{array}{rrrrr}
+<p>\[\left(\begin{array}{rrrrr}
 \frac{1}{2} &amp; 0 &amp; 0 &amp; -1 &amp; 1 \\
 -1 &amp; -1 &amp; 1 &amp; -\frac{1}{2} &amp; 2 \\
 0 &amp; -1 &amp; 0 &amp; -2 &amp; 0 \\
 0 &amp; 0 &amp; \frac{1}{2} &amp; -1 &amp; 0 \\
 -1 &amp; 0 &amp; -2 &amp; 2 &amp; 0
 \end{array}\right)
-\]</span> <span class="math">\[\left(\begin{array}{rrrrr}
+\] \[\left(\begin{array}{rrrrr}
 -1 &amp; -1 &amp; 0 &amp; 0 &amp; -1 \\
 2 &amp; 1 &amp; 0 &amp; 1 &amp; 1 \\
 -2 &amp; 0 &amp; 1 &amp; 2 &amp; 2 \\
 -\frac{1}{2} &amp; 0 &amp; -\frac{1}{2} &amp; 0 &amp; \frac{1}{2} \\
 0 &amp; 0 &amp; 0 &amp; \frac{1}{2} &amp; -1
 \end{array}\right)
-\]</span> <span class="math">\[\left(\begin{array}{rr}
+\] \[\left(\begin{array}{rr}
 -\frac{1}{2} &amp; -\frac{1}{2} \\
 -2 &amp; -1
 \end{array}\right)
-\]</span> <span class="math">\[\left(\begin{array}{rrr}
+\] \[\left(\begin{array}{rrr}
 2 &amp; -2 &amp; 1 \\
 6 &amp; -1 &amp; 1 \\
 12 &amp; -2 &amp; 2
 \end{array}\right)
-\]</span> <span class="math">\[\left(\begin{array}{rr}
+\] \[\left(\begin{array}{rr}
 1 &amp; 2 \\
 2 &amp; 0
-\end{array}\right)\]</span></p>
+\end{array}\right)\]</p>
 <p>For every matrix in this list and the original list obtain the result of the <code>det</code> method. This gives the <strong>determinant</strong> of the matrices. It is a very important quantity that will be explained next semester.</p>
 <p><a href="http://youtu.be/rUvbWGg0QO0">Video hint</a></p></li>
 <li><p><strong>TICKABLE</strong> The <code>random_matrix</code> command can be used to obtain a random matrix:</p>
@@ -145,13 +144,13 @@ random_matrix(QQ, <span class="dv">5</span>) <span class="co"># Gives a random s
 <li><p><strong>TICKABLE</strong> The file <a href="./Data/W08_D01.txt">W08_D01.txt</a> contains 4 columns of data:</p>
 <pre><code>a, b, c, d, f, g</code></pre>
 <p>For each row of data, obtain the solution to the system of equations:</p>
-<p><span class="math">\[\begin{cases}
+<p>\[\begin{cases}
 ax+by=c\\
 dx+fy=g
-\end{cases}\]</span></p>
+\end{cases}\]</p>
 <p>Write to file a new data set containing the following columns:</p>
 <pre><code>A, B, C, D</code></pre>
-<p>Where <span class="math">\(A\)</span> is the number of the original data set, <span class="math">\(B\)</span> and <span class="math">\(C\)</span> are the solutions to the system of equation in question: <span class="math">\(B=x, C=y\)</span>. <span class="math">\(D\)</span> is the 'norm of the solution vector': <span class="math">\(D=\sqrt{C^2+B^2}\)</span>.</p>
+<p>Where \(A\) is the number of the original data set, \(B\) and \(C\) are the solutions to the system of equation in question: \(B=x, C=y\). \(D\) is the 'norm of the solution vector': \(D=\sqrt{C^2+B^2}\).</p>
 <p>If there is no solution to the system of equations set <code>B=C=D=False</code>. The data set is a randomly sampled set of problems, how often does a solution exist?</p></li>
 <li><p>The file <a href="./Data/W08_D02.txt">W08_D02.txt</a> contains a large number of columns and rows. Investigate the <code>dimensions</code> and <code>plot</code> methods on this matrix.</p></li>
 </ol>
