@@ -36,8 +36,9 @@ My teaching assistant [Jason Young](https://plus.google.com/u/0/1042438545548331
 
 ## Online help forums
 
-- [Stackoverflow](http://stackoverflow.com/)
 - [Python Google Group](https://groups.google.com/forum/#!forum/comp.lang.python)
+- [Sage Google Group](https://groups.google.com/forum/#!forum/sage-support)
+- [Stackoverflow](http://stackoverflow.com/)
 - [Tutor mailing list for python](https://mail.python.org/mailman/listinfo/tutor)
 - [Python-forum.org](http://python-forum.org/)
 
