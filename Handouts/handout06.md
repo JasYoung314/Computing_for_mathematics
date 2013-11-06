@@ -44,6 +44,7 @@ email: knightva@cf.ac.uk
     ~~~
 
 - Sage is a tool available to you to help you through your time at Cardiff.
+- Sage allows you to share files with particular people (if you know their username) and also allows you to publish it.
 
 ## Sometimes our server is buggy
 
