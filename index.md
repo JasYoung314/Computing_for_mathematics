@@ -65,6 +65,10 @@ This website contains the lab sheets for the first term of Computing for Mathema
 
 	[html (recommended)](./Handouts/handout05.html), [pdf](./Handouts/handout05.pdf), [docx](./Handouts/handout05.docx)
 
+6. Handout 6: Sage and the Class test
+
+	[html (recommended)](./Handouts/handout06.html), [pdf](./Handouts/handout06.pdf), [docx](./Handouts/handout06.docx)
+
 The reading list can be found [here](./readinglist.html).
 
 [My personal website](http://www.vincent-knight.com/) contains information with regards to assessment and also solutions to the lab sheets.
