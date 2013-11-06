@@ -52,7 +52,7 @@ p = plot(x^<span class="dv">0</span>,color=rainbow(<span class="dv">20</span>)[<
 <span class="kw">for</span> i in <span class="dt">range</span>(<span class="dv">1</span>,<span class="dv">20</span>):
     p += plot(x^i,color=rainbow(<span class="dv">20</span>)[i],legend_label=<span class="st">&quot;$x^{</span><span class="ot">%s</span><span class="st">}$&quot;</span> % i)
 p</code></pre>
-<p>Here is something a bit more visually impressive (the code is slightly shorter):</p>
+<p>Here is something a bit more visually impressive (the code is slightly more compact as it uses some Sage tricks):</p>
 <pre class="sourceCode python"><code class="sourceCode python">k = <span class="dv">20</span>
 rb = rainbow(k<span class="dv">+1</span>)
 <span class="dt">sum</span>(plot(sin(i*x)*i,color=rb[k-i], legend_label=<span class="st">r&quot;${0}\sin({0}x)$&quot;</span>.<span class="dt">format</span>(i)) <span class="kw">for</span> i in [<span class="dv">0</span>..k])</code></pre></li>

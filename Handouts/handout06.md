@@ -35,7 +35,7 @@ email: knightva@cf.ac.uk
     p
     ~~~
 
-    Here is something a bit more visually impressive (the code is slightly shorter):
+    Here is something a bit more visually impressive (the code is slightly more compact as it uses some Sage tricks):
 
     ~~~{.python}
     k = 20
