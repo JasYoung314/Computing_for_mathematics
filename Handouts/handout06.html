@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; background-color: #f8f8f8; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+pre, code { background-color: #f8f8f8; }
+code > span.kw { color: #204a87; font-weight: bold; }
+code > span.dt { color: #204a87; }
+code > span.dv { color: #0000cf; }
+code > span.bn { color: #0000cf; }
+code > span.fl { color: #0000cf; }
+code > span.ch { color: #4e9a06; }
+code > span.st { color: #4e9a06; }
+code > span.co { color: #8f5902; font-style: italic; }
+code > span.ot { color: #8f5902; }
+code > span.al { color: #ef2929; }
+code > span.fu { color: #000000; }
+code > span.er { font-weight: bold; }
+  </style>
+  <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+</head>
+<body>
+<h1 id="computing-for-mathematics-handout-6---sage-and-the-class-test">Computing for mathematics handout 6 - Sage and the Class test</h1>
+<p>Lecturer: Vince Knight</p>
+<p>Office: M1.30</p>
+<p>email: knightva@cf.ac.uk</p>
+<p><strong>Office hours: Thursday 1300-1500</strong></p>
+<h2 id="what-you-have-learnt-this-week">What you have learnt this week:</h2>
+<ul>
+<li>How to carry out basic algebraic operations in Sage (solve equations, simplify expressions etc...)</li>
+</ul>
+<h2 id="what-is-sage">What is Sage?</h2>
+<ul>
+<li>Sage is a mathematics package built on Python. This implies that you can use the Python code you learnt in the first weeks of this class in Sage.</li>
+<li><p>Sage can be used to check formulae. For example: what is the formula for \(\sum_{i=a}^bx^{i}\)?</p>
+<pre class="sourceCode python"><code class="sourceCode python">a = var(<span class="st">&#39;a&#39;</span>)
+b = var(<span class="st">&#39;b&#39;</span>)
+i = var(<span class="st">&#39;i&#39;</span>)
+x = var(<span class="st">&#39;x&#39;</span>)
+<span class="dt">sum</span>(x^i,i,a,b)</code></pre></li>
+<li><p>Sage can also be used to plot functions (this could help when attempting to visualise a particular theorem):</p>
+<pre class="sourceCode python"><code class="sourceCode python">k = <span class="dv">20</span>
+p = plot(x^<span class="dv">0</span>,color=rainbow(<span class="dv">20</span>)[<span class="dv">0</span>], legend_label=<span class="st">&quot;$x^0$&quot;</span>)
+<span class="kw">for</span> i in <span class="dt">range</span>(<span class="dv">1</span>,<span class="dv">20</span>):
+    p += plot(x^i,color=rainbow(<span class="dv">20</span>)[i],legend_label=<span class="st">&quot;$x^{</span><span class="ot">%s</span><span class="st">}$&quot;</span> % i)
+p</code></pre>
+<p>Here is something a bit more visually impressive (the code is slightly shorter):</p>
+<pre class="sourceCode python"><code class="sourceCode python">k = <span class="dv">20</span>
+rb = rainbow(k<span class="dv">+1</span>)
+<span class="dt">sum</span>(plot(sin(i*x)*i,color=rb[k-i], legend_label=<span class="st">r&quot;${0}\sin({0}x)$&quot;</span>.<span class="dt">format</span>(i)) <span class="kw">for</span> i in [<span class="dv">0</span>..k])</code></pre></li>
+<li><p>Sage is a tool available to you to help you through your time at Cardiff.</p></li>
+</ul>
+<h2 id="sometimes-our-server-is-buggy">Sometimes our server is buggy</h2>
+<p>Our server has been a bit buggy for some of you. I apologise and sadly there's not much I can do about it a part from show you how to get around the bugs.</p>
+<ul>
+<li><strong>DO NOT USE INTERNET EXPLORER</strong> Internet explorer (IE) does weird things sometimes and so if you've written your code in IE and then opened up your file in a modern browser you might <strong>still need to re-write your code</strong> (not copy and paste) to make it work. <strong>Alternative to IE are available on the networked machines</strong>.</li>
+<li><p>If sometimes your code seems to work but does not evaluate try the following trick:</p>
+<pre class="sourceCode python"><code class="sourceCode python">sol = solve(x^<span class="dv">2</span>==-<span class="dv">1</span>,x)</code></pre>
+<p>Then in another cell simple show <code>sol</code>:</p>
+<pre class="sourceCode python"><code class="sourceCode python">sol</code></pre></li>
+<li><p>If all else fails close down your browser and open it up again. If there are very buggy things happening please let me know.</p></li>
+</ul>
+<h2 id="class-test">Class test</h2>
+<ul>
+<li>format</li>
+<li>submitting</li>
+<li>schedule</li>
+</ul>
+<h2 id="what-you-should-do-next">What you should do next:</h2>
+<ul>
+<li><strong>Finish revising for the class test</strong>: be sure to be confident with the lab sheets 1 - 5 (Sage is not on the class test).</li>
+<li><strong>Start the next sheet</strong>: this is a longer one looking at how to differentiate, integrate and plot in Sage.</li>
+<li>Contribute to the wiki.</li>
+<li>To make the best use of the lab sessions turn up having finished your sheets;</li>
+<li>If anything is still unclear <strong>please</strong> come and see me during office hours.</li>
+</ul>
+</body>
+</html>
