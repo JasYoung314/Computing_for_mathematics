@@ -88,7 +88,7 @@ for i in range(len(list_of_md_sheets)):
 ### Reading List
 
 index_file.write("""
-The reading list can be found [here](./readinglist.html).
+Alternative resources can be found [here](./alternativeresources.html).
 
 [My personal website](http://www.vincent-knight.com/) contains information with regards to assessment and also solutions to the lab sheets.
 
