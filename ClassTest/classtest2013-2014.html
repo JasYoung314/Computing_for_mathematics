@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <style type="text/css">
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; background-color: #f8f8f8; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+pre, code { background-color: #f8f8f8; }
+code > span.kw { color: #204a87; font-weight: bold; }
+code > span.dt { color: #204a87; }
+code > span.dv { color: #0000cf; }
+code > span.bn { color: #0000cf; }
+code > span.fl { color: #0000cf; }
+code > span.ch { color: #4e9a06; }
+code > span.st { color: #4e9a06; }
+code > span.co { color: #8f5902; font-style: italic; }
+code > span.ot { color: #8f5902; }
+code > span.al { color: #ef2929; }
+code > span.fu { color: #000000; }
+code > span.er { font-weight: bold; }
+  </style>
+  <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+</head>
+<body>
+<h1 id="computing-for-mathematics-class-test">Computing for Mathematics: Class test</h1>
+<h2 id="instructions">Instructions</h2>
+<ul>
+<li>You have 50 minutes to carry out the following 3 questions;</li>
+<li>You are allowed access to the internet and any books/notes you may have with you. <strong>However, YOU ARE NOT PERMITTED TO COMMUNICATE WITH ANY OTHER STUDENT</strong>. As such you are simply not allowed to log in to an email client, facebook etc... If you are caught using any site that an invigilator suspects you may be able to use to communicate with another student you will be asked to stop working on this class test and reported.</li>
+<li><p>Write three separate scripts for each question naming them as follows: `ma1003-studentnumber-q1.py' (replacing studentnumber by your actual student number and q1 with q2 or q3 for each of the questions). Submission details are given at the end of this sheet. Start every script with a multiline comment with your student number and question number. For example:</p>
+<pre class="sourceCode python"><code class="sourceCode python"><span class="co">&quot;&quot;&quot;</span>
+<span class="co">Class test - question 1</span>
+<span class="co">c123456789</span>
+<span class="co">&quot;&quot;&quot;</span></code></pre></li>
+</ul>
+<p><strong>10 marks are available for convention, comments and general presentation of code.</strong></p>
+<h2 id="q1">Q1</h2>
+<p>Consider the Fibonacci sequence defined by:</p>
+<p><span class="math">\[X_n=\begin{cases}
+    1&amp; n=0\text{ or }n=1\\
+    X_{n-1} + X_{n-2}&amp;\text{otherwise}
+    \end{cases}\]</span></p>
+<p>Define a function <code>fib(n)</code> that returns <span class="math">\(X_n\)</span> <strong>using a recursive approach</strong>.</p>
+<p>Use this function to print to screen <span class="math">\(X_n\)</span> for <span class="math">\(0\leq n&lt;11\)</span>.</p>
+<p>(Available marks: 30)</p>
+<h2 id="q2">Q2</h2>
+<p>The data file <a href="./Data/classtestdata.csv">classtestdata.csv</a> (<strong>the file can be found at <a href="http://drvinceknight.github.io/Computing_for_mathematics/data.html">drvinceknight.github.io/Computing_for_mathematics/data.html</a></strong>, use the following password: cL3d2a) contains a collections of names. Write a script that:</p>
+<ul>
+<li>Imports the data;</li>
+<li>Prints to screen how many total names are in the data file;</li>
+<li>Prints to screen the mean length of names in the file;</li>
+<li>Prints to screen the number of unique names in the file.</li>
+</ul>
+<p>(Available marks: 30)</p>
+<h2 id="q3">Q3</h2>
+<p>Consider the square on a grid with dimensions as shown:</p>
+<div class="figure">
+<img src="./Images/grid.png" alt="" /><p class="caption"></p>
+</div>
+<p>On this grid, consider the graph of <span class="math">\(f(x) = 1 - x ^ 2\)</span>.</p>
+<div class="figure">
+<img src="./Images/gridwithplot.png" alt="" /><p class="caption"></p>
+</div>
+<p>If we draw points of random coordinates in this square, the probability <span class="math">\(P\)</span> of a point landing under the graph would be:</p>
+<p><span class="math">\[P=\frac{\text{Area under the graph}}{\text{Total area of square}}=\frac{\text{Area under the graph}}{1}\]</span></p>
+<p>Importantly, from basic Calculus we know that:</p>
+<p><span class="math">\[\text{Area under the graph}=\int_{0}^{1}1-x^2,dx\]</span></p>
+<p>Use the random library and a class to approximate the value of <span class="math">\(\int_{0}^11-x^2,dx\)</span>.</p>
+<p>(Available marks: 30)</p>
+<h2 id="submission-instructions">Submission instructions</h2>
+<p>Do <strong>both</strong> of the following (if in any doubt ask an invigilator):</p>
+<ul>
+<li>Save your 3 files to the folder called 'MA1003 Class Test' <strong>in the S drive</strong>. You will only be able to do this once!</li>
+<li>Email your files in an attachment to me: knightva@cf.ac.uk. BE SURE TO CLOSE PYTHON BEFORE OPENING YOUR EMAIL! <strong>Use the following as a subject for the email:</strong> MA1003-classtest-yourstudentnumber. For example: 'MA1003-classtest-c123456789'.</li>
+</ul>
+</body>
+</html>
