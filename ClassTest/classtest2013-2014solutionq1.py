@@ -1,7 +1,7 @@
 """
 Solution to question 1 of class test
 
-Marking for this exercise will be strict as the students were told multiple times during lectures that all they would need to do for question 1 of the class test is to copy a file from the solutions.
+Marking for this exercise will be strict as the students were told multiple times during lectures that all they would need to do for question 1 of the class test is to copy a file from the solutions. If students use a different convention for the Fibonacci sequence than the one given in the test and given in the solutions of the lab sheet: they will not be penalised heavily although it is a bit disappointing as it shows that students did not read the question carefully.
 """
 
 def fib(n):
