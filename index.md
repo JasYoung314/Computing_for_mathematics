@@ -69,6 +69,20 @@ This website contains the lab sheets for the first term of Computing for Mathema
 
 	[html (recommended)](./Handouts/handout06.html), [pdf](./Handouts/handout06.pdf), [docx](./Handouts/handout06.docx)
 
+
+## Class Tests
+
+1. 2013-2014
+
+	[html (recommended)](./ClassTest/classtest2013-2014.html), [pdf](./ClassTest/classtest2013-2014.pdf), [docx](./ClassTest/classtest2013-2014.docx)
+
+	- [q1.py](./ClassTest/classtest2013-2014solutionq1.py)
+
+	- [q2.py](./ClassTest/classtest2013-2014solutionq2.py)
+
+	- [q3.py](./ClassTest/classtest2013-2014solutionq3.py)
+
+
 Alternative resources can be found [here](./alternativeresources.html).
 
 [My personal website](http://www.vincent-knight.com/) contains information with regards to assessment and also solutions to the lab sheets.

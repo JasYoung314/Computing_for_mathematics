@@ -1,4 +1,4 @@
-# Computing for Mathematics: Class test
+# Computing for Mathematics Class Test - 2013-2014
 
 ## Instructions
 

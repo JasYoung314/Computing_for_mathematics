@@ -32,8 +32,8 @@ def approxint(N=1000):
     """
     numberofpointsundergraph = 0
     for i in range(N):  # A loop to drop sufficient points
-        point = Point()  # Generate a new drop
-        if point.undergraph:  # Check if drop is in circle
+        point = Point()  # Generate a new point
+        if point.undergraph:  # Check if point is under graph
             numberofpointsundergraph += 1
     return numberofpointsundergraph / float(N)
 

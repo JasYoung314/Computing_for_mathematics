@@ -62,6 +62,36 @@ for i in range(len(list_of_md_sheets)):
     index_file.write("\n")
     index_file.write("\n\t[html (recommended)](./Handouts/%s.html), [pdf](./Handouts/%s.pdf), [docx](./Handouts/%s.docx)" % (file_name, file_name, file_name))
     index_file.write("\n")
+
+# Write classtests
+
+target_dir = "../ClassTest"
+
+list_of_classtests = os.listdir(target_dir)
+list_of_md_sheets = [p for p in list_of_classtests if p[-3:] == ".md"]
+list_of_solutions = [p for p in list_of_classtests if "solution" in p]
+list_of_md_sheets.sort()
+number_of_class_tests = len(list_of_md_sheets)
+print "%s Class tests read." % number_of_class_tests
+
+index_file.write("\n")
+index_file.write("\n## Class Tests")
+index_file.write("\n")
+
+for i in range(len(list_of_md_sheets)):
+    outfile = open(target_dir + "/" + list_of_md_sheets[i])
+    data = outfile.read().split("\n")
+    outfile.close()
+    file_name = list_of_md_sheets[i][:-3]
+    print file_name
+    index_file.write("\n%s. %s" % (i + 1, data[0][data[0].index("-") + 2:]))
+    index_file.write("\n")
+    index_file.write("\n\t[html (recommended)](./ClassTest/%s.html), [pdf](./ClassTest/%s.pdf), [docx](./ClassTest/%s.docx)" % (file_name, file_name, file_name))
+    index_file.write("\n")
+    for k in list_of_solutions:
+        if data[0][data[0].index("-") + 2:] in k:
+            index_file.write("\n\t- [%s](./ClassTest/%s)\n" % (k[-5:],k))
+    index_file.write("\n")
 # Write Lesson plans
 
 #target_dir = "../Lesson_Plans"
