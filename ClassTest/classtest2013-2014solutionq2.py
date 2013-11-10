@@ -43,4 +43,4 @@ for n in data:  # Iterate through every element of data
 
 print len(uniquenames)  # Print len of unique names
 
-### 5 marks for removing duplicates
+### 10 marks for removing duplicates
