@@ -16,7 +16,7 @@ def fib(n):
         return 1
     return fib(n - 1) + fib(n - 2)  # Use recursion and the formula for the fibonacci numbers
 
-### 20 marks available for defining function
+### 20 marks available for defining function, lose 10 marks if iterative approach is used.
 
 print "The first 10 fibonacci numbers:"
 
