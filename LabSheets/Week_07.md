@@ -220,3 +220,5 @@ A YouTube playlist with all the videos for this lab sheet can be found [here](ht
     3. The mean value of all integrals that are negative
 
     To carry this out you will need to load a data file as before (see Python lab sheets) but to do so in the notebook you need to 'attach' a data file.
+
+    [Video hint](http://www.youtube.com/watch?v=lhmXmIBBQOI) (Only the first part of this video is relevant to this question)
