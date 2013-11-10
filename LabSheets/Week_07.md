@@ -145,7 +145,7 @@ A YouTube playlist with all the videos for this lab sheet can be found [here](ht
     2. Compute $\frac{f(x+h)-f(x)}{h}$;
     3. Compute the above limit as $h\to 0$ and verify that this is the derivative of $f$.
 
-9. **TICKABLE** By definition, the derivative $f'(a)$ gives the rate of change of the tangent line at the point $(a,f(a))$. Write a function that takes as arguments a function and a point $a$ and returns the plot of the function as well as the tangent line at $a$. The plot \text{in Figure \ref{W07-img01}} shows a plot of $f(x)=\sin(x)+3x+1/x$ as well as the tangent line at $x=2$.
+9. **TICKABLE** By definition, the derivative $f'(a)$ gives the rate of change of the tangent line at the point $(a,f(a))$. Write a function that takes as arguments a function and a coordinate $x=a$ and returns the plot of the function as well as the tangent line at $x=a$. The plot \text{in Figure \ref{W07-img01}} shows a plot of $f(x)=\sin(x)+3x+1/x$ as well as the tangent line at $x=2$.
 
     ![\text{Tangent at $x=2$.}\label{W07-img01}](./Images/W07-img01.png)
 
