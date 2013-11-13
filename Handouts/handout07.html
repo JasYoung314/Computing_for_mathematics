@@ -59,7 +59,7 @@ code > span.er { font-weight: bold; }
 <pre class="sourceCode python"><code class="sourceCode python"><span class="kw">for</span> n in <span class="dt">range</span>(<span class="dv">1</span>):
     <span class="kw">print</span> expand((phi ^ n - (<span class="dv">1</span> - phi) ^ n) / sqrt(<span class="dv">5</span>))</code></pre>
 <h2 id="question-9">Question 9</h2>
-<p>Question 9 was a tricky task. The solution gives a function that takes a function and a point and outputs a plot. If the solution is not clear: come and speak to me.</p>
+<p>Question 9 was a tricky task. The solution file shows a function that takes a function and a point and outputs a plot. If the solution is not clear: come and speak to me.</p>
 <h2 id="importing-data">Importing data</h2>
 <p>Let's carry out the following exercise:</p>
 <ol style="list-style-type: decimal">
@@ -67,36 +67,44 @@ code > span.er { font-weight: bold; }
 <li>Write those numbers to file;</li>
 <li>Import that data file in to Sage;</li>
 <li><p>Plot the ratio of the differences between two consecutive Fibonacci numbers.</p></li>
-<li><p>Here't the python script:</p></li>
+<li><p>Here's the python script:</p></li>
 </ol>
-<pre class="sourceCode python"><code class="sourceCode python"><span class="ch">import</span> csv
+<pre class="sourceCode python"><code class="sourceCode python"><span class="ch">import</span> csv  <span class="co"># Use the csv library</span>
 
 <span class="kw">def</span> fib(n):
+    <span class="co">&quot;&quot;&quot;</span>
+<span class="co">    A function that returns the nth Fibonacci number.</span>
+
+<span class="co">    Arguments: n (an integer)</span>
+
+<span class="co">    Outputs: The nth Fibonacci number (an integer)</span>
+<span class="co">    &quot;&quot;&quot;</span>
     <span class="kw">if</span> n == <span class="dv">0</span>:
         <span class="kw">return</span> <span class="dv">0</span>
     <span class="kw">if</span> n == <span class="dv">1</span>:
         <span class="kw">return</span> <span class="dv">1</span>
     <span class="kw">return</span> fib(n<span class="dv">-1</span>) + fib(n<span class="dv">-2</span>)
 
-<span class="dt">file</span> = <span class="dt">open</span>(<span class="st">&#39;fibonaccinumber.csv&#39;</span>, <span class="st">&#39;w&#39;</span>)
-csvwrtr = csv.writer(<span class="dt">file</span>)  <span class="co"># You have seen how to do this before</span>
-<span class="kw">for</span> n in <span class="dt">range</span>(<span class="dv">201</span>):
-    csvwrtr.writerow([fib(n)])
+f = <span class="dt">open</span>(<span class="st">&#39;fibonaccinumber.csv&#39;</span>, <span class="st">&#39;w&#39;</span>)  <span class="co"># Open a file in write mode</span>
+csvwrtr = csv.writer(f)  <span class="co"># Create a writer object (see exercise 10 of sheet 2)</span>
+<span class="kw">for</span> n in <span class="dt">range</span>(<span class="dv">31</span>):  <span class="co"># Loop n over the first 30 integers</span>
+    csvwrtr.writerow([fib(n)])  <span class="co"># Write the nth Fibonacci number</span>
 
-csvwrtr.close()</code></pre>
+f.close()  <span class="co"># Close the file</span></code></pre>
 <p>Now let us import that file in to Sage and use the following code to obtain the ratios of two successive numbers:</p>
-<pre class="sourceCode python"><code class="sourceCode python"><span class="ch">import</span> csv
+<pre class="sourceCode python"><code class="sourceCode python"><span class="ch">import</span> csv  <span class="co"># Use the csv library</span>
 
-<span class="dt">file</span> = <span class="dt">open</span>(DATA + <span class="st">&#39;fibs&#39;</span>, <span class="st">&#39;r&#39;</span>)
-csvrdr = csv.reader(<span class="dt">file</span>)
+f = <span class="dt">open</span>(DATA + <span class="st">&#39;fibs&#39;</span>, <span class="st">&#39;r&#39;</span>)  <span class="co"># Open the newly loaded file in Sage.</span>
+csvrdr = csv.reader(f)  <span class="co"># Create a reader object</span>
 
-data = [<span class="dt">int</span>(row[<span class="dv">0</span>]) <span class="kw">for</span> row in data]
+data = [<span class="dt">float</span>(row[<span class="dv">0</span>]) <span class="kw">for</span> row in csvrdr]  <span class="co"># Read in the data and convert to float</span>
+f.close()  <span class="co"># Close the file</span>
 
-ratios = []
-<span class="kw">for</span> k in <span class="dt">range</span>(<span class="dt">len</span>(data) - <span class="dv">1</span>):
-    ratios = [[k, data[k + <span class="dv">1</span>] / data[k]]]
+ratios = []  <span class="co"># Create a new list</span>
+<span class="kw">for</span> k in <span class="dt">range</span>(<span class="dv">1</span>, <span class="dt">len</span>(data) - <span class="dv">1</span>):  <span class="co"># Iterate over integers</span>
+    ratios = [[k, data[k + <span class="dv">1</span>] / data[k]]]  <span class="co"># Add a tuple with the ratio of two consecutive number from the Fibonacci sequence</span>
 
-list_plot(k)</code></pre>
+list_plot(k) <span class="co"># A list plot</span></code></pre>
 <p><strong>We could do all of the above using Sage but this is just an example of using data written to file.</strong></p>
 <h2 id="what-you-should-do-next">What you should do next:</h2>
 <ul>

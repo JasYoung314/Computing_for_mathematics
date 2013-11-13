@@ -61,7 +61,7 @@ for n in range(1):
 
 ## Question 9
 
-Question 9 was a tricky task. The solution gives a function that takes a function and a point and outputs a plot. If the solution is not clear: come and speak to me.
+Question 9 was a tricky task. The solution file shows a function that takes a function and a point and outputs a plot. If the solution is not clear: come and speak to me.
 
 ## Importing data
 
@@ -72,41 +72,49 @@ Let's carry out the following exercise:
 3. Import that data file in to Sage;
 4. Plot the ratio of the differences between two consecutive Fibonacci numbers.
 
-1. Here't the python script:
+1. Here's the python script:
 
 ~~~{.python}
-import csv
+import csv  # Use the csv library
 
 def fib(n):
+    """
+    A function that returns the nth Fibonacci number.
+
+    Arguments: n (an integer)
+
+    Outputs: The nth Fibonacci number (an integer)
+    """
     if n == 0:
         return 0
     if n == 1:
         return 1
     return fib(n-1) + fib(n-2)
 
-file = open('fibonaccinumber.csv', 'w')
-csvwrtr = csv.writer(file)  # You have seen how to do this before
-for n in range(201):
-    csvwrtr.writerow([fib(n)])
+f = open('fibonaccinumber.csv', 'w')  # Open a file in write mode
+csvwrtr = csv.writer(f)  # Create a writer object (see exercise 10 of sheet 2)
+for n in range(31):  # Loop n over the first 30 integers
+    csvwrtr.writerow([fib(n)])  # Write the nth Fibonacci number
 
-csvwrtr.close()
+f.close()  # Close the file
 ~~~
 
 Now let us import that file in to Sage and use the following code to obtain the ratios of two successive numbers:
 
 ~~~{.python}
-import csv
+import csv  # Use the csv library
 
-file = open(DATA + 'fibs', 'r')
-csvrdr = csv.reader(file)
+f = open(DATA + 'fibs', 'r')  # Open the newly loaded file in Sage.
+csvrdr = csv.reader(f)  # Create a reader object
 
-data = [int(row[0]) for row in data]
+data = [float(row[0]) for row in csvrdr]  # Read in the data and convert to float
+f.close()  # Close the file
 
-ratios = []
-for k in range(len(data) - 1):
-    ratios = [[k, data[k + 1] / data[k]]]
+ratios = []  # Create a new list
+for k in range(1, len(data) - 1):  # Iterate over integers
+    ratios = [[k, data[k + 1] / data[k]]]  # Add a tuple with the ratio of two consecutive number from the Fibonacci sequence
 
-list_plot(k)
+list_plot(k) # A list plot
 ~~~
 
 **We could do all of the above using Sage but this is just an example of using data written to file.**
