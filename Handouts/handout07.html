@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <style type="text/css">
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; background-color: #f8f8f8; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+pre, code { background-color: #f8f8f8; }
+code > span.kw { color: #204a87; font-weight: bold; }
+code > span.dt { color: #204a87; }
+code > span.dv { color: #0000cf; }
+code > span.bn { color: #0000cf; }
+code > span.fl { color: #0000cf; }
+code > span.ch { color: #4e9a06; }
+code > span.st { color: #4e9a06; }
+code > span.co { color: #8f5902; font-style: italic; }
+code > span.ot { color: #8f5902; }
+code > span.al { color: #ef2929; }
+code > span.fu { color: #000000; }
+code > span.er { font-weight: bold; }
+  </style>
+  <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+</head>
+<body>
+<h1 id="computing-for-mathematics-handout-7---the-class-test-srange-tangents-and-more-applications-of-functions-or-classes-to-data.">Computing for mathematics handout 7 - The class test, srange, tangents and more applications of functions or classes to data.</h1>
+<p>Lecturer: Vince Knight</p>
+<p>Office: M1.30</p>
+<p>email: knightva@cf.ac.uk</p>
+<p><strong>Office hours: Thursday 1300-1500</strong></p>
+<h2 id="what-you-have-learnt-this-week">What you have learnt this week:</h2>
+<ul>
+<li>How to plot in Sage (domain of plot and 'addition' of plots);</li>
+<li>How to obtain limits in Sage;</li>
+<li>How to differentiate in Sage;</li>
+<li>How to integrate in Sage;</li>
+<li>How to to upload data to Sage.</li>
+</ul>
+<h2 id="obtaining-the-values-from-a-solution-of-an-equation">Obtaining the values from a solution of an equation</h2>
+<p>Let's consider the following equation:</p>
+<p><span class="math">\[x^2-x-1\]</span></p>
+<p>To find the roots of the equation we can simply use the <code>solve</code> function:</p>
+<pre class="sourceCode python"><code class="sourceCode python">sols = solve(x ^ <span class="dv">2</span> - x - <span class="dv">1</span> == <span class="dv">0</span>, x)</code></pre>
+<p>Before viewing the solutions of our equation what type of object is <code>sols</code>?</p>
+<pre class="sourceCode python"><code class="sourceCode python"><span class="dt">type</span>(sols)</code></pre>
+<p><code>sols</code> is a 'generic sequence' (a type of list).</p>
+<pre class="sourceCode python"><code class="sourceCode python">sols</code></pre>
+<p>We see that our solutions are given in the form of a list of relationships. The solutions to exercise 3 show a way of extracting the solutions. Here is another:</p>
+<pre class="sourceCode python"><code class="sourceCode python">sols = solve(x ^ <span class="dv">2</span> - x - <span class="dv">1</span> == <span class="dv">0</span>, x, solution_dict=<span class="ot">True</span>)</code></pre>
+<p>Sols is now a list of dictionaries. Let us try and extract the positive solution to our equation:</p>
+<pre class="sourceCode python"><code class="sourceCode python">phi = [k[x] <span class="kw">for</span> k in sols <span class="kw">if</span> k[x] &gt;= <span class="dv">0</span>][<span class="dv">0</span>]</code></pre>
+<p>If you're not familiar with what <span class="math">\(\phi\)</span> is try the following:</p>
+<pre class="sourceCode python"><code class="sourceCode python"><span class="kw">for</span> n in <span class="dt">range</span>(<span class="dv">1</span>):
+    <span class="kw">print</span> expand((phi ^ n - (<span class="dv">1</span> - phi) ^ n) / sqrt(<span class="dv">5</span>))</code></pre>
+<h2 id="question-9">Question 9</h2>
+<p>Question 9 was a tricky task. The solution gives a function that takes a function and a point and outputs a plot. If the solution is not clear: come and speak to me.</p>
+<h2 id="importing-data">Importing data</h2>
+<p>Let's carry out the following exercise:</p>
+<ol style="list-style-type: decimal">
+<li>Use Python to obtain a list of the Fibonacci numbers;</li>
+<li>Write those numbers to file;</li>
+<li>Import that data file in to Sage;</li>
+<li><p>Plot the ratio of the differences between two consecutive Fibonacci numbers.</p></li>
+<li><p>Here't the python script:</p></li>
+</ol>
+<pre class="sourceCode python"><code class="sourceCode python"><span class="ch">import</span> csv
+
+<span class="kw">def</span> fib(n):
+    <span class="kw">if</span> n == <span class="dv">0</span>:
+        <span class="kw">return</span> <span class="dv">0</span>
+    <span class="kw">if</span> n == <span class="dv">1</span>:
+        <span class="kw">return</span> <span class="dv">1</span>
+    <span class="kw">return</span> fib(n<span class="dv">-1</span>) + fib(n<span class="dv">-2</span>)
+
+<span class="dt">file</span> = <span class="dt">open</span>(<span class="st">&#39;fibonaccinumber.csv&#39;</span>, <span class="st">&#39;w&#39;</span>)
+csvwrtr = csv.writer(<span class="dt">file</span>)  <span class="co"># You have seen how to do this before</span>
+<span class="kw">for</span> n in <span class="dt">range</span>(<span class="dv">201</span>):
+    csvwrtr.writerow([fib(n)])
+
+csvwrtr.close()</code></pre>
+<p>Now let us import that file in to Sage and use the following code to obtain the ratios of two successive numbers:</p>
+<pre class="sourceCode python"><code class="sourceCode python"><span class="ch">import</span> csv
+
+<span class="dt">file</span> = <span class="dt">open</span>(DATA + <span class="st">&#39;fibs&#39;</span>, <span class="st">&#39;r&#39;</span>)
+csvrdr = csv.reader(<span class="dt">file</span>)
+
+data = [<span class="dt">int</span>(row[<span class="dv">0</span>]) <span class="kw">for</span> row in data]
+
+ratios = []
+<span class="kw">for</span> k in <span class="dt">range</span>(<span class="dt">len</span>(data) - <span class="dv">1</span>):
+    ratios = [[k, data[k + <span class="dv">1</span>] / data[k]]]
+
+list_plot(k)</code></pre>
+<p><strong>We could do all of the above using Sage but this is just an example of using data written to file.</strong></p>
+<h2 id="what-you-should-do-next">What you should do next:</h2>
+<ul>
+<li><strong>Start the next sheet</strong>: make sure you spend time working on the sheet <strong>BEFORE</strong> the labs.</li>
+<li>Contribute to the wiki.</li>
+<li>To make the best use of the lab sessions turn up having finished your sheets;</li>
+<li>If anything is still unclear <strong>please</strong> come and see me during office hours.</li>
+</ul>
+</body>
+</html>

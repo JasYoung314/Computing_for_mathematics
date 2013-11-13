@@ -69,6 +69,10 @@ This website contains the lab sheets for the first term of Computing for Mathema
 
 	[html (recommended)](./Handouts/handout06.html), [pdf](./Handouts/handout06.pdf), [docx](./Handouts/handout06.docx)
 
+7. Handout 7: The class test, srange, tangents and more applications of functions or classes to data.
+
+	[html (recommended)](./Handouts/handout07.html), [pdf](./Handouts/handout07.pdf), [docx](./Handouts/handout07.docx)
+
 
 ## Class Tests
 
@@ -76,11 +80,11 @@ This website contains the lab sheets for the first term of Computing for Mathema
 
 	[html (recommended)](./ClassTest/classtest2013-2014.html), [pdf](./ClassTest/classtest2013-2014.pdf), [docx](./ClassTest/classtest2013-2014.docx)
 
+	- [q3.py](./ClassTest/classtest2013-2014solutionq3.py)
+
 	- [q2.py](./ClassTest/classtest2013-2014solutionq2.py)
 
 	- [q1.py](./ClassTest/classtest2013-2014solutionq1.py)
-
-	- [q3.py](./ClassTest/classtest2013-2014solutionq3.py)
 
 
 Alternative resources can be found [here](./alternativeresources.html).
