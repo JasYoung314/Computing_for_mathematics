@@ -59,6 +59,21 @@ for n in range(1):
     print expand((phi ^ n - (1 - phi) ^ n) / sqrt(5))
 ~~~
 
+## srange
+
+The `srange` command is a Sage 'wrapper' for the Python `range` command. It allows us to obtain lists of non integer values with control of step size, start value and end value.
+
+~~~{.python}
+# General syntax
+srange(startingvalue, endvalue, stepsize)
+~~~
+
+The following gives the numbers from 0 to 4 (not inclusive) with steps of .5:
+
+~~~{.python}
+srange(0, 5, .5)
+~~~
+
 ## Question 9
 
 Question 9 was a tricky task. The solution file shows a function that takes a function and a point and outputs a plot. If the solution is not clear: come and speak to me.

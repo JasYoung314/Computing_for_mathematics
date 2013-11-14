@@ -5,11 +5,10 @@
   <meta http-equiv="Content-Style-Type" content="text/css" />
   <meta name="generator" content="pandoc" />
   <title></title>
-  <style type="text/css">code{white-space: pre;}</style>
   <style type="text/css">
 table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
   margin: 0; padding: 0; vertical-align: baseline; border: none; }
-table.sourceCode { width: 100%; line-height: 100%; background-color: #f8f8f8; }
+table.sourceCode { width: 100%; background-color: #f8f8f8; }
 td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
 td.sourceCode { padding-left: 5px; }
 pre, code { background-color: #f8f8f8; }
@@ -44,7 +43,7 @@ code > span.er { font-weight: bold; }
 </ul>
 <h2 id="obtaining-the-values-from-a-solution-of-an-equation">Obtaining the values from a solution of an equation</h2>
 <p>Let's consider the following equation:</p>
-<p><span class="math">\[x^2-x-1\]</span></p>
+<p>\[x^2-x-1\]</p>
 <p>To find the roots of the equation we can simply use the <code>solve</code> function:</p>
 <pre class="sourceCode python"><code class="sourceCode python">sols = solve(x ^ <span class="dv">2</span> - x - <span class="dv">1</span> == <span class="dv">0</span>, x)</code></pre>
 <p>Before viewing the solutions of our equation what type of object is <code>sols</code>?</p>
@@ -55,9 +54,15 @@ code > span.er { font-weight: bold; }
 <pre class="sourceCode python"><code class="sourceCode python">sols = solve(x ^ <span class="dv">2</span> - x - <span class="dv">1</span> == <span class="dv">0</span>, x, solution_dict=<span class="ot">True</span>)</code></pre>
 <p>Sols is now a list of dictionaries. Let us try and extract the positive solution to our equation:</p>
 <pre class="sourceCode python"><code class="sourceCode python">phi = [k[x] <span class="kw">for</span> k in sols <span class="kw">if</span> k[x] &gt;= <span class="dv">0</span>][<span class="dv">0</span>]</code></pre>
-<p>If you're not familiar with what <span class="math">\(\phi\)</span> is try the following:</p>
+<p>If you're not familiar with what \(\phi\) is try the following:</p>
 <pre class="sourceCode python"><code class="sourceCode python"><span class="kw">for</span> n in <span class="dt">range</span>(<span class="dv">1</span>):
     <span class="kw">print</span> expand((phi ^ n - (<span class="dv">1</span> - phi) ^ n) / sqrt(<span class="dv">5</span>))</code></pre>
+<h2 id="srange">srange</h2>
+<p>The <code>srange</code> command is a Sage 'wrapper' for the Python <code>range</code> command. It allows us to obtain lists of non integer values with control of step size, start value and end value.</p>
+<pre class="sourceCode python"><code class="sourceCode python"><span class="co"># General syntax</span>
+srange(startingvalue, endvalue, stepsize)</code></pre>
+<p>The following gives the numbers from 0 to 4 (not inclusive) with steps of .5:</p>
+<pre class="sourceCode python"><code class="sourceCode python">srange(<span class="dv">0</span>, <span class="dv">5</span>, .<span class="dv">5</span>)</code></pre>
 <h2 id="question-9">Question 9</h2>
 <p>Question 9 was a tricky task. The solution file shows a function that takes a function and a point and outputs a plot. If the solution is not clear: come and speak to me.</p>
 <h2 id="importing-data">Importing data</h2>
