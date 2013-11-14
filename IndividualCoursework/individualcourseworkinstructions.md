@@ -2,9 +2,9 @@
 
 ## Instructions
 
-Write a 3 page report on a mathematical topic. Your report is to be written in LaTeX and must use aspects of programming (Python and/or Sage) to illustrate the particular topic.
+Write a 3 page report on a mathematical topic. Consider the target audience of your report to be first year mathematics students wanting to learn about a given topic. Your report is to be written in LaTeX and must use aspects of programming (Python and/or Sage) to illustrate the particular topic.
 
-*You are encouraged to choose a topic*, if you do so I recommend checking with me (Vince Knight) that the topic is appropriate. If you are unable to choose a topic select one from the following:
+*You are encouraged to choose your own topic*, if you do so I recommend checking with me (Vince Knight) that the topic is appropriate. If you are unable to choose a topic select one from the following:
 
 - Convergence of sequences,
 - Complex numbers,
