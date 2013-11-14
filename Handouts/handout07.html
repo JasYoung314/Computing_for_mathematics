@@ -107,9 +107,9 @@ f.close()  <span class="co"># Close the file</span>
 
 ratios = []  <span class="co"># Create a new list</span>
 <span class="kw">for</span> k in <span class="dt">range</span>(<span class="dv">1</span>, <span class="dt">len</span>(data) - <span class="dv">1</span>):  <span class="co"># Iterate over integers</span>
-    ratios = [[k, data[k + <span class="dv">1</span>] / data[k]]]  <span class="co"># Add a tuple with the ratio of two consecutive number from the Fibonacci sequence</span>
+    ratios.append([k, data[k + <span class="dv">1</span>] / data[k]])  <span class="co"># Add a tuple with the ratio of two consecutive number from the Fibonacci sequence</span>
 
-list_plot(k) <span class="co"># A list plot</span></code></pre>
+list_plot(ratios) <span class="co"># A list plot</span></code></pre>
 <p><strong>We could do all of the above using Sage but this is just an example of using data written to file.</strong></p>
 <h2 id="what-you-should-do-next">What you should do next:</h2>
 <ul>

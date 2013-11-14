@@ -127,9 +127,9 @@ f.close()  # Close the file
 
 ratios = []  # Create a new list
 for k in range(1, len(data) - 1):  # Iterate over integers
-    ratios = [[k, data[k + 1] / data[k]]]  # Add a tuple with the ratio of two consecutive number from the Fibonacci sequence
+    ratios.append([k, data[k + 1] / data[k]])  # Add a tuple with the ratio of two consecutive number from the Fibonacci sequence
 
-list_plot(k) # A list plot
+list_plot(ratios) # A list plot
 ~~~
 
 **We could do all of the above using Sage but this is just an example of using data written to file.**
