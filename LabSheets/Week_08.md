@@ -1,7 +1,5 @@
 # Week 8 - Linear Algebra
 
-'TEST'
-
 A YouTube playlist with all the videos for this lab sheet can be found [here](http://www.youtube.com/playlist?list=PLnC5h3PY-znzwLePTdmDWDCKJse3omJe5).
 
 1. Use Sage to solve the following system of equations:
@@ -199,7 +197,7 @@ A YouTube playlist with all the videos for this lab sheet can be found [here](ht
 
     [Video hint](http://youtu.be/3qdlespAi9o)
 
-8. **TICKABLE** The file [W08_D01.txt](./Data/W08_D01.txt) contains 4 columns of data:
+8. **TICKABLE** The file [W08_D01.csv](./Data/W08_D01.csv) contains 4 columns of data:
 
         a, b, c, d, f, g
 
@@ -218,4 +216,4 @@ A YouTube playlist with all the videos for this lab sheet can be found [here](ht
 
     If there is no solution to the system of equations set `B=C=D=False`. The data set is a randomly sampled set of problems, how often does a solution exist?
 
-8. The file [W08_D02.txt](./Data/W08_D02.txt) contains a large number of columns and rows. Investigate the `dimensions` and `plot` methods on this matrix.
+8. The file [W08_D02.csv](./Data/W08_D02.csv) contains a large number of columns and rows. Investigate the `dimensions` and `plot` methods on this matrix.
