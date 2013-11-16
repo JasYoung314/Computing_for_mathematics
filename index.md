@@ -30,7 +30,7 @@ This website contains the lab sheets for the first term of Computing for Mathema
 
 	[html (recommended)](./LabSheets/Week_07.html), [pdf](./LabSheets/Week_07.pdf), [docx](./LabSheets/Week_07.docx)
 
-7. Lab Sheets 7: Linear Algebra.
+7. Lab Sheets 7: Linear Algebra
 
 	[html (recommended)](./LabSheets/Week_08.html), [pdf](./LabSheets/Week_08.pdf), [docx](./LabSheets/Week_08.docx)
 
