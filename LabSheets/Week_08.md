@@ -195,7 +195,7 @@ A YouTube playlist with all the videos for this lab sheet can be found [here](ht
     random_matrix(QQ, 5) # Gives a random square matrix of size 5 in the Rationals.
     ~~~
 
-    Using this, attempt to conjecture a connection between the determinant of a matrix and it's inverse (and the determinant of it's inverse).
+    Using this, attempt to conjecture a connection between the determinant of a matrix and its inverse (and the determinant of it's inverse).
 
     [Video hint](http://youtu.be/3qdlespAi9o)
 
