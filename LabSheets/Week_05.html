@@ -5,10 +5,11 @@
   <meta http-equiv="Content-Style-Type" content="text/css" />
   <meta name="generator" content="pandoc" />
   <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
   <style type="text/css">
 table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
   margin: 0; padding: 0; vertical-align: baseline; border: none; }
-table.sourceCode { width: 100%; background-color: #f8f8f8; }
+table.sourceCode { width: 100%; line-height: 100%; background-color: #f8f8f8; }
 td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
 td.sourceCode { padding-left: 5px; }
 pre, code { background-color: #f8f8f8; }
@@ -91,7 +92,7 @@ vince.age = <span class="dv">28</span>
 vince.sex = <span class="st">&quot;M&quot;</span>
 <span class="kw">print</span> vince.sex</code></pre>
 <p><a href="http://youtu.be/I_fbk5Uss-Q">Video hint</a></p></li>
-<li><p><strong>TICKABLE</strong> A quadratic is a mathematical expression of the form: \(a x ^ 2 + b x + c\). The following code creates a Quadratic class:</p>
+<li><p><strong>TICKABLE</strong> A quadratic is a mathematical expression of the form: <span class="math">\(a x ^ 2 + b x + c\)</span>. The following code creates a Quadratic class:</p>
 <pre class="sourceCode python"><code class="sourceCode python"><span class="kw">class</span> Quadratic()
     a = <span class="dv">0</span>
     b = <span class="dv">0</span>
@@ -147,8 +148,8 @@ vince = Student([<span class="st">&quot;Biology&quot;</span>,<span class="st">&q
 <span class="kw">print</span> vince.age
 <span class="kw">print</span> vince.sex</code></pre></li>
 <li><p><strong>TICKABLE</strong> Revisit the Quadratic class from earlier. Use the <code>__init__</code> method and also create a method to return <code>True</code> if the quadratic has real roots.</p>
-<p>Recall that the roots of \(ax^2 + bx + c\) are given by:</p>
-<p>\[x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\]</p>
+<p>Recall that the roots of <span class="math">\(ax^2 + bx + c\)</span> are given by:</p>
+<p><span class="math">\[x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\]</span></p>
 <p>Using this count how many of the instances in <a href="./Data/W05_D01.txt">W05_D01.csv</a> have real roots.</p></li>
 <li><p>The following dictionary contains course code - course name pairs:</p>
 <pre class="sourceCode python"><code class="sourceCode python">coursedictionary = {<span class="dv">1</span>: <span class="st">&quot;Math&quot;</span>,
@@ -172,21 +173,21 @@ vince = Student([<span class="st">&quot;Biology&quot;</span>,<span class="st">&q
                 [<span class="st">&quot;Lisa&quot;</span>, [<span class="dv">1</span>, <span class="dv">8</span>]],
                 [<span class="st">&quot;Penny&quot;</span>, [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>]]]</code></pre>
 <p><strong>Using object orientated programming</strong> obtain the number of students enrolled on each course as well as a dictionary containing students as keys and lists of enrolled courses as values.</p></li>
-<li><p>If rain drops were to fall <em>randomly</em> on a square of side length \(2r\) the probability of the drops landing in an inscribed circle of radius \(r\) would be given by:</p>
-<p>\[P = \frac{\text{Area of circle}}{\text{Area of square}} = \frac{\pi r^2}{4 r^2} = \frac{\pi}{4}\]</p>
+<li><p>If rain drops were to fall <em>randomly</em> on a square of side length <span class="math">\(2r\)</span> the probability of the drops landing in an inscribed circle of radius <span class="math">\(r\)</span> would be given by:</p>
+<p><span class="math">\[P = \frac{\text{Area of circle}}{\text{Area of square}} = \frac{\pi r^2}{4 r^2} = \frac{\pi}{4}\]</span></p>
 <div class="figure">
 <img src="./Images/W05-img03.png" alt="" /><p class="caption"></p>
 </div>
-<p>Thus, if we can approximate \(P\) then we can approximate \(\pi\) as \(4P\). In this question we will write code to approximate \(P\) using the random python library.</p>
+<p>Thus, if we can approximate <span class="math">\(P\)</span> then we can approximate <span class="math">\(\pi\)</span> as <span class="math">\(4P\)</span>. In this question we will write code to approximate <span class="math">\(P\)</span> using the random python library.</p>
 <p>First of all, create a class for a rain drop (make sure you understand the code!):</p>
 <pre class="sourceCode python"><code class="sourceCode python"><span class="kw">class</span> Drop():
     <span class="kw">def</span> <span class="ot">__init__</span>(<span class="ot">self</span>, r=<span class="dv">1</span>):
         <span class="ot">self</span>.x = (.<span class="dv">5</span> - random.random()) * <span class="dv">2</span> * r
         <span class="ot">self</span>.y = (.<span class="dv">5</span> - random.random()) * <span class="dv">2</span> * r
         <span class="ot">self</span>.incircle = (<span class="ot">self</span>.y) ** <span class="dv">2</span> + (<span class="ot">self</span>.x) ** <span class="dv">2</span> &lt;= (r) ** <span class="dv">2</span></code></pre>
-<p>Note that the above uses the following equation for a circle centred at \((0,0)\) of radius \(r\): \[x^2+y^2\leq r^2\].</p>
-<p>To approximate \(P\) simply create N=1000 instances of Drops and count the number of those that are in the circle.</p>
-<p>Use this to approximate \(\pi\). What happens if you increase N? What value of N seems to give \(\pi\) correct to 3 decimal places?</p>
+<p>Note that the above uses the following equation for a circle centred at <span class="math">\((0,0)\)</span> of radius <span class="math">\(r\)</span>: <span class="math">\[x^2+y^2\leq r^2\]</span>.</p>
+<p>To approximate <span class="math">\(P\)</span> simply create N=1000 instances of Drops and count the number of those that are in the circle.</p>
+<p>Use this to approximate <span class="math">\(\pi\)</span>. What happens if you increase N? What value of N seems to give <span class="math">\(\pi\)</span> correct to 3 decimal places?</p>
 <p>(This is an example of a technique called Monte Carlo Simulation.)</p></li>
 </ol>
 <h2 id="inheritance">Inheritance</h2>

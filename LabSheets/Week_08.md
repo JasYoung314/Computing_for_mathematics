@@ -58,7 +58,7 @@ A YouTube playlist with all the videos for this lab sheet can be found [here](ht
     A * X
     ~~~
 
-    Verify that $X = (x_0, y_0)$ where $(x_0, y_0)$ is the solution to our system of equations (obtained in (1)).
+    Verify that $X = (x_0, y_0)$ where $(x_0, y_0)$ is the solution to our system of equations (obtained in Q1).
 
     [Video hint](http://youtu.be/zuxPlbRK79w)
 
@@ -126,7 +126,7 @@ A YouTube playlist with all the videos for this lab sheet can be found [here](ht
     identity_matrix(4)
     ~~~
 
-    Note also, that the previous exercise showed that we can sometimes find a matrix $B$ such that $AB=\mathbb{I}_n$. Finding such a matrix is refered to as 'invering' $A$ and if certain properties hold (you will see this in further details next semester) this matrix is denoted $A^{-1}$.
+    Note also, that the previous exercise showed that we can sometimes find a matrix $B$ such that $AB=\mathbb{I}_n$. Finding such a matrix is refered to as 'inverting' $A$ and if certain properties hold (you will see this in further details next semester) this matrix is denoted $A^{-1}$.
 
     If we recall the matrix equation $AX=b$ and if we assume that $A^{-1}$exists then multiplying both sides by $A^{-1}$ gives:
 
@@ -148,7 +148,9 @@ A YouTube playlist with all the videos for this lab sheet can be found [here](ht
 
     [Video hint](http://youtu.be/NOpEMl_yzMM)
 
-6. **TICKABLE** Recalling your basic python knowledge. Lists can be used to hold any sort of object. Obtain a list of the inverses of the following matrices (when the inverse exists, you might need to look up information on `try` and `except`):
+6. **TICKABLE** Recalling your basic python knowledge. Create a function that returns the inverse of a matrix if it exists (return False if it does not). Do this using the `try` and `except` statements that you will need to research.
+
+    Using this obtain a list of the inverses of the following matrices:
 
     $$\left(\begin{array}{rrrrr}
     \frac{1}{2} & 0 & 0 & -1 & 1 \\
@@ -182,15 +184,15 @@ A YouTube playlist with all the videos for this lab sheet can be found [here](ht
     2 & 0
     \end{array}\right)$$
 
-    For every matrix in this list and the original list obtain the result of the `det` method. This gives the **determinant** of the matrices. It is a very important quantity that will be explained next semester.
+    For all the above matrices, find the output of the `.det` method. This gives the **determinant** of the matrices. It is a very important quantity that will be explained next semester.
 
     [Video hint](http://youtu.be/rUvbWGg0QO0)
 
 7. **TICKABLE** The `random_matrix` command can be used to obtain a random matrix:
 
     ~~~{.python}
-    random_matrix(ZZ, 5) # Gives a random square matrix of size 5 in Z
-    random_matrix(QQ, 5) # Gives a random square matrix of size 5 in Q
+    random_matrix(ZZ, 5) # Gives a random square matrix of size 5 in the Integers.
+    random_matrix(QQ, 5) # Gives a random square matrix of size 5 in the Rationals.
     ~~~
 
     Using this attempt to conjecture a connection between the determinant of a matrix and it's inverse (and the determinant of it's inverse).
