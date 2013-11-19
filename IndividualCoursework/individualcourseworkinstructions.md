@@ -16,7 +16,7 @@ Write a 3 page report on a mathematical topic. Consider the target audience of y
 The following marking scheme will be applied:
 
 - **Code** (50% weighting)
-    - 50%: Appropriate code used with concepts learn in lab sheets.
+    - 50%: Appropriate code used with concepts learnt in lab sheets.
     - 70%: Code from lab sheets used to demonstrate concepts clearly.
     - 90%: Code used is a combination of code learnt in class and individually researched. Used to explain concepts in a clear and original way.
 
