@@ -11,6 +11,8 @@ Write a 3 page report on a mathematical topic. Consider the target audience of y
 - Solving differential equations,
 - Random events in probability.
 
+You are encouraged to include the code used as an appendix (if you use Sage, including a link to a published sheet is appropriate).
+
 ## Marking scheme
 
 The following marking scheme will be applied:
@@ -34,4 +36,4 @@ The following marking scheme will be applied:
 
 A model solution is available [here]().
 
-How the model solution would have been marked is [here]().
+How the model solution would have been marked is [here](https://www.writelatex.com/read/qcjzqvbrmsfq).
