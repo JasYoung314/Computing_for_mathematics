@@ -34,6 +34,10 @@ The following marking scheme will be applied:
 
 ## Example
 
-A model solution is available [here]().
+A model solution is available [here](http://goo.gl/ly8fdG).
 
 How the model solution would have been marked is [here](https://www.writelatex.com/read/qcjzqvbrmsfq).
+
+## Submitting
+
+Deadline for this work to be handed in is *Thursday of Week 11*. Electronic submission instructions will be distributed in due time.
