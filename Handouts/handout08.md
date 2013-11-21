@@ -25,7 +25,7 @@ Sage makes it very easy to share worksheets. If you know someones username, you 
 
 One difficulty that was reported to me was writing data to file. Let's take a quick look at the following example (revisiting the field example from [Handout 5](http://drvinceknight.github.io/Computing_for_mathematics/Handouts/handout05.html)):
 
-Let us say that we want to print to file the dimensions of the fields but also this value (let's pretend it's important):
+Let us say that we want to write to file the dimensions of the profitable fields but also this value (let's pretend it's important):
 
 $$\int_{0}^{h}x^w\;dx$$
 
