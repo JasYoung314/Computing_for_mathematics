@@ -73,6 +73,10 @@ This website contains the lab sheets for the first term of Computing for Mathema
 
 	[html (recommended)](./Handouts/handout07.html), [pdf](./Handouts/handout07.pdf), [docx](./Handouts/handout07.docx)
 
+8. Handout 8: Sharing and publishing worksheets, writing to files, the individual coursework and Class test feedback.
+
+	[html (recommended)](./Handouts/handout08.html), [pdf](./Handouts/handout08.pdf), [docx](./Handouts/handout08.docx)
+
 
 ## Class Tests
 
