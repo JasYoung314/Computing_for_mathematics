@@ -87,6 +87,13 @@ This website contains the lab sheets for the first term of Computing for Mathema
 	- [q3.py](./ClassTest/classtest2013-2014solutionq3.py)
 
 
+
+## Individual Coursework
+
+The coursework instructions can be found [here](./IndividualCoursework/individualcourseworkinstructions.html).
+
+## Other
+
 Alternative resources can be found [here](./alternativeresources.html).
 
 [My personal website](http://www.vincent-knight.com/) contains information with regards to assessment and also solutions to the lab sheets.

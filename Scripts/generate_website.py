@@ -92,6 +92,15 @@ for i in range(len(list_of_md_sheets)):
         if data[0][data[0].index("-") + 2:] in k:
             index_file.write("\n\t- [%s](./ClassTest/%s)\n" % (k[-5:],k))
     index_file.write("\n")
+
+# Write individual coursework
+
+index_file.write("\n")
+index_file.write("\n## Individual Coursework")
+index_file.write("\n")
+index_file.write("""
+The coursework instructions can be found [here](./IndividualCoursework/individualcourseworkinstructions.html).
+""")
 # Write Lesson plans
 
 #target_dir = "../Lesson_Plans"
@@ -118,6 +127,8 @@ for i in range(len(list_of_md_sheets)):
 ### Reading List
 
 index_file.write("""
+## Other
+
 Alternative resources can be found [here](./alternativeresources.html).
 
 [My personal website](http://www.vincent-knight.com/) contains information with regards to assessment and also solutions to the lab sheets.
