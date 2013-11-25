@@ -95,7 +95,7 @@ A YouTube playlist with all the videos for this lab sheet can be found [here](ht
 
     Where $x(t)$ represents the affection of Juliet towards Romeo and $y(t)$ the affection of Romeo towards Juliet (negative affection represents 'hatred').
 
-    Solve this system of equations assuming that Juliet is initially attracted to Juliet ($x(0)=1$) but that Juliet is initially indifferent to Romeo ($y(0)=0$). Describe the long term relationship between Romeo and Juliet.
+    Solve this system of equations assuming that Juliet is initially attracted to Romeo ($x(0)=1$) but that Romeo is initially indifferent to Juliet ($y(0)=0$). Describe the long term relationship between Romeo and Juliet.
 
     Describe the behaviour of the system if Romeo and Juliet are initially indifferent to each other.
 
