@@ -5,11 +5,10 @@
   <meta http-equiv="Content-Style-Type" content="text/css" />
   <meta name="generator" content="pandoc" />
   <title></title>
-  <style type="text/css">code{white-space: pre;}</style>
   <style type="text/css">
 table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
   margin: 0; padding: 0; vertical-align: baseline; border: none; }
-table.sourceCode { width: 100%; line-height: 100%; background-color: #f8f8f8; }
+table.sourceCode { width: 100%; background-color: #f8f8f8; }
 td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
 td.sourceCode { padding-left: 5px; }
 pre, code { background-color: #f8f8f8; }
@@ -38,12 +37,12 @@ code > span.er { font-weight: bold; }
 </ul>
 <p>A YouTube playlist with all the videos for this lab sheet can be found <a href="http://www.youtube.com/playlist?list=PLnC5h3PY-znzOZOAOVo6k_b-zDxjBr-x4">here</a>.</p>
 <ol style="list-style-type: decimal">
-<li><p><strong>TICKABLE</strong> The general syntax for solving a differential equation of the form <span class="math">\(f(x, y)== g(x, y)\)</span> is shown below:</p>
+<li><p><strong>TICKABLE</strong> The general syntax for solving a differential equation of the form \(f(x, y)== g(x, y)\) is shown below:</p>
 <pre class="sourceCode python"><code class="sourceCode python">desolve(f(x, y) == g(x, y), y)</code></pre>
-<p>Try out the following code which solves the differential equation: <span class="math">\(\frac{dy}{dx}=y\)</span>.</p>
+<p>Try out the following code which solves the differential equation: \(\frac{dy}{dx}=y\).</p>
 <pre class="sourceCode python"><code class="sourceCode python">y = function(<span class="st">&#39;y&#39;</span>, x)
 desolve(diff(y, x) == y, y)</code></pre>
-<p>Note that that there is no need to specify the independent variable (<span class="math">\(x\)</span>). The following code solves the general form of the above equation: <span class="math">\(\frac{dy}{dx}=ky\)</span> for some <span class="math">\(k\in\mathbb{R}\)</span>.</p>
+<p>Note that that there is no need to specify the independent variable (\(x\)). The following code solves the general form of the above equation: \(\frac{dy}{dx}=ky\) for some \(k\in\mathbb{R}\).</p>
 <pre class="sourceCode python"><code class="sourceCode python">k = var(<span class="st">&#39;k&#39;</span>)
 desolve(diff(y, x) == k * y, y, ivar=x)</code></pre>
 <p><a href="http://youtu.be/fpyxAE_-UsI">Video hint</a></p></li>
@@ -57,42 +56,42 @@ plot(soln(x).subs(c=<span class="dv">2</span>), x, -<span class="dv">10</span>, 
     p += plot(soln(x).subs(c=C), x, -<span class="dv">10</span>, <span class="dv">10</span>, color=rainbow(<span class="dv">11</span>)[C], legend_label=<span class="st">&quot;c=</span><span class="ot">%s</span><span class="st">&quot;</span> % C)
 p.show()</code></pre>
 <p>We are here making use of the Sage <code>rainbow</code> function which gives a list of colors that can be used in the plot <code>color</code> option. We are also making use of the <code>legend_label</code> option.</p>
-<p>Obtain a similar plot for the solution to the differential equation: <span class="math">\(\frac{dy}{dx} = xy\)</span>.</p>
+<p>Obtain a similar plot for the solution to the differential equation: \(\frac{dy}{dx} = xy\).</p>
 <p><a href="http://youtu.be/XUcn_zTa2FM">Video hint</a></p></li>
 <li><p>There is nothing restricting us to only solving first order differential equations. The following differential equation can be used to model the position of a mass on a spring:</p>
-<p><span class="math">\[m\frac{d^2x}{dt^2}+c\frac{dx}{dt}+kx=0\]</span></p>
+<p>\[m\frac{d^2x}{dt^2}+c\frac{dx}{dt}+kx=0\]</p>
 <p>Solve this equation.</p>
 <p><a href="http://youtu.be/DZ5ofuAgDIY">Video hint</a></p></li>
 <li><p><strong>TICKABLE</strong> Solve the following differential equations and plot their solution (for the given particular value):</p>
 <ol style="list-style-type: decimal">
-<li><span class="math">\(\frac{dy}{dx}+4y=5e^x\)</span>, (<span class="math">\(y(0)=3\)</span>)</li>
-<li><span class="math">\(\frac{dy}{dx}+\frac{x(2y-3)}{x^2+1}=\sin(x)\)</span>, (<span class="math">\(y(0)=4\)</span>)</li>
-<li><span class="math">\(\frac{d^2y}{dx^2}-y=\sin(5x)\)</span>, (<span class="math">\(y(3)=1, y&#39;(3)=0\)</span>)</li>
-<li><span class="math">\(\frac{d^2y}{dx^2}+2\frac{dy}{dx}+2y=\cosh(x)\)</span>, (<span class="math">\(y(1)=2, y&#39;(1)=72\)</span>)</li>
+<li>\(\frac{dy}{dx}+4y=5e^x\), (\(y(0)=3\))</li>
+<li>\(\frac{dy}{dx}+\frac{x(2y-3)}{x^2+1}=\sin(x)\), (\(y(0)=4\))</li>
+<li>\(\frac{d^2y}{dx^2}-y=\sin(5x)\), (\(y(3)=1, y&#39;(3)=0\))</li>
+<li>\(\frac{d^2y}{dx^2}+2\frac{dy}{dx}+2y=\cosh(x)\), (\(y(1)=2, y&#39;(1)=72\))</li>
 </ol></li>
 <li><p>Systems of differential equations often arise and can also be solved using Sage. Take a look at the <code>desolve_system</code> function and solve the following system of differential equations:</p>
-<p><span class="math">\[\begin{cases}
+<p>\[\begin{cases}
 \frac{dx}{dt} = 1 - y\\
 \frac{dy}{dt} = 1 - x
-\end{cases}\]</span></p>
+\end{cases}\]</p>
 <p><a href="http://youtu.be/2Q52rmftdjQ">Video hint</a></p></li>
 <li><p>A battle between two armies can be modelled with the following set of differential equations:</p>
-<p><span class="math">\[\begin{cases}
+<p>\[\begin{cases}
 \frac{dx}{dt} = - y\\
 \frac{dy}{dt} = -5x
-\end{cases}\]</span></p>
-<p>Obtain the solution to this system of equations. Assuming that <span class="math">\(x(0)=100\)</span> and that <span class="math">\(y(0)=700\)</span> plot the two solutions of the equations, which army wins this battle? When does the battle end?</p></li>
+\end{cases}\]</p>
+<p>Obtain the solution to this system of equations. Assuming that \(x(0)=100\) and that \(y(0)=700\) plot the two solutions of the equations, which army wins this battle? When does the battle end?</p></li>
 <li><p><strong>TICKABLE</strong> The love story between Romero and Juliet can be modelled with the following system of differential equations:</p>
-<p><span class="math">\[\begin{cases}
+<p>\[\begin{cases}
 \frac{dx}{dt} = -y\\
 \frac{dy}{dt} = .7x
-\end{cases}\]</span></p>
-<p>Where <span class="math">\(x(t)\)</span> represents the affection of Juliet towards Romeo and <span class="math">\(y(t)\)</span> the affection of Romeo towards Juliet (negative affection represents 'hatred').</p>
-<p>Solve this system of equation and assuming that Romeo is initially attracted to Juliet (<span class="math">\(x(0)=1\)</span>) but that Juliet is initially indifferent to Romeo (<span class="math">\(y(0)=0\)</span>) at time <span class="math">\(t=0\)</span> are indifferent to each other describe the long term relationship between the two characters.</p>
+\end{cases}\]</p>
+<p>Where \(x(t)\) represents the affection of Juliet towards Romeo and \(y(t)\) the affection of Romeo towards Juliet (negative affection represents 'hatred').</p>
+<p>Solve this system of equations assuming that Juliet is initially attracted to Juliet (\(x(0)=1\)) but that Juliet is initially indifferent to Romeo (\(y(0)=0\)). Describe the long term relationship between Romeo and Juliet.</p>
 <p>Describe the behaviour of the system if Romeo and Juliet are initially indifferent to each other.</p></li>
 <li><p><strong>TICKABLE</strong> Certain differential equations are much harder to solve than others. Attempt to solve the following differential equation using Sage:</p>
-<p><span class="math">\[\frac{dy}{dx} + y(y-1)==|(x-2)|\]</span></p>
-<p>In these situations certain numerical algorithms exist that can still describe the evolution of the system. Investigate the <code>desolve_rk4</code> function and obtain a solution for the above equation given that <span class="math">\(y(0)=1\)</span> for <span class="math">\(x&lt;100\)</span>. Obtain a plot of the numerical solution</p>
+<p>\[\frac{dy}{dx} + y(y-1)==|(x-2)|\]</p>
+<p>In these situations certain numerical algorithms exist that can still describe the evolution of the system. Investigate the <code>desolve_rk4</code> function and obtain a solution for the above equation given that \(y(0)=1\) for \(x&lt;100\). Obtain a plot of the numerical solution</p>
 <p><a href="http://youtu.be/LhIyZ14LKKE">Video hint</a></p></li>
 </ol>
 </body>
