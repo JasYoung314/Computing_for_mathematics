@@ -77,6 +77,10 @@ This website contains the lab sheets for the first term of Computing for Mathema
 
 	[html (recommended)](./Handouts/handout08.html), [pdf](./Handouts/handout08.pdf), [docx](./Handouts/handout08.docx)
 
+9. Handout 9: Extracting solutions from outputs of solvers
+
+	[html (recommended)](./Handouts/handout09.html), [pdf](./Handouts/handout09.pdf), [docx](./Handouts/handout09.docx)
+
 
 ## Class Tests
 

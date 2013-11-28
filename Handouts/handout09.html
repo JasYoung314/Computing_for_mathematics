@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+</head>
+<body>
+<h1 id="computing-for-mathematics-handout-8---extracting-solutions-from-outputs-of-solvers">Computing for mathematics handout 8 - Extracting solutions from outputs of solvers</h1>
+<p>Lecturer: Vince Knight</p>
+<p>Office: M1.30</p>
+<p>email: knightva@cf.ac.uk</p>
+<p><strong>Office hours: Thursday 1300-1500</strong></p>
+<h2 id="what-you-have-learnt-this-week">What you have learnt this week:</h2>
+<p>Some basic Sage code to solve differential equations:</p>
+<pre><code>- ODEs;
+- Systems of ODEs;
+- Numerical solutions of ODEs (for when they can&#39;t be solved exactly).</code></pre>
+<h2 id="extracting-parts-of-an-equation">Extracting parts of an equation</h2>
+<p>In <a href="http://drvinceknight.github.io/Computing_for_mathematics/Handouts/handout07.html">handout 7</a> we saw how to extract solutions to equations from the list output:</p>
+<pre><code>sols = solve(x ^ 2 - x - 1 == 0, x, solution_dict=True)
+[d[x] for d in sols]</code></pre>
+<p>Another way to do this is to use <code>.rhs()</code>:</p>
+<pre><code>sols = solve(x ^ 2 - x - 1 == 0, x)
+[eq.rhs() for eq in sols]  # We are getting the right hand side of the solutions which are given in the form of equations: `x = ...`.</code></pre>
+<p><strong>This extends to the solutions of differential equations</strong>.</p>
+<pre><code>t = var(&#39;t&#39;)
+y = function(&#39;y&#39;, t)
+x = function(&#39;x&#39;, t)
+sols = desolve_system([diff(x, t) == 1 - y, diff(y, t) == 1 - x], [y,x])</code></pre>
+<p>If we take a look at sols, the output of <code>desolve_system</code> is a list containing <code>x(t) = ...</code> and <code>y(t) = ...</code>.</p>
+<p>To extract the solutions we use the <code>rhs()</code> method:</p>
+<pre><code>x(t) = sols[0].rhs()
+y(t) = sols[1].rhs()</code></pre>
+<p>Now plotting these is straightforward:</p>
+<pre><code>p = plot(x, t, 0, 10, legend_label=&quot;$x(t)$&quot;)
+p += plot(y, t, 0, 10, color=&#39;red&#39;, legend_label=&quot;$y(t)$&quot;)
+p</code></pre>
+<h2 id="numerical-analysis">Numerical analysis</h2>
+<h2 id="what-you-should-do-next">What you should do next:</h2>
+<ul>
+<li><strong>Start the next sheet</strong>: make sure you spend time working on the sheet <strong>BEFORE</strong> the labs.</li>
+<li><strong>Start the coursework</strong></li>
+<li>Contribute to the wiki.</li>
+<li>To make the best use of the lab sessions turn up having finished your sheets;</li>
+<li>If anything is still unclear <strong>please</strong> come and see me during office hours.</li>
+</ul>
+</body>
+</html>
