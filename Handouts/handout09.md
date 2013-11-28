@@ -67,7 +67,7 @@ LaTeX is a language for typesetting (writing) documents.
 
 ## What you should do next:
 
+- Work through LaTeX lab sheets.
 - **Finish the coursework**
 - Contribute to the wiki.
-- Work through the LaTeX lab sheets.
 - If anything is still unclear **please** come and see me during office hours.
