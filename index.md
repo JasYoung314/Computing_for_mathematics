@@ -88,11 +88,11 @@ This website contains the lab sheets for the first term of Computing for Mathema
 
 	[html (recommended)](./ClassTest/classtest2013-2014.html), [pdf](./ClassTest/classtest2013-2014.pdf), [docx](./ClassTest/classtest2013-2014.docx)
 
-	- [q1.py](./ClassTest/classtest2013-2014solutionq1.py)
+	- [q3.py](./ClassTest/classtest2013-2014solutionq3.py)
 
 	- [q2.py](./ClassTest/classtest2013-2014solutionq2.py)
 
-	- [q3.py](./ClassTest/classtest2013-2014solutionq3.py)
+	- [q1.py](./ClassTest/classtest2013-2014solutionq1.py)
 
 
 

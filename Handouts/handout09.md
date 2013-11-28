@@ -47,12 +47,27 @@ Now plotting these is straightforward:
     p += plot(y, t, 0, 10, color='red', legend_label="$y(t)$")
     p
 
+**NOTE THAT THE ABOVE FAILS TO PLOT!** We need to include initial conditions so that `x(t)` does not contain `x(0)`.
+
 ## Numerical analysis
+
+Certain equations and differential equations can't be solved or are very difficult to solve. In this case numerical solutions can still be found. This is what `desolve_rk4` is for.
+
+This is all part of a subject called [Numerical Analysis](http://en.wikipedia.org/wiki/Numerical_analysis).
+
+Some applications of this include the solution of equations that describe how many people would be in a queue throughout a day across different hours of the day.
+
+## LaTeX
+
+LaTeX is a language for typesetting (writing) documents.
+
+- Go through the videos on the corresponding [lab sheet](http://drvinceknight.github.io/Computing_for_mathematics/LabSheets/Week_10.html).
+- Take a look at my [coursework template](http://goo.gl/huzjyq).
+- There are various other templates available at [https://www.writelatex.com/templates](https://www.writelatex.com/templates).
 
 ## What you should do next:
 
-- **Start the next sheet**: make sure you spend time working on the sheet **BEFORE** the labs.
-- **Start the coursework**
+- **Finish the coursework**
 - Contribute to the wiki.
-- To make the best use of the lab sessions turn up having finished your sheets;
+- Work through the LaTeX lab sheets.
 - If anything is still unclear **please** come and see me during office hours.

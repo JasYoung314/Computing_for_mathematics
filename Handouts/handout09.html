@@ -5,6 +5,7 @@
   <meta http-equiv="Content-Style-Type" content="text/css" />
   <meta name="generator" content="pandoc" />
   <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
 </head>
 <body>
 <h1 id="computing-for-mathematics-handout-8---extracting-solutions-from-outputs-of-solvers">Computing for mathematics handout 8 - Extracting solutions from outputs of solvers</h1>
@@ -37,13 +38,23 @@ y(t) = sols[1].rhs()</code></pre>
 <pre><code>p = plot(x, t, 0, 10, legend_label=&quot;$x(t)$&quot;)
 p += plot(y, t, 0, 10, color=&#39;red&#39;, legend_label=&quot;$y(t)$&quot;)
 p</code></pre>
+<p><strong>NOTE THAT THE ABOVE FAILS TO PLOT!</strong> We need to include initial conditions so that <code>x(t)</code> does not contain <code>x(0)</code>.</p>
 <h2 id="numerical-analysis">Numerical analysis</h2>
+<p>Certain equations and differential equations can't be solved or are very difficult to solve. In this case numerical solutions can still be found. This is what <code>desolve_rk4</code> is for.</p>
+<p>This is all part of a subject called <a href="http://en.wikipedia.org/wiki/Numerical_analysis">Numerical Analysis</a>.</p>
+<p>Some applications of this include the solution of equations that describe how many people would be in a queue throughout a day across different hours of the day.</p>
+<h2 id="latex">LaTeX</h2>
+<p>LaTeX is a language for typesetting (writing) documents.</p>
+<ul>
+<li>Go through the videos on the corresponding <a href="http://drvinceknight.github.io/Computing_for_mathematics/LabSheets/Week_10.html">lab sheet</a>.</li>
+<li>Take a look at my <a href="http://goo.gl/huzjyq">coursework template</a>.</li>
+<li>There are various other templates available at <a href="https://www.writelatex.com/templates">https://www.writelatex.com/templates</a>.</li>
+</ul>
 <h2 id="what-you-should-do-next">What you should do next:</h2>
 <ul>
-<li><strong>Start the next sheet</strong>: make sure you spend time working on the sheet <strong>BEFORE</strong> the labs.</li>
-<li><strong>Start the coursework</strong></li>
+<li><strong>Finish the coursework</strong></li>
 <li>Contribute to the wiki.</li>
-<li>To make the best use of the lab sessions turn up having finished your sheets;</li>
+<li>Work through the LaTeX lab sheets.</li>
 <li>If anything is still unclear <strong>please</strong> come and see me during office hours.</li>
 </ul>
 </body>
