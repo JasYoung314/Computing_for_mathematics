@@ -32,7 +32,7 @@ A YouTube playlist with all the videos for this lab sheet can be found [here](ht
     2. Often possible to have multiple authors collaborating on a document **at the same time**;
     3. Your files are always available to you.
 
-    The main disadvantage is that you need an internet collection to use it. A good such site is [www.writelatex.org](writelatex.org). Feel free to either use TeXworks or writelatex throughout your learning of LaTeX.
+    The main disadvantage is that you need an internet connection to use it. A good such site is [www.writelatex.org](writelatex.org). Feel free to either use TeXworks or writelatex throughout your learning of LaTeX.
 
     [Video hint](http://youtu.be/4B8Cmm9scmU)
 
@@ -289,13 +289,13 @@ A YouTube playlist with all the videos for this lab sheet can be found [here](ht
 
     [Video hint](http://youtu.be/ef2p-rVJ2Vk)
 
-12. **TICKABLE** The previous code showed how to include mathematics in text (_inline). We can also include mathematics in display mode. Add the following to your document:
+12. **TICKABLE** The previous code showed how to include mathematics in text (_inline_). We can also include mathematics in display mode. Add the following to your document:
 
     $$\sum_{i=1}^{n}i=\frac{n(n+1)}{2}$$
 
     [Video hint](http://youtu.be/cHuDdblKmjs)
 
-13. **TICKABLE** Mathematics can also be included in equations and referred to as for sections, pictures etc:
+13. **TICKABLE** Mathematics can also be included in equations and referred to in the same way as for sections, pictures etc:
 
     ~~~{.latex}
     \begin{equation}\label{my_first_equation}
