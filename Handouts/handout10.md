@@ -48,6 +48,38 @@ There are other ways to change the layout of a LaTeX page: [http://en.wikibooks.
 
 ## Floating figures
 
+We can include figure and tables in LaTeX using:
+
+    \begin{figure}
+    \begin{center}
+    \includegraphics{...}
+    \end{center}
+    \end{figure}
+
+    \begin{table}
+    \begin{tabular}
+    \begin{center}
+    ...
+    \end{center}
+    \end{tabular}
+    \end{table}
+
+Figures and Tables _move_ in LaTeX, ie if we put them in some specific place in the code they potentially do not appear there in the pdf. This is called _floating_.
+
+In general 'trust' LaTeX to put them in the correct place and refer to figure and tables using `\ref` and `\label`.
+
+LaTeX places these things in such a way as to format documents in an esthetically pleasing way. You can pass certain options to LaTeX to get it to ignore certain constraints:
+
+- `h` indicates that it can place the float inline;
+- `t` indicates that it can place the float in the top area;
+- `b` indicates that it can place the float in the bottom area;
+- `p` indicates that it can place the float on a float page or column area;
+- `!` indicates that further constraints can be ignored.
+
+In practice this means, use:
+
+    \begin{figure}[!htbp]
+
 ## [cloud.sagemath](https://cloud.sagemath.com/)
 
 The inventor of Sage: [William Stein](http://goo.gl/bkzDDP) has recently been working on a very ambitious project: cloud.sagemath.
