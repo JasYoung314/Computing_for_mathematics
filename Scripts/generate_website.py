@@ -150,6 +150,11 @@ Alternative resources can be found [here](./alternativeresources.html).
 </script>
                  """)
 
+index_file.write("""
+## Spring Semester
+
+The spring semester will involve a group project. Instructions about how this will be carried out can be found [here](./Entrepreneurship/secondsemesterinstructions.html).
+""")
 
 index_file.close()
 
