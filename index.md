@@ -81,7 +81,7 @@ This website contains the lab sheets for the first term of Computing for Mathema
 
 	[html (recommended)](./Handouts/handout09.html), [pdf](./Handouts/handout09.pdf), [docx](./Handouts/handout09.docx)
 
-10. Handout 10: File paths, Fullpage, Floating figures, cloud.sagemath and plagiarism.
+10. Handout 10: File paths, formatting, floating figures, cloud.sagemath, plagiarism and next semester.
 
 	[html (recommended)](./Handouts/handout10.html), [pdf](./Handouts/handout10.pdf), [docx](./Handouts/handout10.docx)
 
