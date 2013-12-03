@@ -13,6 +13,8 @@ The 'product' must involve programming and mathematics. Students are completely 
 
 Students are welcome and encouraged to form their own companies but if they are unable to do so then they must let me know so that I can form companies for them.
 
+**Students are expected to have at least 1 meeting a week. During these meetings it will be the responsibility of the secretary to ensure that minutes are collected. These meeting reports will form part of the group submission.**
+
 The timetable for the 11 weeks of term is shown:
 
 1. Week 1 - Introductory lecture:
