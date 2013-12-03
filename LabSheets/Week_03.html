@@ -5,10 +5,11 @@
   <meta http-equiv="Content-Style-Type" content="text/css" />
   <meta name="generator" content="pandoc" />
   <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
   <style type="text/css">
 table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
   margin: 0; padding: 0; vertical-align: baseline; border: none; }
-table.sourceCode { width: 100%; background-color: #f8f8f8; }
+table.sourceCode { width: 100%; line-height: 100%; background-color: #f8f8f8; }
 td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
 td.sourceCode { padding-left: 5px; }
 pre, code { background-color: #f8f8f8; }
@@ -79,12 +80,12 @@ clist = alist + blist
 <pre class="sourceCode python"><code class="sourceCode python">squares = [e ** <span class="dv">2</span> <span class="kw">for</span> e in <span class="dt">range</span>(<span class="dv">1</span>, <span class="dv">11</span>) <span class="kw">if</span> e % <span class="dv">2</span> == <span class="dv">1</span>]
 <span class="kw">print</span> squares</code></pre>
 <p><a href="http://www.youtube.com/watch?v=8WXIY18RJiY">Video hint</a></p></li>
-<li><p><strong>TICKABLE</strong> By creating a function and using list comprehensions, create a list of \(f(n)\) for all integers \(n\leq 100\) where \(f(n)\) is given below:</p>
-<p>\[f(n) = \begin{cases}
+<li><p><strong>TICKABLE</strong> By creating a function and using list comprehensions, create a list of <span class="math">\(f(n)\)</span> for all integers <span class="math">\(n\leq 100\)</span> where <span class="math">\(f(n)\)</span> is given below:</p>
+<p><span class="math">\[f(n) = \begin{cases}
    n ^ 3,&amp; \text{ if $n$ odd}\\
    n ^ 2 + 1,&amp; \text{ if $n$ is divisible by }4\\
    n - 1,&amp; \text{otherwise}
-\end{cases}\]</p>
+\end{cases}\]</span></p>
 <p><a href="http://www.youtube.com/watch?v=cr_QV3fF-Ls">Video hint</a></p></li>
 <li><p>There are various other things that we can do to a list. Including getting the highest, lowest values as well as the length of the list:</p>
 <pre class="sourceCode python"><code class="sourceCode python">alist = [<span class="dv">1</span>,<span class="dv">74</span>,<span class="dv">2</span>,<span class="dv">100</span>,-<span class="dv">123</span>]
@@ -120,11 +121,11 @@ clist = alist + blist
 </div>
 <p>This code creates the above phone book as a dictionary with the names as <em>keys</em> and the numbers as their <em>values</em>:</p>
 <pre class="sourceCode python"><code class="sourceCode python">goodphonebook = {<span class="st">&quot;Vince&quot;</span>: <span class="dv">3</span>,
-                    <span class="st">&quot;Zoe&quot;</span>: <span class="dv">2</span>,
-                    <span class="st">&quot;Julien&quot;</span>: <span class="dv">6</span>,
-                    <span class="st">&quot;Thomas&quot;</span>: <span class="dv">10</span>,
-                    <span class="st">&quot;Mike&quot;</span>: <span class="dv">1</span>,
-                    <span class="st">&quot;Matt&quot;</span>: <span class="dv">4</span>}</code></pre>
+                    <span class="co">&quot;Zoe&quot;</span>: <span class="dv">2</span>,
+                    <span class="co">&quot;Julien&quot;</span>: <span class="dv">6</span>,
+                    <span class="co">&quot;Thomas&quot;</span>: <span class="dv">10</span>,
+                    <span class="co">&quot;Mike&quot;</span>: <span class="dv">1</span>,
+                    <span class="co">&quot;Matt&quot;</span>: <span class="dv">4</span>}</code></pre>
 <p>(Note that you can write dictionaries over multiple lines)</p>
 <p>To query a dictionary we can use the <code>get</code> method:</p>
 <pre class="sourceCode python"><code class="sourceCode python">goodphonebook.get(<span class="st">&quot;Thomas&quot;</span>)
@@ -182,18 +183,18 @@ string = textfile.read()
 <h2 id="recursion">Recursion</h2>
 <ol start="14" style="list-style-type: decimal">
 <li><p><strong>TICKABLE</strong> Recursion is an important technique in programming. It often allows you to write code in a much more succinct way and is intimately linked to mathematics where sequences can be defined recursively. For example, consider:</p>
-<p>\[X_n=\begin{cases}
+<p><span class="math">\[X_n=\begin{cases}
 1,&amp; n=1\\
 2X_{n-1},&amp; n&gt;1
-\end{cases}\]</p>
-<p>To calculate \(X_3\), we apply the formula and get:</p>
-<p>\[X_3=2X_2\]</p>
-<p>at this point we must calculate \(X_2\):</p>
-<p>\[X_2=2X_1\]</p>
-<p>and we now apply the formula to calculate \(X_1\):</p>
-<p>\[X_1=1\]</p>
+\end{cases}\]</span></p>
+<p>To calculate <span class="math">\(X_3\)</span>, we apply the formula and get:</p>
+<p><span class="math">\[X_3=2X_2\]</span></p>
+<p>at this point we must calculate <span class="math">\(X_2\)</span>:</p>
+<p><span class="math">\[X_2=2X_1\]</span></p>
+<p>and we now apply the formula to calculate <span class="math">\(X_1\)</span>:</p>
+<p><span class="math">\[X_1=1\]</span></p>
 <p>so by substituting all this in to our previous equation we get</p>
-<p>\[X_3=4\]</p>
+<p><span class="math">\[X_3=4\]</span></p>
 <p>Here is an iterative approach to programming this:</p>
 <pre class="sourceCode python"><code class="sourceCode python"><span class="kw">def</span> iterX(n):
     r = <span class="dv">1</span>
@@ -211,7 +212,7 @@ string = textfile.read()
 <img src="./Images/W03-img03.png" alt="" /><p class="caption"></p>
 </div>
 <p><a href="http://www.youtube.com/watch?v=EYPT4Ykx5IU">Video hint</a></p></li>
-<li><p><strong>TICKABLE</strong> Program two functions that return \(n!\) in both an iterative approach and a recursive approach.</p></li>
+<li><p><strong>TICKABLE</strong> Program two functions that return <span class="math">\(n!\)</span> in both an iterative approach and a recursive approach.</p></li>
 <li><p>Write a recursive program for the Fibonacci sequence.</p></li>
 </ol>
 </body>
