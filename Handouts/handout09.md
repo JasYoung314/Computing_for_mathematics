@@ -1,4 +1,4 @@
-# Computing for mathematics handout 8 - Extracting solutions from outputs of solvers
+# Computing for mathematics handout 9 - Extracting solutions from outputs of solvers
 Lecturer: Vince Knight
 
 Office: M1.30
