@@ -102,6 +102,8 @@ Be careful to not not plagiarise. Here are the University's guidelines on plagia
 
 As long as you reference any work that you use as a source you'll be fine (for example a website from which you have taken some code).
 
+Note that the submission details have been detailed in the [coursework instructions](../IndividualCoursework/individualcourseworkinstructions.html).
+
 ## What you should do next:
 
 - Think of groups and topics for next semester
