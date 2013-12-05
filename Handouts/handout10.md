@@ -48,7 +48,7 @@ There are other ways to change the layout of a LaTeX page: [http://en.wikibooks.
 
 ## Floating figures
 
-We can include figure and tables in LaTeX using:
+We can include figures and tables in LaTeX using:
 
     \begin{figure}
     \begin{center}
