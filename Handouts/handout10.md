@@ -100,7 +100,7 @@ Note that this is an external service (the servers sit at Washington University)
 
 ## Plagiarism
 
-Be careful to not not plagiarise. Here are the University's guidelines on plagiarism and unfair practice: [http://cardiff.ac.uk/regis/ifs/plag/](http://cardiff.ac.uk/regis/ifs/plag/).
+Be careful to not plagiarise. Here are the University's guidelines on plagiarism and unfair practice: [http://cardiff.ac.uk/regis/ifs/plag/](http://cardiff.ac.uk/regis/ifs/plag/).
 
 As long as you reference any work that you use as a source you'll be fine (for example a website from which you have taken some code).
 
