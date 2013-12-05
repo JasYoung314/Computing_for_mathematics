@@ -80,6 +80,8 @@ In practice this means, use:
 
     \begin{figure}[!htbp]
 
+Take a look at this writeLaTeX [http://goo.gl/k83ZHi](http://goo.gl/k83ZHi) template to play around with this.
+
 ## [cloud.sagemath](https://cloud.sagemath.com/)
 
 The inventor of Sage: [William Stein](http://goo.gl/bkzDDP) has recently been working on a very ambitious project: cloud.sagemath.
