@@ -46,3 +46,11 @@ You will submit this work in two ways:
 
 - Via learning central using turnitin. Find the assessment section of the Computing for Mathematics module. You will **only** submit the pdf this way and turnitit will check it for plagiarism. **You will only be able to do this once!**
 - Put **all your files** (.tex, .pdf, .py, .sws etc...) in a folder named `studentnumber` (**YOUR STUDENT NUMBER**). Place this folder in the directory named: `MA1003 Coursework` in the Shared Drive. **Importantly: this directory has particular read and write permissions so you will only be able to do this once!**
+
+## Showcases
+
+Here are some past reports by your peers:
+
+- [Prime Number Theory](./PastCourseWorks/lunn2013-2014.pdf)
+- [Fractals](./PastCourseWorks/carney2013-2014.pdf)
+- [Snakes and Ladders](./PastCourseWorks/campbell2013-2014.pdf)
