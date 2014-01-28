@@ -154,6 +154,10 @@ index_file.write("""
 ## Spring Semester
 
 The spring semester will involve a group project. Instructions about how this will be carried out can be found [here](./Entrepreneurship/secondsemesterinstructions.html).
+
+The introductory slides can be found [here](./Slides/introtoentrepreneurship.pdf).
+
+Information about how any conflicts about individual marks will be taken care of can be found [here](http://www.vincent-knight.com/teaching/fairmarks/). A weighting of 70% output and 30& group work will be used.
 """)
 
 index_file.close()
