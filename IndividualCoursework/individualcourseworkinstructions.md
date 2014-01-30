@@ -51,6 +51,7 @@ You will submit this work in two ways:
 
 Here are some past reports by your peers:
 
-- [Prime Number Theory](./PastCourseWorks/lunn2013-2014.pdf)
 - [Fractals](./PastCourseWorks/carney2013-2014.pdf)
+- [Prime Number Theory](./PastCourseWorks/lunn2013-2014.pdf)
+- [Relationship between Integration and Differentiation](./PastCourseWorks/patsianas2013-2014.pdf)
 - [Snakes and Ladders](./PastCourseWorks/campbell2013-2014.pdf)
