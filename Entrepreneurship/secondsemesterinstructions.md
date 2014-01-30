@@ -37,6 +37,8 @@ The timetable for the 11 weeks of term is shown:
 
     **At the end of this week: all companies must submit a 2 page project proposal (assessed).**
 
+    **[Here is some guidance about the report](./projectreportguidance.html)**
+
 4. Week 4 - Strategic project management:
 
     - What is project management?
