@@ -55,3 +55,6 @@ Here are some past reports by your peers:
 - [Prime Number Theory](./PastCourseWorks/lunn2013-2014.pdf)
 - [Relationship between Integration and Differentiation](./PastCourseWorks/patsianas2013-2014.pdf)
 - [Snakes and Ladders](./PastCourseWorks/campbell2013-2014.pdf)
+- [Linear Algebra](./PastCourseWorks/bateman2013-2014.pdf)
+- [Towers of Hanoi](./PastCourseWorks/thomas2013-2014.pdf)
+- [Convergence of Sequences](./PastCourseWorks/conway2013-2014.pdf)
