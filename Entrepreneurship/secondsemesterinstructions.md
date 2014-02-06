@@ -71,7 +71,7 @@ The timetable for the 11 weeks of term is shown:
 
 # Enterprise Resources
 
-- [Setting up your SME](./Enterprise/wk1settingupyoursme.pptx)
-- [Idea Generation](./Enterprise/wk2ideageneration.docx)
-- [Idea Posters](./Enterprise/wk2ideaposters.pptx)
-- [Your Ideas and Your Market](./Enterprise/wk2yourideayourmarket.pptx)
+- [Setting up your SME]()
+- [Idea Generation]()
+- [Idea Posters]()
+- [Your Ideas and Your Market]()
