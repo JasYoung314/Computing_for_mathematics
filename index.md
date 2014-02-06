@@ -1,7 +1,7 @@
 # Computing for mathematics
 
 This website contains the lab sheets for the first term of Computing for Mathematics. Each lab sheet contains links to a number of videos that should help with the exercises.
-
+                 
 
 
 ## Lab Sheets
@@ -110,6 +110,22 @@ Alternative resources can be found [here](./alternativeresources.html).
 
 [My personal website](http://www.vincent-knight.com/) contains information with regards to assessment and also solutions to the lab sheets.
 
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-38016329-2']);
+  _gaq.push(['_setDomainName', 'github.com']);
+  _gaq.push(['_setAllowLinker', true]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+                 
 ## Spring Semester
 
 The spring semester will involve a group project. Instructions about how this will be carried out can be found [here](./Entrepreneurship/secondsemesterinstructions.html).

@@ -71,7 +71,7 @@ The timetable for the 11 weeks of term is shown:
 
 # Enterprise Resources
 
-- [Setting up your SME](./Enterprise/wk1_setting_ up_your_SME.pptx)
-- [Idea Generation](./Enterprise/wk2_notes_osborn_idea_gen_qs.docx)
-- [Idea Posters](./Enterprise/wk2_notes_team_idea_posters.pptx)
-- [Your Ideas and Your Market](./Enterprise/wk2_your_ideas_and _your_market.pptx)
+- [Setting up your SME](./Enterprise/wk1settingupyoursme.pptx)
+- [Idea Generation](./Enterprise/wk2ideageneration.docx)
+- [Idea Posters](./Enterprise/wk2ideaposters.pptx)
+- [Your Ideas and Your Market](./Enterprise/wk2yourideayourmarket.pptx)
