@@ -68,10 +68,3 @@ The timetable for the 11 weeks of term is shown:
 8. Week 11 - Pitches:
 
     **Company pitches (assessed)**
-
-# Enterprise Resources
-
-- [Setting up your SME]()
-- [Idea Generation]()
-- [Idea Posters]()
-- [Your Ideas and Your Market]()
