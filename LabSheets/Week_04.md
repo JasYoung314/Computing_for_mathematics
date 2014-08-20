@@ -114,9 +114,9 @@ A YouTube playlist with all the videos for this lab sheet can be found [here](ht
 
 07. Write a recursive program for the Fibonacci sequence.
 
-**Sorting Algorithms**
+    **Sorting Algorithms**
 
----
+    ---
 
 08. **TICKABLE** The following code creates a list of digits from 1 to 31.
 
