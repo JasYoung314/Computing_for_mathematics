@@ -1,7 +1,7 @@
 ---
 layout      : post
 categories  : labsheets
-title       : Week 3 - Data Structures and Recursion
+title       : Week 3 - Functions and Data Structures
 playlisturl : http://www.youtube.com/playlist?list=PLnC5h3PY-znxclcsx-JIwgFqGTXMdItOH
 comments    : true
 ---
@@ -16,18 +16,180 @@ This lab sheet will introduce various data structures and also an important conc
 
 A YouTube playlist with all the videos for this lab sheet can be found [here](http://www.youtube.com/playlist?list=PLnC5h3PY-znxclcsx-JIwgFqGTXMdItOH).
 
-**Lists**
+**Functions**
 
 ---
 
-Lists are a particular object in Python that hold ordered collection of other objects. In other languages they are sometimes called 'arrays'. You can think of these as baskets that allow you to hold objects. You can put anything in lists:
+To be able to make progress from the basic on this sheet we need a way to write "recycle" code: functions. Much like mathematical functions, functions in programming can take multiple arguments and carry out tasks with those arguments.
 
-+ Numeric variables;
-+ Character variables;
-+ Other lists;
-+ and various other 'things'.
+![]({{site.baseurl}}/assets/Images/W02-img03.png)
 
-01. **TICKABLE**: The following code creates a list with the numbers from 1, to 10.
+01. The following code defines a very simple function (with no arguments):
+
+        def printhello():
+            print "Hello"
+
+    The name of the function is `PrintHello` and `def` is the Python syntax used to define it. When we run the above two lines of code, nothing is output. To call the function we simply write:
+
+        printhello()
+
+    We can modify our function to take an argument:
+
+        def printhello(name):
+            print "Hello, " + name
+
+    [Video hint](http://www.youtube.com/watch?v=I_DXaP-mrRA)
+
+02. The following function makes use of the `return` call to actually return a result of the function:
+
+        def mydiv(a, b):
+            return a/b
+
+    [Video hint](http://www.youtube.com/watch?v=0cA2VNcc54A)
+
+03. **TICKABLE**: Include a check in the `MyDiv` function to ensure that no division by 0 is attempted.
+
+    [Video hint](http://www.youtube.com/watch?v=KxdJVw-06KE)
+
+04. **TICKABLE**: Create a function that returns the sum of the first $K$ integers not divisiable by $B$. Investigate "using optional arguments" and set $K$ and $B$ to have default values 10000 and 3 respectively.
+
+    [Video hint](http://www.youtube.com/watch?v=hjv8sAlYPDw&feature=youtu.be)
+
+05. Create a function that return the square root of a number using the algorithm suggested in question 14. Write some code that compares the output of this algorithm to the actual square root for the first 10000 digits.
+
+06. **TICKABLE**: Write a function `Fibonacci` that uses loops to calculate the \\(n\\)th number of the Fibonacci sequence:
+
+    $$X_n=\begin{cases}1,& n=0,1\\
+    X_{n-1}+X_{n-2}\end{cases}$$
+
+    [Video hint](http://www.youtube.com/watch?v=4ZxBLkLRPXQ)
+
+
+    **Writing clear code**
+
+    ---
+
+    When writing code it is **very important** to include comments throughout. How well commented code is will be evaluated throughout this module. Comments should be thought of as messages explaining what instructions are being given by the code. This is useful to the writer of the code but more importantly to anyone who might want to add/modify the code.
+
+    There are two ways of writing comments in Python:
+
+    - Use the `#` to indicate to the interpreter that everything that is about to follow on a given line is to be ignored.
+    - Use `"""` to indicate the beginning and end of multi line comments (note that this can also be used to write multi line strings).
+
+07. The following is an example of a single line comment in the middle of some code:
+
+        num = 2
+        num += 3  # Add 3 to num
+        print num
+
+08. The following is an example of a multilined comment in the definition of a function:
+
+        def myfunc(a,b):
+            """
+            This function calculates the ratio of two numbers raised to the sum of the two numbers.
+
+            Arguments:
+                a: the first number
+                b: the second number
+
+            Output: (a / b) ** (a + b)
+            """
+            return (a / float(b)) ** (a + b)
+
+09. **TICKABLE**: One final aspect that is very important when writing code is **convention**. When working on a project with multiple people for example being able to use the same convention can be very beneficial. The most commonly known convention for Python is [PEP8](http://www.Python.org/dev/peps/pep-0008/). You are advised to use the following general summary of PEP8 for this course:
+
+    - Variable and function names
+
+          Use a descriptive `lowercase` (all lowercase characters) for variable and function names.
+
+      Yes:
+
+              myvariable
+              sqrtvar
+              var
+              myfunction
+
+      No:
+
+              my_variable
+              SqrtVAR
+              MyFunction
+              MYFUNCTION
+
+
+      On some occasions it might be appropriate to make some exceptions (for example using a single letter for a very simple variable).
+
+    - White spaces
+
+      Include a whitespace between operators (`+`, `-`, etc) and a whitespace after a comma `,`.
+
+      Yes:
+
+            print 2 + 2
+            myfunc(3, 4)
+
+      No:
+
+            print 2+2
+            myfunc(3,4)
+
+      Include 2 whitespaces before an inline comment `#` at the end of a line of code.
+
+      Yes:
+
+            # Just leave a space after the comment symbol if on a single line
+            print 2 + 2  # but if you comment at the end of a line leave 2 whitespaces.
+
+      No:
+
+            print 2 + 2 # So this is not enough space.
+
+      Also include two blank lines before the definition of a function.
+
+      Yes:
+
+            print 2 + 2
+
+
+            def myfunc():
+                print 2 + 2
+
+      No:
+
+            print 2 + 2
+
+            def myfunc():
+                print 2 + 2
+
+    - Comments
+
+      Comment well and comment often. In particular use the following convention for functions:
+
+            afunc():
+                """
+                Always start a function with a multiline comment to describe what it does.
+
+                Arguments: List the arguments and what format they should be in.
+
+                Output: List the expected output of the function.
+                """
+
+      As and when we see new topics on this course we will also discuss the corresponding conventions.
+
+    Go back through your previously written code and ensure that you have used the above convention.
+
+    **Lists**
+
+    ---
+
+    Lists are a particular object in Python that hold ordered collection of other objects. In other languages they are sometimes called 'arrays'. You can think of these as baskets that allow you to hold objects. You can put anything in lists:
+
+    + Numeric variables;
+    + Character variables;
+    + Other lists;
+    + and various other 'things'.
+
+10. **TICKABLE**: The following code creates a list with the numbers from 1, to 10.
 
         alist = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
@@ -49,7 +211,7 @@ Lists are a particular object in Python that hold ordered collection of other ob
 
     [Video hint](http://www.youtube.com/watch?v=7FbYcOOB64c)
 
-02. We have seen how to combine two lists using `+` but there is a very useful method on lists called the `append` method. With this we can easily add elements to lists:
+11. We have seen how to combine two lists using `+` but there is a very useful method on lists called the `append` method. With this we can easily add elements to lists:
 
         mylist = []
         for i in range(11):
@@ -61,11 +223,11 @@ Lists are a particular object in Python that hold ordered collection of other ob
 
     [Video hint](http://www.youtube.com/watch?v=DWiHBdf5mQI)
 
-03. **TICKABLE** Create a list with the first 1300 integers divisible by 3. What is the largest such number?
+12. **TICKABLE** Create a list with the first 1300 integers divisible by 3. What is the largest such number?
 
     [Video hint](http://www.youtube.com/watch?v=7KxOxWC3h78)
 
-04. There is another way of creating/manipulating lists in python called list _comprehensions_. The following code give the squares of the first 10 integers:
+13. There is another way of creating/manipulating lists in python called list _comprehensions_. The following code give the squares of the first 10 integers:
 
         squares = [e ** 2 for e in range(1, 11)]
         print squares
@@ -77,7 +239,7 @@ Lists are a particular object in Python that hold ordered collection of other ob
 
     [Video hint](http://www.youtube.com/watch?v=8WXIY18RJiY)
 
-05. **TICKABLE** By creating a function and using list comprehensions, create a list of \\(f(n)\\) for all integers \\(n\leq 100\\) where \\(f(n)\\) is given below:
+14. **TICKABLE** By creating a function and using list comprehensions, create a list of \\(f(n)\\) for all integers \\(n\leq 100\\) where \\(f(n)\\) is given below:
 
     $$f(n) = \begin{cases}
        n ^ 3,& \text{ if $n$ odd}\\
@@ -87,7 +249,7 @@ Lists are a particular object in Python that hold ordered collection of other ob
 
     [Video hint](http://www.youtube.com/watch?v=cr_QV3fF-Ls)
 
-06. There are various other things that we can do to a list. Including getting the highest, lowest values as well as the length of the list:
+15. There are various other things that we can do to a list. Including getting the highest, lowest values as well as the length of the list:
 
         alist = [1,74,2,100,-123]
         print max(alist)
@@ -100,7 +262,7 @@ Lists are a particular object in Python that hold ordered collection of other ob
 
     ---
 
-07. **TICKABLE** In computer science 'hash tables' are used as an efficient way to find particular data that is used often. In python 'hash tables' are called dictionaries. To understand this consider the following list of lists:
+16. **TICKABLE** In computer science 'hash tables' are used as an efficient way to find particular data that is used often. In python 'hash tables' are called dictionaries. To understand this consider the following list of lists:
 
         badphonebook = [["Vince", 3],
                         ["Zoe", 2],
@@ -162,7 +324,7 @@ Lists are a particular object in Python that hold ordered collection of other ob
 
     [Video hint](http://www.youtube.com/watch?v=CuyHg-1Let0)
 
-08. Iterate over the list `badphonebook` to initiate the `pb` as the equivalent dictionary:
+17. Iterate over the list `badphonebook` to initiate the `pb` as the equivalent dictionary:
 
         pb = {}
         for e in badphonebook:
@@ -170,7 +332,7 @@ Lists are a particular object in Python that hold ordered collection of other ob
 
     [Video hint](http://www.youtube.com/watch?v=ZZv2sB57BgA)
 
-09. Note that it is also possible to iterate over keys in a dictionary:
+18. Note that it is also possible to iterate over keys in a dictionary:
 
         for e in goodphonebook:
             print goodphonebook[e]
@@ -178,103 +340,3 @@ Lists are a particular object in Python that hold ordered collection of other ob
     [Video hint](http://www.youtube.com/watch?v=cZWwJgvRbBE)
 
 
-    **Writing data to files**
-
-    ---
-
-10. **TICKABLE** All of the data we handle with variables, lists and dictionaries lives in the 'memory' of a computer when our python code is running. When the program stops running the data is lost. There will be occasions when we want to write our data to a file on the hard drive of a computer (so that it is always available even when we turn the computer off).
-
-    To do this we need Python to open a file (usually a basic text file), write strings to the text file and then close the file. The following code opens (or creates a) text file in 'write mode' (that's what the `w` is for) and writes the numbers 1 to 10 to it:
-
-        textfile = open('mytextfile.txt', 'w')
-        for i in range(1, 11):
-            textfile.write("%s\n" % i)
-        textfile.close()
-
-    Note that the string we are writing at each step of the loop ends with a `\n`. This is a special character that tells the writer to write a new line. There are other special characters such as `\t` which tells the writer to include a tabulated space.
-
-    [Video hint](http://www.youtube.com/watch?v=HSz1A8ZHWWg)
-
-11. To read data from a file, we need to open the file in 'read mode':
-
-        textfile = open('mytextfile.txt', 'r')
-        string = textfile.read()
-        print string
-
-    This string is not particularly helpful. To transform the string to a list we can use the `split` method which seperates a string on a given character:
-
-        data = string.split('\n')
-        print data
-
-    All the variables in this list are still character variables. To convert them to numeric variables we can use a list comprehension:
-
-        data = [int(e) for e in data[:-1]]
-
-    [Video hint](http://www.youtube.com/watch?v=3ljPll8cG3A&feature=youtu.be)
-
-12. **TICKABLE** The following function checks if a number is prime or not. Read through the function and ensure that you understand it.
-
-        def isprime(n):
-            return min([n % e for e in range(2, n)]) != 0
-
-    The file [W03_D01.txt]({{site.baseurl}}/assets/Data/W03_D01.txt) contains a list of integers. Read in these integers and print to screen how many of them are prime. (If you would like a bit of a challenge, print to to screen the number of unique primes as the file contains various repetitions of numbers).
-
-    [Video hint](http://www.youtube.com/watch?v=Tbv0s_GEJ1I)
-
-13. There is a common data format called 'csv' short for 'comma separated value'. There is a python library that allows for the easy use of this format when writing a lot of data to files. Watch the following video and experiment with this library.
-
-    [Video hint](http://www.youtube.com/watch?v=jQ9aDyBWCXI)
-
-    **Recursion**
-
-    ---
-
-14. **TICKABLE** Recursion is an important technique in programming. It often allows you to write code in a much more succinct way and is intimately linked to mathematics where sequences can be defined recursively. For example, consider:
-
-    $$X_n=\begin{cases}
-    1,& n=1\\
-    2X_{n-1},& n>1
-    \end{cases}$$
-
-    To calculate \\(X_3\\), we apply the formula and get:
-
-    $$X_3=2X_2$$
-
-    at this point we must calculate \\(X_2\\):
-
-    $$X_2=2X_1$$
-
-    and we now apply the formula to calculate \\(X_1\\):
-
-    $$X_1=1$$
-
-    so by substituting all this in to our previous equation we get
-
-    $$X_3=4$$
-
-    Here is an iterative approach to programming this:
-
-        def iterX(n):
-            r = 1
-            for i in range(n - 1):
-                r *= 2
-            return r
-
-    Experiment and understand this function to verify that it is giving the correct results.
-
-    The following code is a **recursive** approach to programming this:
-
-        def recX(n):
-            if n == 1:
-                return 1
-            return 2 * recX(n - 1)
-
-    Note that this approach is much more closely related to the actual definition of what we are trying to compute. In general we will always either be considering a _base_ case or a case than can be reduced.
-
-    ![]({{site.baseurl}}/assets/Images/W03-img03.png)
-
-    [Video hint](http://www.youtube.com/watch?v=EYPT4Ykx5IU)
-
-15. **TICKABLE** Program two functions that return \\(n!\\) in both an iterative approach and a recursive approach.
-
-16. Write a recursive program for the Fibonacci sequence.

@@ -4,10 +4,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Week 2 - Conditional Statements, Flow Control and Functions</title>
+    <title>Week 2 - Conditional Statements and Flow Control</title>
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="Class website for Computing for Mathematics">
-    <meta name="keywords" content="Week 2 - Conditional Statements, Flow Control and Functions, , , ">
+    <meta name="keywords" content="Week 2 - Conditional Statements and Flow Control, , , ">
     <link rel="canonical" href="/LabSheets/Week_02/">
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
 
@@ -72,7 +72,7 @@
       <div class="post">
 
   <header class="post-header">
-    <h1>Week 2 - Conditional Statements, Flow Control and Functions</h1>
+    <h1>Week 2 - Conditional Statements and Flow Control</h1>
     <p class="meta"></p>
   </header>
 
@@ -394,200 +394,9 @@ while k &lt; 10:
     </ul>
 
     <p><a href="http://www.youtube.com/watch?v=TpQgPKEhrg0">Video hint</a></p>
-
-    <p><strong>Functions</strong></p>
-
-    <hr />
-
-    <p>To be able to make progress from the basic on this sheet we need a way to write “recycle” code: functions. Much like mathematical functions, functions in programming can take multiple arguments and carry out tasks with those arguments.</p>
-
-    <p><img src="/Computing_for_mathematics/assets/Images/W02-img03.png" alt="" /></p>
-  </li>
-  <li>
-    <p>The following code defines a very simple function (with no arguments):</p>
-
-    <pre><code>def printhello():
-    print "Hello"
-</code></pre>
-
-    <p>The name of the function is <code>PrintHello</code> and <code>def</code> is the Python syntax used to define it. When we run the above two lines of code, nothing is output. To call the function we simply write:</p>
-
-    <pre><code>printhello()
-</code></pre>
-
-    <p>We can modify our function to take an argument:</p>
-
-    <pre><code>def printhello(name):
-    print "Hello, " + name
-</code></pre>
-
-    <p><a href="http://www.youtube.com/watch?v=I_DXaP-mrRA">Video hint</a></p>
-  </li>
-  <li>
-    <p>The following function makes use of the <code>return</code> call to actually return a result of the function:</p>
-
-    <pre><code>def mydiv(a, b):
-    return a/b
-</code></pre>
-
-    <p><a href="http://www.youtube.com/watch?v=0cA2VNcc54A">Video hint</a></p>
-  </li>
-  <li>
-    <p><strong>TICKABLE</strong>: Include a check in the <code>MyDiv</code> function to ensure that no division by 0 is attempted.</p>
-
-    <p><a href="http://www.youtube.com/watch?v=KxdJVw-06KE">Video hint</a></p>
-  </li>
-  <li>
-    <p><strong>TICKABLE</strong>: Create a function that returns the sum of the first $K$ integers not divisiable by $B$. Investigate “using optional arguments” and set $K$ and $B$ to have default values 10000 and 3 respectively.</p>
-
-    <p><a href="http://www.youtube.com/watch?v=hjv8sAlYPDw&amp;feature=youtu.be">Video hint</a></p>
-  </li>
-  <li>
-    <p>Create a function that return the square root of a number using the algorithm suggested in question 14. Write some code that compares the output of this algorithm to the actual square root for the first 10000 digits.</p>
-  </li>
-  <li>
-    <p><strong>TICKABLE</strong>: Write a function <code>Fibonacci</code> that uses loops to calculate the \(n\)th number of the Fibonacci sequence:</p>
-
-    <script type="math/tex; mode=display">% <![CDATA[
-X_n=\begin{cases}1,& n=0,1\\
-X_{n-1}+X_{n-2}\end{cases} %]]></script>
-
-    <p><a href="http://www.youtube.com/watch?v=4ZxBLkLRPXQ">Video hint</a></p>
-
-    <p><strong>Writing clear code</strong></p>
-
-    <hr />
-
-    <p>When writing code it is <strong>very important</strong> to include comments throughout. How well commented code is will be evaluated throughout this module. Comments should be thought of as messages explaining what instructions are being given by the code. This is useful to the writer of the code but more importantly to anyone who might want to add/modify the code.</p>
-
-    <p>There are two ways of writing comments in Python:</p>
-
-    <ul>
-      <li>Use the <code>#</code> to indicate to the interpreter that everything that is about to follow on a given line is to be ignored.</li>
-      <li>Use <code>"""</code> to indicate the beginning and end of multi line comments (note that this can also be used to write multi line strings).</li>
-    </ul>
-  </li>
-  <li>
-    <p>The following is an example of a single line comment in the middle of some code:</p>
-
-    <pre><code>num = 2
-num += 3  # Add 3 to num
-print num
-</code></pre>
-  </li>
-  <li>
-    <p>The following is an example of a multilined comment in the definition of a function:</p>
-
-    <pre><code>def myfunc(a,b):
-    """
-    This function calculates the ratio of two numbers raised to the sum of the two numbers.
-
-    Arguments:
-        a: the first number
-        b: the second number
-
-    Output: (a / b) ** (a + b)
-    """
-    return (a / float(b)) ** (a + b)
-</code></pre>
-  </li>
-  <li>
-    <p><strong>TICKABLE</strong>: One final aspect that is very important when writing code is <strong>convention</strong>. When working on a project with multiple people for example being able to use the same convention can be very beneficial. The most commonly known convention for Python is <a href="http://www.Python.org/dev/peps/pep-0008/">PEP8</a>. You are advised to use the following general summary of PEP8 for this course:</p>
-
-    <ul>
-      <li>
-        <p>Variable and function names</p>
-
-        <pre><code>Use a descriptive `lowercase` (all lowercase characters) for variable and function names.
-
-Yes:
-
-    myvariable
-    sqrtvar
-    var
-    myfunction
-
-No:
-
-    my_variable
-    SqrtVAR
-    MyFunction
-    MYFUNCTION
-</code></pre>
-
-        <p>On some occasions it might be appropriate to make some exceptions (for example using a single letter for a very simple variable).</p>
-      </li>
-      <li>
-        <p>White spaces</p>
-
-        <p>Include a whitespace between operators (<code>+</code>, <code>-</code>, etc) and a whitespace after a comma <code>,</code>.</p>
-
-        <p>Yes:</p>
-
-        <pre><code>  print 2 + 2
-  myfunc(3, 4)
-</code></pre>
-
-        <p>No:</p>
-
-        <pre><code>  print 2+2
-  myfunc(3,4)
-</code></pre>
-
-        <p>Include 2 whitespaces before an inline comment <code>#</code> at the end of a line of code.</p>
-
-        <p>Yes:</p>
-
-        <pre><code>  # Just leave a space after the comment symbol if on a single line
-  print 2 + 2  # but if you comment at the end of a line leave 2 whitespaces.
-</code></pre>
-
-        <p>No:</p>
-
-        <pre><code>  print 2 + 2 # So this is not enough space.
-</code></pre>
-
-        <p>Also include two blank lines before the definition of a function.</p>
-
-        <p>Yes:</p>
-
-        <pre><code>  print 2 + 2
-
-
-  def myfunc():
-      print 2 + 2
-</code></pre>
-
-        <p>No:</p>
-
-        <pre><code>  print 2 + 2
-
-  def myfunc():
-      print 2 + 2
-</code></pre>
-      </li>
-      <li>
-        <p>Comments</p>
-
-        <p>Comment well and comment often. In particular use the following convention for functions:</p>
-
-        <pre><code>  afunc():
-      """
-      Always start a function with a multiline comment to describe what it does.
-
-      Arguments: List the arguments and what format they should be in.
-
-      Output: List the expected output of the function.
-      """
-</code></pre>
-
-        <p>As and when we see new topics on this course we will also discuss the corresponding conventions.</p>
-      </li>
-    </ul>
-
-    <p>Go back through your script and ensure that you have used the above convention.</p>
   </li>
 </ol>
+
 
   </article>
 
@@ -598,7 +407,7 @@ No:
     <script type="text/javascript">
         /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
         var disqus_shortname = 'vincent-knight';
-        var disqus_identifier = 'CfM: Week 2 - Conditional Statements, Flow Control and Functions';
+        var disqus_identifier = 'CfM: Week 2 - Conditional Statements and Flow Control';
 
         /* * * DON'T EDIT BELOW THIS LINE * * */
         (function() {

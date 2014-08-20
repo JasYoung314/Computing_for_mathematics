@@ -225,7 +225,9 @@ A YouTube playlist with all the videos for this lab sheet can be found [here](ht
 
     (This is an example of a technique called Monte Carlo Simulation.)
 
-## Inheritance
+    **Inheritance**
+
+    ---
 
 10. **TICKABLE** One final important concept of object orientated programming that we will consider is 'inheritance'. This allows us create hierarchical structures of classes where some classes are derived from others.
 
