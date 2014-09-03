@@ -102,7 +102,7 @@ A YouTube playlist with all the videos for this lab sheet can be found [here](ht
 
 08. We can also define functions in Sage. The following code defines \\(f:x\to x^3 + \pi x^2-\frac{23}{2}x^2+15x-\frac{23}{2}\pi x+15\pi\\):
 
-        f(x) =  x^3 + pi*x^2 - 23/2*x^2 - 23/2*pi*x  + 15*x+ 15*pi
+        f(x) =  x ^ 3 + pi * x ^ 2 - 23 / 2 * x ^ 2 - 23 / 2 * pi * x  + 15 * x+ 15 * pi
 
     To take a look at \\(f\\) we can use the `plot` function:
 
